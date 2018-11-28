@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use std::io::{self, BufRead, };
+use std::io::{self, BufRead};
 
 pub fn solve() {
     // Get line from standard input
@@ -24,17 +24,19 @@ pub fn solve() {
     let vals: Vec<u32> = input.chars().filter_map(|c| c.to_digit(10)).collect();
 
     // pair up digits using zip, and a cycled iterator skipped by 1
-    let captcha1: u32 = vals.iter()
+    let captcha1: u32 = vals
+        .iter()
         .zip(vals.iter().cycle().skip(1))
-        .filter_map(|(a,b)| if a == b {Some(a) } else { None })
+        .filter_map(|(a, b)| if a == b { Some(a) } else { None })
         .sum();
 
-    println!("[Part 1] ANS is: {}", captcha1.to_string());
+    println!("[Day 24][Part 1] ANS is: {}", captcha1.to_string());
 
-    let captcha2: u32 = vals.iter()
+    let captcha2: u32 = vals
+        .iter()
         .zip(vals.iter().cycle().skip(vals.len() / 2))
-        .filter_map(|(a,b)| if a == b {Some(a) } else { None })
+        .filter_map(|(a, b)| if a == b { Some(a) } else { None })
         .sum();
 
-    println!("[Part 2] ANS is: {}", captcha2.to_string());
+    println!("[Day 24][Part 2] ANS is: {}", captcha2.to_string());
 }
