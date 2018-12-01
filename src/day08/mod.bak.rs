@@ -14,30 +14,37 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use itertools::Itertools;
+use nom::alpha;
+use util::num;
 use std::io::{self, BufRead};
 
 pub fn solve() {
     // Get line from standard input
     let stdin = io::stdin();
+    let input = stdin.lock().lines();
 
-    let lines: Vec<Vec<u32>> = stdin
-        .lock()
-        .lines()
-        .filter_map(|line| line.ok())
-        .map(|line| {
-            line.split_whitespace()
-                .filter_map(|el| el.parse::<u32>().ok())
-                .collect()
-        })
-        .collect();
+    let mut registers = [0, 26];
 
-    let sum: u32 = lines
-        .iter()
-        .map(|linesum| linesum.iter().max().unwrap() - linesum.iter().min().unwrap())
-        .sum();
+    for line in input {
+        let line = line.unwrap();
 
-    println!("[Day 13][Part 1] ANS is: {}", sum.to_string());
+        ws!(line.as_str(), do_parse!(
+                reg1: alpha >>
+                alt!(
+                    tag_s!("inc") | tag_s!("dec")
+                ) >>
+                val1: num >>
+                tag_s!("if") >>
 
-    // println!("[Day 13][Part 2] ANS is: {}", sum.to_string());
+
+        ))
+        println!("{}", reg[0]);
+    }
+
+    println!(
+        "[Day 08][Part 1] ANS is: {}",
+        registers.iter().max().unwrap()
+    );
+
+    // println!("[Day 08][Part 2] ANS is: {}", captcha2.to_string());
 }

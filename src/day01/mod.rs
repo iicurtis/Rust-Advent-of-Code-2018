@@ -14,29 +14,33 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+use std::collections::HashSet;
 use std::io::{self, BufRead};
 
 pub fn solve() {
     // Get line from standard input
     let stdin = io::stdin();
-    let input = stdin.lock().lines().next().unwrap().unwrap();
+    let input: Vec<isize> = stdin
+        .lock()
+        .lines()
+        .filter_map(|line| line.ok())
+        .map(|line| line.parse::<isize>().unwrap())
+        .collect();
 
-    let vals: Vec<u32> = input.chars().filter_map(|c| c.to_digit(10)).collect();
+    let sum: isize = input.iter().sum();
 
-    // pair up digits using zip, and a cycled iterator skipped by 1
-    let captcha1: u32 = vals
-        .iter()
-        .zip(vals.iter().cycle().skip(1))
-        .filter_map(|(a, b)| if a == b { Some(a) } else { None })
-        .sum();
+    println!("[Day 01][Part 1] ANS is: {}", sum.to_string());
 
-    println!("[Day 01][Part 1] ANS is: {}", captcha1.to_string());
+    let mut seen = HashSet::new();
+    let mut sum = 0;
 
-    let captcha2: u32 = vals
-        .iter()
-        .zip(vals.iter().cycle().skip(vals.len() / 2))
-        .filter_map(|(a, b)| if a == b { Some(a) } else { None })
-        .sum();
+    for freq in input.iter().cycle() {
+        sum += freq;
+        let repeated = seen.insert(sum);
+        if !repeated {
+            break;
+        }
+    }
 
-    println!("[Day 01][Part 2] ANS is: {}", captcha2.to_string());
+    println!("[Day 01][Part 2] ANS is: {}", sum.to_string());
 }

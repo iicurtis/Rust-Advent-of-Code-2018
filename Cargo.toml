@@ -1,5 +1,5 @@
 [package]
-name = "advent2018-rs"
+name = "advent2017-rs"
 version = "0.1.0"
 authors = ["Isaac Curtis <iicurtis@outlook.com>"]
 edition = "2018"
@@ -7,3 +7,14 @@ edition = "2018"
 [dependencies]
 clap = "2"
 itertools = "0.7"
+num = "*"
+petgraph = "*"
+regex = "*"
+nom = "*"
+
+[dev-dependencies]
+criterion = "*"
+
+[[bench]]
+name = "tests"
+harness = false

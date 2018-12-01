@@ -14,50 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-extern crate clap;
+extern crate advent2017_rs;
 
-use clap::{Arg, App};
-
-mod util;
-mod day01;
-mod day02;
-mod day03;
-mod day04;
-mod day05;
-mod day06;
-mod day07;
-mod day08;
-mod day09;
-mod day10;
-mod day11;
-mod day12;
-mod day13;
-mod day14;
-mod day15;
-mod day16;
-mod day17;
-mod day18;
-mod day19;
-mod day20;
-mod day21;
-mod day22;
-mod day23;
-mod day24;
-mod day25;
+use advent2017_rs::*;
+use clap::{App, Arg};
 
 fn main() {
     let matches = App::new("Advent of Code in Rust 2018")
         .author("Isaac Curtis <iicurtis att outlook doot com>")
-        .arg(Arg::with_name("day")
-             .required(true)
-             .help("Day of the advent calendar")
-             .validator(|str|
-                        str.parse::<u32>()
+        .arg(
+            Arg::with_name("day")
+                .required(true)
+                .help("Day of the advent calendar")
+                .validator(|str| {
+                    str.parse::<u32>()
                         .or(Err("day must be an integer".to_owned()))
                         .and_then(|v| match v {
                             1...25 => Ok(()),
-                            _ => Err("day must be between 1 and 25".to_owned())
-                        })))
+                            _ => Err("day must be between 1 and 25".to_owned()),
+                        })
+                }),
+        )
         .get_matches();
     match matches.value_of("day").unwrap().parse::<u32>().unwrap() {
         1 => day01::solve(),
@@ -85,6 +62,6 @@ fn main() {
         23 => day23::solve(),
         24 => day24::solve(),
         25 => day25::solve(),
-        _ => ()
+        _ => (),
     }
 }

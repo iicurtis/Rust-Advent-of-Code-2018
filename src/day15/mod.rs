@@ -14,29 +14,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+use itertools::Itertools;
 use std::io::{self, BufRead};
 
 pub fn solve() {
     // Get line from standard input
     let stdin = io::stdin();
-    let input = stdin.lock().lines().next().unwrap().unwrap();
 
-    let vals: Vec<u32> = input.chars().filter_map(|c| c.to_digit(10)).collect();
+    let lines: Vec<Vec<u32>> = stdin
+        .lock()
+        .lines()
+        .filter_map(|line| line.ok())
+        .map(|line| {
+            line.split_whitespace()
+                .filter_map(|el| el.parse::<u32>().ok())
+                .collect()
+        })
+        .collect();
 
-    // pair up digits using zip, and a cycled iterator skipped by 1
-    let captcha1: u32 = vals
+    let sum: u32 = lines
         .iter()
-        .zip(vals.iter().cycle().skip(1))
-        .filter_map(|(a, b)| if a == b { Some(a) } else { None })
+        .map(|linesum| linesum.iter().max().unwrap() - linesum.iter().min().unwrap())
         .sum();
 
-    println!("[Day 15][Part 1] ANS is: {}", captcha1.to_string());
+    println!("[Day 15][Part 1] ANS is: {}", sum.to_string());
 
-    let captcha2: u32 = vals
-        .iter()
-        .zip(vals.iter().cycle().skip(vals.len() / 2))
-        .filter_map(|(a, b)| if a == b { Some(a) } else { None })
-        .sum();
-
-    println!("[Day 15][Part 2] ANS is: {}", captcha2.to_string());
+    // println!("[Day 15][Part 2] ANS is: {}", sum.to_string());
 }

@@ -39,41 +39,5 @@ pub fn solve() {
 
     println!("[Day 02][Part 1] ANS is: {}", sum.to_string());
 
-    let sum: u32 = lines
-        .iter()
-        .filter_map(|ls| {
-            ls.iter()
-                .tuple_combinations()
-                .filter_map(|(a, b)| {
-                    if a % b == 0 {
-                        Some(a / b)
-                    } else if b % a == 0 {
-                        Some(b / a)
-                    } else {
-                        None
-                    }
-                })
-                .next()
-        })
-        .sum();
-
-    println!("[Day 02][Part 2] ANS is: {}", sum.to_string());
-    let mut sum: u32 = 0;
-    for line in lines.iter() {
-        'outer: for (i, a) in line.iter().enumerate() {
-            for (j, b) in line.iter().enumerate() {
-                if i != j {
-                    if a % b == 0 {
-                        sum += a / b;
-                        break 'outer;
-                    } else if b % a == 0 {
-                        sum += b / a;
-                        break 'outer;
-                    }
-                }
-            }
-        }
-    }
-
-    println!("[Day 02][Part 2] ANS is: {}", sum.to_string());
+    // println!("[Day 02][Part 2] ANS is: {}", sum.to_string());
 }
