@@ -5,11 +5,14 @@ authors = ["Isaac Curtis <iicurtis@outlook.com>"]
 edition = "2018"
 
 [dependencies]
-aoc-runner = "0.1"
-aoc-runner-derive = "0.1"
+aoc-runner = "0.2.0-alpha1"
+aoc-runner-derive = "0.2.0-alpha1"
 itertools = "0.7"
 hashbrown = "0.1"
-# nom = "4"
+fnv = "1.0.3"
+nom = "4"
+packed_simd = "0.3"
+matrix = "0.21"
 # petgraph = "*"
 # regex = "*"
 

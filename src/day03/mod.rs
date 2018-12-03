@@ -14,33 +14,78 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use std::collections::HashSet;
+use hashbrown::{HashMap, HashSet};
+use matrix::format::conventional::Conventional;
+use std::str;
+
+pub struct LandClaim {
+    id: usize,
+    x: usize,
+    y: usize,
+    width: usize,
+    height: usize,
+}
 
 #[aoc_generator(day3)]
-fn parse_input(input: &str) -> Vec<isize> {
-    input
-        .lines()
-        .map(|line| line.parse::<isize>().unwrap())
-        .collect()
+fn parse_input(input: &str) -> Vec<LandClaim> {
+    let mut input_vec: Vec<LandClaim> = Vec::new();
+    for line in input.lines() {
+        let all_the_things = line
+            .split(|c| c == ' ' || c == '@' || c == ',' || c == ':' || c == 'x' || c == '#')
+            .filter_map(|c| c.parse::<usize>().ok())
+            .collect::<Vec<_>>();
+        let id = all_the_things[0];
+        let xpos = all_the_things[1];
+        let ypos = all_the_things[2];
+        let xsize = all_the_things[3];
+        let ysize = all_the_things[4];
+        input_vec.push(LandClaim {
+            id: id,
+            x: xpos,
+            y: ypos,
+            width: xsize,
+            height: ysize,
+        })
+    }
+    return input_vec;
 }
 
 #[aoc(day3, part1)]
-fn part1(input: &[isize]) -> isize {
-    return input.iter().sum();
+fn part1(input: &Vec<LandClaim>) -> usize {
+    let mut claims = HashMap::new();
+    for claim in input.iter() {
+        for x in claim.x..(claim.x + claim.width) {
+            for y in claim.y..(claim.y + claim.height) {
+                *claims.entry((x, y)).or_insert(0) += 1;
+            }
+        }
+    }
+    let intersected_claims = claims.values().filter(|v| **v > 1).count();
+    return intersected_claims;
 }
 
 #[aoc(day3, part2)]
-fn part2(input: &[isize]) -> isize {
-    let mut seen = HashSet::new();
-    let mut sum = 0;
-
-    for freq in input.iter().cycle() {
-        sum += freq;
-        let repeated = seen.insert(sum);
-        if !repeated {
-            break;
+fn part2(input: &Vec<LandClaim>) -> usize {
+    let mut claims = HashMap::<_, usize>::new();
+    let mut all_ids = HashSet::new();
+    for claim in input.iter() {
+        let mut overlap = false;
+        all_ids.insert(claim.id);
+        for x in claim.x..(claim.x + claim.width) {
+            for y in claim.y..(claim.y + claim.height) {
+                if let Some(old) = claims.insert((x, y), claim.id) {
+                    overlap = true;
+                    all_ids.remove(&old);
+                }
+            }
+        }
+        if !overlap {
+            all_ids.insert(claim.id);
         }
     }
 
-    return sum;
+    match all_ids.iter().next() {
+        Some(id) => *id,
+        None => 0,
+    }
 }

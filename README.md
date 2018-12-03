@@ -33,7 +33,7 @@ cargo run -- 01 < <INPUT>
 * [AuroransSolic/aoc_2018](https://github.com/AuroransSolis/aoc_2018)
 * [gobanos/advent-of-code-2018](https://github.com/gobanos/advent-of-code-2018)
 * [anowell/advent-of-code](https://github.com/anowell/advent-of-code)
-* [d653/rust_advent_of_code_2018](https://github.com/d653/rust_advent_of_code_2018)
+* [zesterer/advent-of-code-2018](https://github.com/zesterer/advent-of-code-2018)
 
 ## TODO
 

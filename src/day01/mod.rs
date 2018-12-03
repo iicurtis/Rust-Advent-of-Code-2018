@@ -14,6 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+use fnv;
+use hashbrown;
 use std::collections::HashSet;
 
 #[aoc_generator(day1)]
@@ -33,14 +35,69 @@ fn part1(input: &[isize]) -> isize {
 fn part2(input: &[isize]) -> isize {
     let mut seen = HashSet::new();
     let mut sum = 0;
+    seen.insert(sum);
 
     for freq in input.iter().cycle() {
         sum += freq;
-        let repeated = seen.insert(sum);
-        if !repeated {
+        if !seen.insert(sum) {
             break;
         }
     }
 
     return sum;
+}
+
+#[aoc(day1, part2, hashbrown)]
+fn part2_hb(input: &[isize]) -> isize {
+    let mut seen = hashbrown::HashSet::new();
+    let mut sum = 0;
+    seen.insert(sum);
+
+    for freq in input.iter().cycle() {
+        sum += freq;
+        if !seen.insert(sum) {
+            break;
+        }
+    }
+
+    return sum;
+}
+
+#[aoc(day1, part2, fnv)]
+fn part2_fnv(input: &[isize]) -> isize {
+    let mut seen = fnv::FnvHashSet::default();
+    let mut sum = 0;
+    seen.insert(sum);
+
+    for freq in input.iter().cycle() {
+        sum += freq;
+        if !seen.insert(sum) {
+            break;
+        }
+    }
+
+    return sum;
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn part1_example() {
+        assert_eq!(part1(&[1, -2, 3, 1]), 3);
+        assert_eq!(part1(&[1, 1, 1]), 3);
+        assert_eq!(part1(&[1, 1, -2]), 0);
+        assert_eq!(part1(&[-1, -2, -3]), -6);
+    }
+
+    #[test]
+    fn part2_example() {
+        assert_eq!(part2(&[1, -2, 3, 1]), 2);
+        assert_eq!(part2(&[1, -1]), 0);
+        assert_eq!(part2(&[3, 3, 4, -2, -4]), 10);
+        assert_eq!(part2(&[-6, 3, 8, 5, -6]), 5);
+        assert_eq!(part2(&[7, 7, -2, -7, -4]), 14);
+    }
+
 }
