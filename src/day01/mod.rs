@@ -15,24 +15,22 @@
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 use std::collections::HashSet;
-use std::io::{self, BufRead};
 
-type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;
-
-pub fn solve() -> Result<()> {
-    // Get line from standard input
-    let stdin = io::stdin();
-    let input: Vec<isize> = stdin
-        .lock()
+#[aoc_generator(day1)]
+fn parse_input(input: &str) -> Vec<isize> {
+    input
         .lines()
-        .filter_map(|line| line.ok())
         .map(|line| line.parse::<isize>().unwrap())
-        .collect();
+        .collect()
+}
 
-    let sum: isize = input.iter().sum();
+#[aoc(day1, part1)]
+fn part1(input: &[isize]) -> isize {
+    return input.iter().sum();
+}
 
-    println!("[Day 01][Part 1] ANS is: {}", sum.to_string());
-
+#[aoc(day1, part2)]
+fn part2(input: &[isize]) -> isize {
     let mut seen = HashSet::new();
     let mut sum = 0;
 
@@ -44,6 +42,5 @@ pub fn solve() -> Result<()> {
         }
     }
 
-    println!("[Day 01][Part 2] ANS is: {}", sum.to_string());
-    Ok(())
+    return sum;
 }

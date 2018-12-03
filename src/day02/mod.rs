@@ -14,27 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+use hashbrown;
 use itertools::Itertools;
 use std::collections::hash_map::Entry;
 use std::collections::HashMap;
-use std::io::{self, Read, Write};
 
-type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;
-
-pub fn solve() -> Result<()> {
-    // Get line from standard input
-    let stdin = io::stdin();
-    // let lines = stdin.lock().lines();
-
-    let mut input = String::new();
-    stdin.lock().read_to_string(&mut input)?;
-
-    part1(&input)?;
-    part2(&input)?;
-    Ok(())
-}
-
-fn part1(input: &str) -> Result<()> {
+#[aoc(day2, part1)]
+fn part1(input: &str) -> u32 {
     let mut doubles = 0;
     let mut triples = 0;
 
@@ -68,11 +54,11 @@ fn part1(input: &str) -> Result<()> {
     }
     let checksum = doubles * triples;
 
-    println!("[Day 02][Part 1] ANS is: {}", checksum.to_string());
-    Ok(())
+    return checksum;
 }
 
-pub fn part2<'a>(input: &'a str) -> Result<()> {
+#[aoc(day2, part2)]
+pub fn part2<'a>(input: &'a str) -> String {
     let lines = input.lines().collect::<Vec<_>>();
 
     let mut map = HashMap::new();
@@ -84,16 +70,62 @@ pub fn part2<'a>(input: &'a str) -> Result<()> {
                 Entry::Vacant(vacant) => {
                     vacant.insert(());
                 }
-                _ => writeln!(
-                    io::stdout(),
-                    "[Day 02][Part 2] ANS is: {}{}",
-                    line.0,
-                    line.1
-                )?,
+                _ => {
+                    let mut ans = line.0.to_string();
+                    ans.push_str(line.1);
+                    return ans;
+                }
             };
         }
         map.clear();
     }
+    return String::from("Fail");
+}
 
-    Ok(())
+#[aoc(day2, part2, hashbrown)]
+pub fn part2_hb<'a>(input: &'a str) -> String {
+    let lines = input.lines().collect::<Vec<_>>();
+
+    let mut map = hashbrown::HashMap::new();
+
+    for index in 0..lines.first().unwrap().len() - 1 {
+        for line in &lines {
+            let line = (&line[..index], &line[index + 1..]);
+            match map.entry(line) {
+                hashbrown::hash_map::Entry::Vacant(vacant) => {
+                    vacant.insert(());
+                }
+                _ => {
+                    let mut ans = line.0.to_string();
+                    ans.push_str(line.1);
+                    return ans;
+                }
+            };
+        }
+        map.clear();
+    }
+    return String::from("Fail");
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    const INPUT_PART1: &str = "abcdef\nbababc\nabbcde\nabcccd\naabcdd\nabcdee\nababab";
+    const INPUT_PART2: &str = "abcde\nfghij\nklmno\npqrst\nfguij\naxcye\nwvxyz";
+
+    #[test]
+    fn part1_example() {
+        assert_eq!(part1(INPUT_PART1), 12);
+    }
+
+    #[test]
+    fn part2_example() {
+        assert_eq!(part2(INPUT_PART2), "fgij");
+    }
+
+    #[test]
+    fn part2_hb_example() {
+        assert_eq!(part2_hb(INPUT_PART2), "fgij");
+    }
 }

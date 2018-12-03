@@ -31,6 +31,8 @@ cargo run -- 01 < <INPUT>
 * [BurntSushi/advent-of-code](https://github.com/BurntSushi/advent-of-code)
 * [birkenfield/advent18](https://github.com/birkenfeld/advent18)
 * [AuroransSolic/aoc_2018](https://github.com/AuroransSolis/aoc_2018)
+* [gobanos/advent-of-code-2018](https://github.com/gobanos/advent-of-code-2018)
+* [anowell/advent-of-code](https://github.com/anowell/advent-of-code)
 * [d653/rust_advent_of_code_2018](https://github.com/d653/rust_advent_of_code_2018)
 
 ## TODO
