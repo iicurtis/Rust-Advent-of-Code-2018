@@ -24,3 +24,16 @@ exists to run code from the *inputs/* directory.
 ```
 cargo run -- 01 < <INPUT>
 ```
+
+
+## Other Rust AoC
+
+* [BurntSushi/advent-of-code](https://github.com/BurntSushi/advent-of-code)
+* [birkenfield/advent18](https://github.com/birkenfeld/advent18)
+* [AuroransSolic/aoc_2018](https://github.com/AuroransSolis/aoc_2018)
+* [d653/rust_advent_of_code_2018](https://github.com/d653/rust_advent_of_code_2018)
+
+## TODO
+
+* [ ] Add tests
+* [ ] Follow BurntSushi's example and don't panic

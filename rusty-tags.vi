@@ -1251,8 +1251,6 @@ Node	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.1
 Node	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/graph_impl/mod.rs	/^impl<E, Ix> Clone for Node<E, Ix> where E: Clone, Ix: Copy {$/;"	c
 Node	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/graph_impl/mod.rs	/^impl<N, Ix: IndexType> Node<N, Ix>$/;"	c
 Node	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/graph_impl/mod.rs	/^pub struct Node<N, Ix = DefaultIx> {$/;"	s
-Node	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^struct Node {$/;"	s
-Node	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^struct Node {$/;"	s
 NodeData	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/algo/mod.rs	/^    struct NodeData {$/;"	s	function:tarjan_scc
 NodeFiltered	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/filter.rs	/^impl<'a, G, F> IntoEdgeReferences for &'a NodeFiltered<G, F>$/;"	c
 NodeFiltered	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/filter.rs	/^impl<'a, G, F> IntoEdges for &'a NodeFiltered<G, F>$/;"	c
@@ -1563,6 +1561,32 @@ Result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4
 Result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/compile.rs	/^type Result = result::Result<Patch, Error>;$/;"	t
 Result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/dfa.rs	/^impl<T> Result<T> {$/;"	c
 Result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/dfa.rs	/^pub enum Result<T> {$/;"	g
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day11/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day12/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day13/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day14/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day15/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day16/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day17/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day18/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day19/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day20/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day21/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day22/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day23/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day24/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/day25/mod.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
+Result	/home/atraii/Downloads/tmp/advent2018-rs/src/main.rs	/^type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;$/;"	t
 Reversed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/reversed.rs	/^impl<G: GraphBase> GraphBase for Reversed<G> {$/;"	c
 Reversed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/reversed.rs	/^impl<G: GraphRef> GraphRef for Reversed<G> { }$/;"	c
 Reversed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/reversed.rs	/^impl<G: Visitable> Visitable for Reversed<G>$/;"	c
@@ -2463,6 +2487,29 @@ combinations	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/iterto
 combinations	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod combinations;$/;"	n
 common	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/compare.rs	/^pub(crate) fn common($/;"	f
 common	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/mod.rs	/^pub(crate) fn common<T>($/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day11/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day12/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day13/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day14/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day15/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day16/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day17/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day18/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day19/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day20/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day21/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day22/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day23/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day24/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
+common_letters	/home/atraii/Downloads/tmp/advent2018-rs/src/day25/mod.rs	/^fn common_letters(box_id1: &str, box_id2: &str) -> Option<String> {$/;"	f
 compare	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/mod.rs	/^mod compare;$/;"	n
 compare	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn compare(&self, t: &'b [u8]) -> CompareResult {$/;"	P	implementation:u8
 compare	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn compare(&self, t: &'b str) -> CompareResult {$/;"	P	implementation:str
@@ -4134,7 +4181,7 @@ macros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4
 macros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/mod.rs	/^#[macro_use] mod macros;$/;"	n
 macros_private	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod macros_private;$/;"	n
 mad	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    mad: ConfidenceInterval,$/;"	m	struct:Context
-main	/home/atraii/Downloads/tmp/advent2018-rs/src/main.rs	/^fn main() {$/;"	f
+main	/home/atraii/Downloads/tmp/advent2018-rs/src/main.rs	/^fn main() -> Result<()> {$/;"	f
 make_filename_safe	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^fn make_filename_safe(string: &str) -> String {$/;"	f
 manual_configurable_endianness_test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn manual_configurable_endianness_test() {$/;"	f	module:tests
 many0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/multi.rs	/^  fn many0() {$/;"	f	module:tests
@@ -4297,8 +4344,6 @@ name	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.
 name	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    name: String,$/;"	m	struct:Plot
 name	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/re_bytes.rs	/^    pub fn name(&self, name: &str) -> Option<Match<'t>> {$/;"	P	implementation:Captures
 name	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/re_unicode.rs	/^    pub fn name(&self, name: &str) -> Option<Match<'t>> {$/;"	P	implementation:Captures
-name	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^    name: String,$/;"	m	struct:Node
-name	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    name: String,$/;"	m	struct:Node
 name_end	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/clap-2.32.0/src/usage_parser.rs	/^fn name_end(b: u8) -> bool { b != b']' && b != b'>' }$/;"	f
 name_no_brackets	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/clap-2.32.0/src/args/arg_builder/positional.rs	/^    pub fn name_no_brackets(&self) -> Cow<str> {$/;"	P	implementation:PosBuilder
 named	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! named ($/;"	M
@@ -4790,6 +4835,54 @@ parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn parse_to(&self) -> Option<R> {$/;"	P	implementation:CompleteStr
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn parse_to(&self) -> Option<R> {$/;"	P	implementation:Input
 parser	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/clap-2.32.0/src/app/mod.rs	/^pub mod parser;$/;"	n
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day11/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day12/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day13/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day14/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day15/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day16/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day17/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day18/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day19/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day20/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day21/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day22/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day23/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day24/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day25/mod.rs	/^fn part1(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn part2<'a>(input: &'a str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day11/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day12/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day13/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day14/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day15/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day16/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day17/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day18/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day19/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day20/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day21/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day22/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day23/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day24/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day25/mod.rs	/^fn part2(input: &str) -> Result<()> {$/;"	f
 partial_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/graphmap.rs	/^    fn partial_cmp(&self, other: &Ptr<'b, T>) -> Option<Ordering> {$/;"	P	implementation:Ptr
 partial_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/scored.rs	/^    fn partial_cmp(&self, other: &MinScored<K, T>) -> Option<Ordering> {$/;"	P	implementation:MinScored
 partial_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/input.rs	/^    fn partial_cmp(&self, other: &Char) -> Option<Ordering> {$/;"	P	implementation:char
@@ -5398,34 +5491,32 @@ slots_len	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0
 slots_per_thread	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/pikevm.rs	/^    slots_per_thread: usize,$/;"	m	struct:Threads
 slow	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/literal/teddy_avx2/imp.rs	/^    fn slow(&self, haystack: &[u8], pos: usize) -> Option<Match> {$/;"	P	implementation:Teddy
 slow	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/regex-1.0.6/src/literal/teddy_ssse3/imp.rs	/^    fn slow(&self, haystack: &[u8], pos: usize) -> Option<Match> {$/;"	P	implementation:Teddy
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^pub fn solve() {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
 solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.bak.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day11/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day12/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day13/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day14/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day15/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day16/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day17/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day18/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day19/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day20/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day21/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day22/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day23/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day24/mod.rs	/^pub fn solve() {$/;"	f
-solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day25/mod.rs	/^pub fn solve() {$/;"	f
-solve_part2_flat	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^pub fn solve_part2_flat(input: u64) -> u64 {$/;"	f
-solve_part2_matrix	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^pub fn solve_part2_matrix(input: u64) -> u64 {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day11/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day12/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day13/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day14/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day15/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day16/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day17/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day18/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day19/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day20/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day21/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day22/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day23/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day24/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
+solve	/home/atraii/Downloads/tmp/advent2018-rs/src/day25/mod.rs	/^pub fn solve() -> Result<()> {$/;"	f
 sort_edges	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/algo/mod.rs	/^    sort_edges: BinaryHeap<MinScored<G::EdgeWeight, (G::NodeId, G::NodeId)>>,$/;"	m	struct:MinSpanningTree
 sorted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn sorted<I>(iterable: I) -> Vec<I::Item>$/;"	f
 sorted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn sorted(self) -> Vec<Self::Item>$/;"	P	interface:Itertools
@@ -5875,8 +5966,6 @@ top	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.1
 top	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/put_back_n_impl.rs	/^    top: Vec<I::Item>,$/;"	m	struct:PutBackN
 top_group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    top_group: usize,$/;"	m	struct:GroupInner
 toposort	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/algo/mod.rs	/^pub fn toposort<G>(g: G, space: Option<&mut DfsSpace<G::NodeId, G::Map>>)$/;"	f
-total	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^    total: u32,$/;"	m	struct:Node
-total	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    total: u32,$/;"	m	struct:Node
 tovisit	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/traversal.rs	/^    tovisit: Vec<N>,$/;"	m	struct:Topo
 trait_template	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/macros.rs	/^macro_rules! trait_template {$/;"	M
 traits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^mod traits;$/;"	n
@@ -6186,8 +6275,6 @@ weight	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4
 weight	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/mod.rs	/^    fn weight(&self) -> &Self::Weight;$/;"	P	interface:EdgeRef
 weight	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/mod.rs	/^    fn weight(&self) -> &Self::Weight;$/;"	P	interface:NodeRef
 weight	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/petgraph-0.4.13/src/visit/reversed.rs	/^    fn weight(&self) -> &Self::Weight {$/;"	f
-weight	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^    weight: u32,$/;"	m	struct:Node
-weight	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    weight: u32,$/;"	m	struct:Node
 when	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/clap-2.32.0/src/fmt.rs	/^    pub when: ColorWhen,$/;"	m	struct:ColorizerOption
 when	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/clap-2.32.0/src/fmt.rs	/^    when: ColorWhen,$/;"	m	struct:Colorizer
 while1_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^    fn while1_s(c: char) -> bool {$/;"	f	function:test::take_while1_s_fail

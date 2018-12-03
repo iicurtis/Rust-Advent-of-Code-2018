@@ -17,7 +17,9 @@
 use std::collections::HashSet;
 use std::io::{self, BufRead};
 
-pub fn solve() {
+type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;
+
+pub fn solve() -> Result<()> {
     // Get line from standard input
     let stdin = io::stdin();
     let input: Vec<isize> = stdin
@@ -43,4 +45,5 @@ pub fn solve() {
     }
 
     println!("[Day 01][Part 2] ANS is: {}", sum.to_string());
+    Ok(())
 }

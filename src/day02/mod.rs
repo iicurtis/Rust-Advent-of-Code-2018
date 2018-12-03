@@ -15,29 +15,85 @@
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 use itertools::Itertools;
-use std::io::{self, BufRead};
+use std::collections::hash_map::Entry;
+use std::collections::HashMap;
+use std::io::{self, Read, Write};
 
-pub fn solve() {
+type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;
+
+pub fn solve() -> Result<()> {
     // Get line from standard input
     let stdin = io::stdin();
+    // let lines = stdin.lock().lines();
 
-    let lines: Vec<Vec<u32>> = stdin
-        .lock()
-        .lines()
-        .filter_map(|line| line.ok())
-        .map(|line| {
-            line.split_whitespace()
-                .filter_map(|el| el.parse::<u32>().ok())
-                .collect()
-        })
-        .collect();
+    let mut input = String::new();
+    stdin.lock().read_to_string(&mut input)?;
 
-    let sum: u32 = lines
-        .iter()
-        .map(|linesum| linesum.iter().max().unwrap() - linesum.iter().min().unwrap())
-        .sum();
+    part1(&input)?;
+    part2(&input)?;
+    Ok(())
+}
 
-    println!("[Day 02][Part 1] ANS is: {}", sum.to_string());
+fn part1(input: &str) -> Result<()> {
+    let mut doubles = 0;
+    let mut triples = 0;
 
-    // println!("[Day 02][Part 2] ANS is: {}", sum.to_string());
+    for line in input.lines() {
+        let mut chars: Vec<char> = line.chars().collect();
+
+        chars.sort_by(|a, b| b.cmp(a));
+        // let repeated: String = chars.iter().collect();
+        let counts = chars
+            .into_iter()
+            .map(|c| (c, 1))
+            .coalesce(|(c, n), (d, m)| {
+                if c == d {
+                    Ok((c, n + m))
+                } else {
+                    Err(((c, n), (d, m)))
+                }
+            });
+
+        let mut first_double = true;
+        let mut first_triple = true;
+        for (_, n) in counts {
+            if n == 2 && first_double {
+                doubles += 1;
+                first_double = false;
+            } else if n == 3 && first_triple {
+                triples += 1;
+                first_triple = false;
+            }
+        }
+    }
+    let checksum = doubles * triples;
+
+    println!("[Day 02][Part 1] ANS is: {}", checksum.to_string());
+    Ok(())
+}
+
+pub fn part2<'a>(input: &'a str) -> Result<()> {
+    let lines = input.lines().collect::<Vec<_>>();
+
+    let mut map = HashMap::new();
+
+    for index in 0..lines.first().unwrap().len() - 1 {
+        for line in &lines {
+            let line = (&line[..index], &line[index + 1..]);
+            match map.entry(line) {
+                Entry::Vacant(vacant) => {
+                    vacant.insert(());
+                }
+                _ => writeln!(
+                    io::stdout(),
+                    "[Day 02][Part 2] ANS is: {}{}",
+                    line.0,
+                    line.1
+                )?,
+            };
+        }
+        map.clear();
+    }
+
+    Ok(())
 }

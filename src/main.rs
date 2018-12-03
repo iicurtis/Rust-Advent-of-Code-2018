@@ -19,7 +19,9 @@ extern crate advent2017_rs;
 use advent2017_rs::*;
 use clap::{App, Arg};
 
-fn main() {
+type Result<T> = ::std::result::Result<T, Box<::std::error::Error>>;
+
+fn main() -> Result<()> {
     let matches = App::new("Advent of Code in Rust 2018")
         .author("Isaac Curtis <iicurtis att outlook doot com>")
         .arg(
@@ -62,6 +64,6 @@ fn main() {
         23 => day23::solve(),
         24 => day24::solve(),
         25 => day25::solve(),
-        _ => (),
+        _ => Ok(()),
     }
 }
