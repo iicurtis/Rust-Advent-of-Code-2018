@@ -14,9 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use hashbrown::{HashMap, HashSet};
+use hashbrown::HashSet;
 use std::str;
-use packed_simd::u16x32;
 
 #[derive(Debug)]
 pub struct LandClaim {
@@ -56,7 +55,7 @@ fn part1(input: &Vec<LandClaim>) -> usize {
     let mut claims: Vec<usize> = vec![0; 1 << 20];
     for claim in input.iter() {
         for x in claim.x..claim.x + claim.width {
-            for y in claim.y..(claim.y + claim.height) {
+            for y in claim.y..claim.y + claim.height {
                 claims[x as usize + y as usize * 1024] += 1;
             }
         }
@@ -72,7 +71,7 @@ fn part2(input: &Vec<LandClaim>) -> usize {
     for claim in input.iter() {
         let mut overlap = false;
         for x in claim.x..claim.x + claim.width {
-            for y in (claim.y..claim.y + claim.height) {
+            for y in claim.y..claim.y + claim.height {
                 let idx = x as usize + y as usize * 1024;
                 if claims[idx] == 0 {
                     claims[idx] = claim.id;

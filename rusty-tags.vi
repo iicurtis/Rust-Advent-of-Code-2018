@@ -2,6 +2,7 @@
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 Abs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/abs.rs	/^crate trait Abs {$/;"	i
 AccessError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/error.rs	/^pub struct AccessError {$/;"	s
+Action	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^enum Action {$/;"	g
 All	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask.rs	/^crate trait All: crate::marker::Sized {$/;"	i
 Alpha	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Alpha,$/;"	e	enum:ErrorKind
 AlphaNumeric	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  AlphaNumeric,$/;"	e	enum:ErrorKind
@@ -17,6 +18,7 @@ ArcStr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0
 ArcStr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.0-alpha1/src/lib.rs	/^pub struct ArcStr(Arc<str>);$/;"	s
 AsBytes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait AsBytes {$/;"	i
 AsChar	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait AsChar {$/;"	i
+Asleep	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    Asleep,$/;"	e	enum:Action
 AtEof	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait AtEof {$/;"	i
 AxisScale	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^pub enum AxisScale {$/;"	g
 AxisScale	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/summary.rs	/^impl AxisScale {$/;"	c
@@ -169,6 +171,8 @@ CustomError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1
 CustomError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  impl From<u32> for CustomError {$/;"	c	module:tests
 CustomError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  struct CustomError;$/;"	s	module:tests
 DEFAULT_FONT	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^static DEFAULT_FONT: &'static str = "Helvetica";$/;"	v
+Date	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^impl Display for Date {$/;"	c
+Date	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^pub struct Date {$/;"	s
 Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I: Clone> Clone for Dedup<I>$/;"	c
 Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I> Iterator for Dedup<I>$/;"	c
 Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I> fmt::Debug for Dedup<I>$/;"	c
@@ -235,6 +239,7 @@ Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/i
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^impl<I, E> fmt::Display for Err<I, E>$/;"	c
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^impl<I, F, E: From<F>> Convert<Err<I, F>> for Err<I, E> {$/;"	c
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^pub enum Err<I, E = u32> {$/;"	g
+Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^        type Err = ParseError;$/;"	t	implementation:parsers::Event
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Error(Context<I, E>),$/;"	e	enum:Err
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  Error,$/;"	e	enum:CompareResult
 ErrorKind	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^impl<E> ErrorKind<E> {$/;"	c
@@ -251,6 +256,8 @@ EscapedTransform	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/no
 Estimate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^impl Estimate {$/;"	c
 Estimate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^struct Estimate {$/;"	s
 Estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/estimate.rs	/^pub(crate) type Estimates = BTreeMap<Statistic, Estimate>;$/;"	t
+Event	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    impl std::str::FromStr for Event {$/;"	c	module:parsers
+Event	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^pub struct Event {$/;"	s
 Exp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/exp.rs	/^crate trait Exp {$/;"	i
 ExprOpt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  ExprOpt,$/;"	e	enum:ErrorKind
 ExprRes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  ExprRes,$/;"	e	enum:ErrorKind
@@ -763,6 +770,7 @@ ParameterizedBenchmark	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec
 ParameterizedBenchmark	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^pub struct ParameterizedBenchmark<T: Debug> {$/;"	s
 ParseError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    enum ParseError {$/;"	g	function:tests::map_res_err
 ParseError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    impl From<u32> for ParseError {$/;"	c	function:tests::map_res_err
+ParseError	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    pub struct ParseError;$/;"	s	module:parsers
 ParseTo	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait ParseTo<R> {$/;"	i
 ParseTo	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  ParseTo,$/;"	e	enum:ErrorKind
 Parser	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^  impl<'a> Parser<'a> {$/;"	c	module:tests
@@ -886,6 +894,7 @@ SeqInPlaceVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/h
 SeqInPlaceVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^        struct SeqInPlaceVisitor<'a, T: 'a, S: 'a>(&'a mut HashSet<T, S>);$/;"	s	function:deserialize_in_place
 SeqVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^        impl<'de, T, S> Visitor<'de> for SeqVisitor<T, S>$/;"	c	function:deserialize
 SeqVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^        struct SeqVisitor<T, S> {$/;"	s	function:deserialize
+ShiftStart	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    ShiftStart(usize),$/;"	e	enum:Action
 Shorter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/diff.rs	/^    Shorter(usize, PutBack<I>),$/;"	e	enum:Diff
 Shuffle	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^pub trait Shuffle<Lanes> {$/;"	i
 Shuffle1Dyn	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle1_dyn.rs	/^pub trait Shuffle1Dyn {$/;"	i
@@ -897,6 +906,7 @@ SinCosPi	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_sim
 SinPi	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin_pi.rs	/^crate trait SinPi {$/;"	i
 Size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Size(usize),$/;"	e	enum:Needed
 SizeHint	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub type SizeHint = (usize, Option<usize>);$/;"	t
+SleepMin	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^type SleepMin = HashMap<usize, Vec<usize>>;$/;"	t
 Slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait Slice<R> {$/;"	i
 Slope	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/estimate.rs	/^    Slope,$/;"	e	enum:Statistic
 Solver	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/types.rs	/^impl Solver {$/;"	c
@@ -1023,6 +1033,7 @@ ValuesMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown
 ValuesMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^pub struct ValuesMut<'a, K: 'a, V: 'a> {$/;"	s
 Vec	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^impl<T> Append<T> for Vec<T> {$/;"	c
 Verify	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Verify,$/;"	e	enum:ErrorKind
+Wake	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    Wake,$/;"	e	enum:Action
 WhileSome	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, A> Iterator for WhileSome<I>$/;"	c
 WhileSome	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub struct WhileSome<I> {$/;"	s
 WithPosition	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^impl<I: Iterator> Iterator for WithPosition<I> {$/;"	c
@@ -1063,6 +1074,7 @@ abs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3
 abs_distributions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^pub(crate) fn abs_distributions($/;"	f
 absolute_estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub absolute_estimates: Estimates,$/;"	m	struct:MeasurementData
 acc	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^macro_rules! acc ($/;"	M
+action	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    action: Action,$/;"	m	struct:Event
 adaptors	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod adaptors;$/;"	n
 add	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    fn add(&mut self, names: &[&str], idb: IndexBenchmark) {$/;"	P	implementation:IndexBenchmark
 add	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn add(a: SizeHint, b: SizeHint) -> SizeHint {$/;"	f
@@ -1441,9 +1453,12 @@ current_key	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertoo
 custom_error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn custom_error(input: &[u8]) -> IResult<&[u8], &[u8], CustomError> {$/;"	f	module:tests
 data	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    data: *const T,$/;"	m	struct:RawIter
 data	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    data: NonNull<T>,$/;"	m	struct:RawTable
+date	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    date: Date,$/;"	m	struct:Event
+day	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    day: usize,$/;"	m	struct:Date
 day01	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day01;$/;"	n
 day02	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day02;$/;"	n
 day03	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day03;$/;"	n
+day04	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day04;$/;"	n
 dbg	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^macro_rules! dbg ($/;"	M
 dbg_dmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^macro_rules! dbg_dmp ($/;"	M
 debug	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/fmt.rs	/^mod debug;$/;"	n
@@ -1702,6 +1717,7 @@ fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.1
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn fmt(&self, f: &mut Formatter) -> Result {$/;"	P	implementation:CompleteStr
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod fmt;$/;"	n
+fmt	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Date
 fmuladd_v16f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/mul_adde.rs	/^    fn fmuladd_v16f32(x: f32x16, y: f32x16, z: f32x16) -> f32x16;$/;"	f
 fmuladd_v2f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/mul_adde.rs	/^    fn fmuladd_v2f32(x: f32x2, y: f32x2, z: f32x2) -> f32x2;$/;"	f
 fmuladd_v2f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/mul_adde.rs	/^    fn fmuladd_v2f64(x: f64x2, y: f64x2, z: f64x2) -> f64x2;$/;"	f
@@ -1769,6 +1785,7 @@ from_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown
 from_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn from_iter<I: IntoIterator<Item = T>>(iter: I) -> HashSet<T, S> {$/;"	f
 from_ptr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    unsafe fn from_ptr(ptr: *const T) -> Self {$/;"	P	implementation:Bucket
 from_slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/slice.rs	/^mod from_slice;$/;"	n
+from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^        fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:parsers::Event
 from_vector	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/from.rs	/^mod from_vector;$/;"	n
 front	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    front: Option<J>,$/;"	m	struct:Flatten
 fs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod fs;$/;"	n
@@ -1838,6 +1855,7 @@ hex_digit1	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.
 hex_digit_test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn hex_digit_test() {$/;"	f	module:tests
 hex_u32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn hex_u32(input: &[u8]) -> IResult<&[u8], u32> {$/;"	f
 hex_u32_tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn hex_u32_tests() {$/;"	f	module:tests
+hour	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    hour: usize,$/;"	m	struct:Date
 html	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod html;$/;"	n
 i128	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^macro_rules! i128 ( ($i:expr, $e:expr) => ( {if $crate::Endianness::Big == $e { $crate::be_i128(/;"	M
 i128	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 1]> for i128 {$/;"	c
@@ -2418,6 +2436,7 @@ methods	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn min<I>(iterable: I) -> Option<I::Item>$/;"	f
 min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^    min: usize,$/;"	m	struct:PadUsing
 min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn min(a: SizeHint, b: SizeHint) -> SizeHint {$/;"	f
+min	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    min: usize,$/;"	m	struct:Date
 min_max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/reductions.rs	/^mod min_max;$/;"	n
 minimal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod minimal;$/;"	n
 minmax	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn minmax(self) -> MinMaxResult<Self::Item>$/;"	P	interface:Itertools
@@ -2427,6 +2446,8 @@ minmax_by_key	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itert
 minmax_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/minmax.rs	/^pub fn minmax_impl<I, K, F, L>(mut it: I, mut key_for: F,$/;"	f
 mkdirp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/fs.rs	/^pub fn mkdirp<P>(path: &P) -> Result<()>$/;"	f
 mmx	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^mod mmx;$/;"	n
+month	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    month: usize,$/;"	m	struct:Date
+mostoccuring	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn mostoccuring(input: Vec<usize>) -> (usize, usize) {$/;"	f
 msize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 2]> for msize {$/;"	c
 msize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 4]> for msize {$/;"	c
 msize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 8]> for msize {$/;"	c
@@ -2624,6 +2645,7 @@ parent	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.
 parent	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    parent: &'a IntoChunks<I>,$/;"	m	struct:Chunks
 parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn parse_input(input: &str) -> Vec<isize> {$/;"	f
 parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn parse_input(input: &str) -> Vec<LandClaim> {$/;"	f
+parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn parse_input(input: &str) -> Vec<Event> {$/;"	f
 parse_lib_infos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^fn parse_lib_infos(infos: pm::TokenStream) -> Result<LibInfos, ()> {$/;"	f
 parse_main_infos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^fn parse_main_infos(infos: pm::TokenStream) -> Result<MainInfos, ()> {$/;"	f
 parse_meta	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/derive.rs	/^fn parse_meta(attrs: &[syn::Attribute]) -> Result<AocMeta, Box<dyn error::Error>> {$/;"	f
@@ -2635,15 +2657,18 @@ parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn parse_to(&self) -> Option<R> {$/;"	P	implementation:CompleteByteSlice
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn parse_to(&self) -> Option<R> {$/;"	P	implementation:CompleteStr
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn parse_to(&self) -> Option<R> {$/;"	P	implementation:Input
+parsers	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^mod parsers {$/;"	n
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part1(input: &[isize]) -> isize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1(input: &str) -> u32 {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn part1(input: &Vec<LandClaim>) -> usize {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn part1(input: &Vec<Event>) -> usize {$/;"	f
 part1_burnt	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1_burnt(input: &str) -> u32 {$/;"	f
 part1_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
 part1_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
 part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part2(input: &[isize]) -> isize {$/;"	f
 part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn part2<'a>(input: &'a str) -> String {$/;"	f
 part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn part2(input: &Vec<LandClaim>) -> usize {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn part2(input: &Vec<Event>) -> usize {$/;"	f
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_fnv	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part2_fnv(input: &[isize]) -> isize {$/;"	f
@@ -3285,6 +3310,7 @@ test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/
 test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^mod test {$/;"	n
 test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^    fn test(&self) -> bool;$/;"	P	interface:Mask
 test	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^mod test {$/;"	n
+test	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^mod test {$/;"	n
 test_apply_m	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^  fn test_apply_m() {$/;"	f	module:tests
 test_benchmark_id_make_directory_name_unique	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn test_benchmark_id_make_directory_name_unique() {$/;"	f	module:test
 test_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/testing/utils.rs	/^pub fn test_cmp<T>($/;"	f
@@ -3307,6 +3333,8 @@ test_mode	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion
 test_mode	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub test_mode: bool,$/;"	m	struct:ReportContext
 test_offset_str	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn test_offset_str() {$/;"	f	module:tests
 test_offset_u8	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn test_offset_u8() {$/;"	f	module:tests
+test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    fn test_part1() {$/;"	f	module:test
+test_part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    fn test_part2() {$/;"	f	module:test
 test_reduction_float_min_max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/reductions/min_max.rs	/^macro_rules! test_reduction_float_min_max {$/;"	M
 test_select	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/select.rs	/^macro_rules! test_select {$/;"	M
 test_shuffle1_dyn	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/shuffle1_dyn.rs	/^macro_rules! test_shuffle1_dyn {$/;"	M
@@ -3343,6 +3371,7 @@ thumbnail_width	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/cri
 till_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^    fn till_s(c: char) -> bool {$/;"	f	function:test::take_till_s_succeed
 time	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/format.rs	/^pub fn time(ns: f64) -> String {$/;"	f
 time_interval	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^        fn time_interval(est: &Estimate) -> ConfidenceInterval {$/;"	f	method:Html::measurement_complete
+timefrom	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn timefrom(start: Date, end: Date) -> Vec<usize> {$/;"	f
 title	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    title: String,$/;"	m	struct:Context
 to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/error.rs	/^    pub to: PathBuf,$/;"	m	struct:CopyError
 to_camelcase	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/utils.rs	/^pub(crate) fn to_camelcase(dp: &DayPart) -> syn::Ident {$/;"	f
@@ -3595,6 +3624,7 @@ x86_m8x8_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packe
 x86_m8x8_mmx_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86/mmx.rs	/^macro_rules! x86_m8x8_mmx_impl {$/;"	M
 y	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    y: u16,$/;"	m	struct:LandClaim
 year	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^    year: u32,$/;"	m	struct:LibInfos
+year	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    year: usize,$/;"	m	struct:Date
 yellow	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn yellow(&self, s: String) -> String {$/;"	P	implementation:CliReport
 zip	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn zip<I, J>(i: I, j: J) -> Zip<I::IntoIter, J::IntoIter>$/;"	f
 zip_eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn zip_eq<J>(self, other: J) -> ZipEq<Self, J::IntoIter>$/;"	P	interface:Itertools
