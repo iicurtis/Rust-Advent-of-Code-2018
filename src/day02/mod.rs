@@ -16,8 +16,6 @@
 
 use hashbrown;
 use itertools::Itertools;
-use std::collections::hash_map::Entry;
-use std::collections::HashMap;
 use std::str;
 
 #[aoc(day2, part1)]
@@ -58,26 +56,6 @@ fn part1(input: &str) -> u32 {
     return checksum;
 }
 
-#[aoc(day2, part1, birkinfeld)]
-// https://github.com/birkenfeld/advent18/blob/master/src/bin/day02.rs
-fn part1_birk(input: &str) -> u32 {
-    let ids = input.lines().collect::<Vec<_>>();
-    // Using fold here lets us keep track of the doubles/triples state
-    // in the iterator without mutable outer variables.
-    let (doubles, triples) = ids.iter().fold((0, 0), |(dbls, tpls), id| {
-        let mut freqs = HashMap::<_, u32>::default();
-        // Determine frequency of every character in the ID using a hashmap.
-        id.chars().for_each(|c| *freqs.entry(c).or_default() += 1);
-        // If we find any of the needed frequency, casting the bool to u32
-        // gives "+ 0" or "+ 1".
-        (
-            dbls + freqs.values().any(|&n| n == 2) as u32,
-            tpls + freqs.values().any(|&n| n == 3) as u32,
-        )
-    });
-    return doubles * triples;
-}
-
 #[aoc(day2, part1, burntsushi)]
 // https://github.com/BurntSushi/advent-of-code/blob/master/2018/aoc02/src/main.rs
 fn part1_burnt(input: &str) -> u32 {
@@ -100,67 +78,47 @@ fn part1_burnt(input: &str) -> u32 {
     return twos * threes;
 }
 
-#[aoc(day2, part2, cryzefast)]
-// https://github.com/zesterer/advent-of-code-2018/blob/master/examples/puzzle-2-2.rs
-fn exec_fast(l: &[u8]) -> String {
-    // I challenge you, whoever the hell you are, to write an implementation faster than this!
-
-    // Uh huh.
-
-    // Didn't think so.
-    let lines = l
-        .chunks(27)
-        .map(|l| str::from_utf8(l).ok().unwrap())
-        .collect::<Vec<_>>();
-
+#[aoc(day2, part2, simd_discord)]
+pub fn part2_simd<'a>(input: &'a str) -> String {
     use packed_simd::u8x32;
+    let lines = input.lines();
 
-    let mut rail = [unsafe { std::mem::uninitialized::<u8x32>() }; 250];
-    for (i, c) in l.chunks(27).enumerate() {
-        let mut ptr =
-            unsafe { std::slice::from_raw_parts_mut(&mut rail[i] as *mut _ as *mut u8, 32) };
-        ptr[0..26].copy_from_slice(&c[0..26]);
-        ptr[26..32].copy_from_slice(&[0, 0, 0, 0, 0, 0])
+    #[repr(align(32))]
+    #[derive(Copy, Clone)]
+    struct Line([u8; 32]);
+
+    let mut storage = [u8x32::splat(0); 250];
+    let mut buf = Line([0; 32]);
+    for (storage, line) in storage.iter_mut().zip(lines) {
+        let line = line.trim_end();
+        buf.0[..line.len()].copy_from_slice(line.as_bytes());
+        *storage = u8x32::from_slice_aligned(&buf.0);
     }
 
-    for i in 0..250 {
-        for j in i + 1..250 {
-            if (rail[i] - rail[j]).min(u8x32::splat(1)).wrapping_sum() == 1 {
-                return lines[i].to_string();
+    for (i, &a) in storage.iter().enumerate() {
+        for &b in &storage[i + 1..] {
+            if a.eq(b)
+                .select(u8x32::splat(1), u8x32::splat(0))
+                .wrapping_sum()
+                == 31
+            {
+                let mut buf = String::with_capacity(25);
+                let a: [u8; 32] = a.into();
+                let b: [u8; 32] = b.into();
+                for (&a, &b) in a.iter().zip(&b) {
+                    if a == b {
+                        buf.push(a as char);
+                    }
+                }
+                return buf;
             }
         }
     }
-
-    return lines[0].to_string();
+    return String::from("fail");
 }
 
 #[aoc(day2, part2)]
 pub fn part2<'a>(input: &'a str) -> String {
-    let lines = input.lines().collect::<Vec<_>>();
-
-    let mut map = HashMap::new();
-
-    for index in 0..lines.first().unwrap().len() - 1 {
-        for line in &lines {
-            let line = (&line[..index], &line[index + 1..]);
-            match map.entry(line) {
-                Entry::Vacant(vacant) => {
-                    vacant.insert(());
-                }
-                _ => {
-                    let mut ans = line.0.to_string();
-                    ans.push_str(line.1);
-                    return ans;
-                }
-            };
-        }
-        map.clear();
-    }
-    return String::from("Fail");
-}
-
-#[aoc(day2, part2, hashbrown)]
-pub fn part2_hb<'a>(input: &'a str) -> String {
     let lines = input.lines().collect::<Vec<_>>();
 
     let mut map = hashbrown::HashMap::new();
@@ -197,17 +155,7 @@ mod tests {
     }
 
     #[test]
-    fn part1_birk_example() {
-        assert_eq!(part1_birk(INPUT_PART1), 12);
-    }
-
-    #[test]
     fn part2_example() {
         assert_eq!(part2(INPUT_PART2), "fgij");
-    }
-
-    #[test]
-    fn part2_hb_example() {
-        assert_eq!(part2_hb(INPUT_PART2), "fgij");
     }
 }

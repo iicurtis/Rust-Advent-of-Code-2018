@@ -7,26 +7,36 @@ My personal implementations for
 The code is designed to take input from `stdin`. A wrapper program *run_day.sh*
 exists to run code from the *inputs/* directory.
 
+### Install cargo-aoc
+
+This requires `cargo-aoc` to work. 
+
+```
+cargo install cargo-aoc
+```
+
 ### Running a single day
 
 ```
-./run_day.sh 1
+cargo aoc -d 1
 ```
 
 ### Running all days
 
 ```
-./run_day.sh
+cargo run --release
 ```
 
 ### Running custom input
 
-```
-cargo run -- 01 < <INPUT>
-```
+I actually don't know how to do this with `cargo-aoc`. It does lose a bit of its
+flexibility. But its nice to get benchmarks and have a coding paradigm very
+similar to others.
 
 
 ## Other Rust AoC
+
+Be sure to check out the Rust Discord! We are on there every day.
 
 * [BurntSushi/advent-of-code](https://github.com/BurntSushi/advent-of-code)
 * [birkenfield/advent18](https://github.com/birkenfeld/advent18)

@@ -2,7 +2,6 @@ extern crate aoc_runner;
 #[macro_use]
 extern crate aoc_runner_derive;
 extern crate hashbrown;
-extern crate matrix;
 
 mod day01;
 mod day02;

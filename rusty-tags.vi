@@ -21,13 +21,6 @@ AtEof	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src
 AxisScale	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^pub enum AxisScale {$/;"	g
 AxisScale	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/summary.rs	/^impl AxisScale {$/;"	c
 B	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^  struct B {$/;"	s	module:tests
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^impl<'l, T: Element> From<&'l Diagonal<T>> for Banded<T> {$/;"	c
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^impl<T: Element> From<Diagonal<T>> for Banded<T> {$/;"	c
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^impl<T: Element> ::format::Validate for Banded<T> {$/;"	c
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^impl<T: Element> Banded<T> {$/;"	c
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^impl<T: Element> Matrix for Banded<T> {$/;"	c
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^pub struct Banded<T: Element> {$/;"	s
-Banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/operation.rs	/^impl<T: Element> Transpose for Banded<T> {$/;"	c
 Baseline	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^pub enum Baseline {$/;"	g
 Batching	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<B, F, I> Iterator for Batching<I, F>$/;"	c
 Batching	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, F> fmt::Debug for Batching<I, F> where I: fmt::Debug {$/;"	c
@@ -80,7 +73,6 @@ CoalesceCore	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/iterto
 CoalesceCore	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub struct CoalesceCore<I>$/;"	s
 Code	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/simple_errors.rs	/^  Code(I, ErrorKind<E>),$/;"	e	enum:Context
 Code	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/verbose_errors.rs	/^  Code(I, ErrorKind<E>),$/;"	e	enum:Context
-Column	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    Column,$/;"	e	enum:Variant
 Combination	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    type Combination = Tuple1Combination<I>;$/;"	t	implementation:Item
 Combination	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    type Combination: From<I> + Iterator<Item = Self>;$/;"	t	interface:HasCombination
 Combinations	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^impl<I> Iterator for Combinations<I>$/;"	c
@@ -146,18 +138,6 @@ CompleteStr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1
 CompleteStr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^impl<'a> Slice<RangeFull> for CompleteStr<'a> {$/;"	c
 CompleteStr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^impl<'a> Slice<RangeTo<usize>> for CompleteStr<'a> {$/;"	c
 CompleteStr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^pub struct CompleteStr<'a>(pub &'a str);$/;"	s
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^impl<'l, T: Element> From<&'l Conventional<T>> for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^impl<'l, T: Element> From<&'l Diagonal<T>> for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^impl<T: Element> From<Conventional<T>> for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^impl<T: Element> From<Diagonal<T>> for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^impl<T: Element> ::format::Validate for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^impl<T: Element> Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^impl<T: Element> Matrix for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^pub struct Compressed<T: Element> {$/;"	s
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^impl<'l, T> MultiplyInto<[T], [T]> for Compressed<T>$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^impl<T: Element> Transpose for Compressed<T> {$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^impl<T> Multiply<Diagonal<T>, Compressed<T>> for Compressed<T>$/;"	c
-Compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^impl<T> MultiplySelf<Diagonal<T>> for Compressed<T>$/;"	c
 CondReduce	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  CondReduce,$/;"	e	enum:ErrorKind
 ConfidenceInterval	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^struct ConfidenceInterval {$/;"	s
 ConfidenceInterval	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^struct ConfidenceInterval {$/;"	s
@@ -171,31 +151,6 @@ Context	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 Context	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/verbose_errors.rs	/^impl<I, F, E: From<F>> Convert<Context<I, F>> for Context<I, E> {$/;"	c
 Context	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/verbose_errors.rs	/^pub enum Context<I, E = u32> {$/;"	g
 Continue	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    Continue(T),$/;"	e	enum:FoldWhile
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^impl<'l, T: Element> From<&'l Banded<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^impl<T: Element> From<Banded<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^impl<'l, T: Element> From<&'l Compressed<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^impl<T: Element> From<Compressed<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^impl<'l, T> MultiplyInto<Compressed<T>, [T]> for Conventional<T>$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/convert.rs	/^impl<T: Element> Into<Vec<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^impl SingularValue<f64> for Conventional<f64> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^impl SymmetricEigen<f64> for Conventional<f64> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^impl<T: Element, P: Position> Index<P> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^impl<T: Element, P: Position> IndexMut<P> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^impl<T: Element> Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^impl<T: Element> Deref for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^impl<T: Element> DerefMut for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^impl<T: Element> Matrix for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^pub struct Conventional<T: Element> {$/;"	s
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^impl Multiply<[f64], Conventional<f64>> for Conventional<f64> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^impl MultiplyInto<Conventional<f64>, [f64]> for Conventional<f64> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^impl MultiplyInto<Vec<f64>, [f64]> for Conventional<f64> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^impl MultiplyInto<[f64], [f64]> for Conventional<f64> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^impl<T: Element> Transpose for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^impl<T> MultiplySelf<Diagonal<T>> for Conventional<T>$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^impl<'l, T: Element> From<&'l Diagonal<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^impl<T: Element> From<Diagonal<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^impl<'l, T: Element> From<&'l Packed<T>> for Conventional<T> {$/;"	c
-Conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^impl<T: Element> From<Packed<T>> for Conventional<T> {$/;"	c
 Convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub trait Convert<T> {$/;"	i
 CopyError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/error.rs	/^pub struct CopyError {$/;"	s
 Cos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/cos.rs	/^crate trait Cos {$/;"	i
@@ -218,14 +173,6 @@ Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7
 Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I> Iterator for Dedup<I>$/;"	c
 Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I> fmt::Debug for Dedup<I>$/;"	c
 Dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub struct Dedup<I>$/;"	s
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^impl<T: Element> Into<Vec<T>> for Diagonal<T> {$/;"	c
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^impl<T: Element> ::format::Validate for Diagonal<T> {$/;"	c
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^impl<T: Element> Deref for Diagonal<T> {$/;"	c
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^impl<T: Element> DerefMut for Diagonal<T> {$/;"	c
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^impl<T: Element> Diagonal<T> {$/;"	c
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^impl<T: Element> Matrix for Diagonal<T> {$/;"	c
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^pub struct Diagonal<T: Element> {$/;"	s
-Diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/operation.rs	/^impl<T: Element> Transpose for Diagonal<T> {$/;"	c
 Diff	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/diff.rs	/^pub enum Diff<I, J>$/;"	g
 Difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^impl<'a, T, S> Clone for Difference<'a, T, S> {$/;"	c
 Difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^impl<'a, T, S> FusedIterator for Difference<'a, T, S>$/;"	c
@@ -273,13 +220,6 @@ Either	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0
 Either	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^pub enum Either<L, R> {$/;"	g
 EitherOrBoth	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/either_or_both.rs	/^impl<A, B> EitherOrBoth<A, B> {$/;"	c
 EitherOrBoth	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/either_or_both.rs	/^pub enum EitherOrBoth<A, B> {$/;"	g
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/element.rs	/^pub trait Element: Copy + PartialEq {$/;"	i
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    type Element = T;$/;"	t	implementation:Banded
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    type Element = T;$/;"	t	implementation:Compressed
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    type Element = T;$/;"	t	implementation:Conventional
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    type Element = T;$/;"	t	implementation:Diagonal
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    type Element = T;$/;"	t	implementation:Packed
-Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^    type Element: Element;$/;"	t	interface:Matrix
 Element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^    type Element;$/;"	t	interface:Simd
 Elements	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    Elements(u32),$/;"	e	enum:Throughput
 Elements	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    Elements,$/;"	e	enum:ValueType
@@ -295,9 +235,6 @@ Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/i
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^impl<I, E> fmt::Display for Err<I, E>$/;"	c
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^impl<I, F, E: From<F>> Convert<Err<I, F>> for Err<I, E> {$/;"	c
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^pub enum Err<I, E = u32> {$/;"	g
-Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^impl error::Error for Error {$/;"	c
-Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^impl fmt::Display for Error {$/;"	c
-Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub struct Error(String);$/;"	s
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Error(Context<I, E>),$/;"	e	enum:Err
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  Error,$/;"	e	enum:CompareResult
 ErrorKind	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^impl<E> ErrorKind<E> {$/;"	c
@@ -561,7 +498,6 @@ Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.
 Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^    type Item = Position<I::Item>;$/;"	t	implementation:WithPosition
 Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/zip_eq_impl.rs	/^    type Item = (I::Item, J::Item);$/;"	t
 Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/zip_longest.rs	/^    type Item = EitherOrBoth<T::Item, U::Item>;$/;"	t
-Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    type Item = (usize, usize, &'l T);$/;"	t	implementation:Iterator
 Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  type Item = <T as InputIter>::RawItem;$/;"	t	implementation:T
 Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  type Item = char;$/;"	t	implementation:CompleteStr
 Item	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  type Item = char;$/;"	t	implementation:char
@@ -607,11 +543,6 @@ IterMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0
 Iterate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/sources.rs	/^impl<St, F> Iterator for Iterate<St, F>$/;"	c
 Iterate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/sources.rs	/^impl<St, F> fmt::Debug for Iterate<St, F>$/;"	c
 Iterate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/sources.rs	/^pub struct Iterate<St, F> {$/;"	s
-Iterator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^impl<'l, T: Element> Iterator<'l, T> {$/;"	c
-Iterator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^impl<'l, T: Element> iter::Iterator for Iterator<'l, T> {$/;"	c
-Iterator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^pub struct Iterator<'l, T: 'l + Element> {$/;"	s
-Iterator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^pub struct Iterator<'l, T: 'l + Element> {$/;"	s
-IteratorMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^pub struct IteratorMut<'l, T: 'l + Element> {$/;"	s
 Itertools	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^pub trait Itertools : Iterator {$/;"	i
 KDE_POINTS	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^static KDE_POINTS: usize = 500;$/;"	v
 KMerge	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/kmerge_impl.rs	/^impl<I> Clone for KMerge<I>$/;"	c
@@ -643,13 +574,13 @@ LengthValue	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1
 LengthValueFn	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  LengthValueFn,$/;"	e	enum:ErrorKind
 LexicographicallyOrdered	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/lib.rs	/^pub struct LexicographicallyOrdered<T>(T);$/;"	s
 LibInfos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^struct LibInfos {$/;"	s
+Line	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    struct Line([u8; 32]);$/;"	s	function:part2_simd
 Linear	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    Linear,$/;"	e	enum:AxisScale
 List	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/verbose_errors.rs	/^  List(Vec<(I, ErrorKind<E>)>),$/;"	e	enum:Context
 Little	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  Little,$/;"	e	enum:Endianness
 Ln	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/ln.rs	/^crate trait Ln {$/;"	i
 Logarithmic	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    Logarithmic,$/;"	e	enum:AxisScale
 Longer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/diff.rs	/^    Longer(usize, PutBack<J>),$/;"	e	enum:Diff
-Lower	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    Lower,$/;"	e	enum:Variant
 MainInfos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^enum MainInfos {$/;"	g
 Many0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Many0,$/;"	e	enum:ErrorKind
 Many1	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Many1,$/;"	e	enum:ErrorKind
@@ -665,7 +596,6 @@ MapResults	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertool
 MapVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^        impl<'de, K, V, S> Visitor<'de> for MapVisitor<K, V, S>$/;"	c	function:deserialize
 MapVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^        struct MapVisitor<K, V, S> {$/;"	s	function:deserialize
 Mask	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^pub trait Mask {$/;"	i
-Matrix	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub trait Matrix: Into<Conventional<<Self as Matrix>::Element>> + Size {$/;"	i
 Mean	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/estimate.rs	/^    Mean,$/;"	e	enum:Statistic
 MeasurementData	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^pub(crate) struct MeasurementData<'a> {$/;"	s
 Median	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/estimate.rs	/^    Median,$/;"	e	enum:Statistic
@@ -706,9 +636,6 @@ MultiProductIter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/it
 MultiProductIter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^struct MultiProductIter<I>$/;"	s
 MultiProductIterState	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^enum MultiProductIterState {$/;"	g
 MultiSpace	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  MultiSpace,$/;"	e	enum:ErrorKind
-Multiply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^pub trait Multiply<Right: ?Sized, Output> {$/;"	i
-MultiplyInto	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^pub trait MultiplyInto<Right: ?Sized, Output: ?Sized> {$/;"	i
-MultiplySelf	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^pub trait MultiplySelf<Right: ?Sized> {$/;"	i
 NT	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^    type NT;$/;"	t	interface:SimdArray
 NamedRoutine	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^pub struct NamedRoutine<T> {$/;"	s
 Needed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^impl Needed {$/;"	c
@@ -738,7 +665,6 @@ Only	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    type Output = V;$/;"	t
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    type Output = HashSet<T, S>;$/;"	t
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    type Output = I::Item;$/;"	t
-Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    type Output = T;$/;"	t	implementation:Conventional
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^    type Output = FakeUint;$/;"	t	implementation:tests::FakeUint
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin_cos_pi.rs	/^    type Output;$/;"	t	interface:SinCosPi
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^    type Output = crate::codegen::cptrx2<T>;$/;"	t	implementation:T
@@ -828,11 +754,6 @@ Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^    type Output = crate::codegen::usizex8;$/;"	t	implementation:usize
 Output	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^    type Output;$/;"	t	interface:Shuffle
 Output	/home/atraii/Downloads/tmp/advent2018-rs/src/utils.rs	/^    type Output = Pt<T>;$/;"	t	implementation:Pt
-Packed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^impl<T: Element> ::format::Validate for Packed<T> {$/;"	c
-Packed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^impl<T: Element> Matrix for Packed<T> {$/;"	c
-Packed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^impl<T: Element> Packed<T> {$/;"	c
-Packed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^pub struct Packed<T: Element> {$/;"	s
-Packed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/operation.rs	/^impl<T: Element> Transpose for Packed<T> {$/;"	c
 PadUsing	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^impl<I, F> DoubleEndedIterator for PadUsing<I, F>$/;"	c
 PadUsing	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^impl<I, F> ExactSizeIterator for PadUsing<I, F>$/;"	c
 PadUsing	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^impl<I, F> Iterator for PadUsing<I, F>$/;"	c
@@ -863,7 +784,6 @@ Plotting	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-
 Plotting	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub enum Plotting {$/;"	g	module:plotting
 Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^impl<T> Position<T> {$/;"	c
 Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^pub enum Position<T> {$/;"	g
-Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^pub trait Position {$/;"	i
 Positions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, F> DoubleEndedIterator for Positions<I, F>$/;"	c
 Positions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, F> Iterator for Positions<I, F>$/;"	c
 Positions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub struct Positions<I, F> {$/;"	s
@@ -950,11 +870,9 @@ Reports	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0
 Reports	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^impl Reports {$/;"	c
 Reports	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^pub(crate) struct Reports {$/;"	s
 Result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/error.rs	/^pub type Result<T> = ::std::result::Result<T, Error>;$/;"	t
-Result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub type Result<T> = std::result::Result<T, Error>;$/;"	t
 Right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    Right(R),$/;"	e	enum:Either
 Right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/either_or_both.rs	/^    Right(B),$/;"	e	enum:EitherOrBoth
 Routine	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/routine.rs	/^pub trait Routine<T> {$/;"	i
-Row	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    Row,$/;"	e	enum:Variant
 RunResult	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/derive.rs	/^    RunResult,$/;"	e	enum:MetaCommand
 Runner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.0-alpha1/src/lib.rs	/^pub trait Runner {$/;"	i
 Runner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/derive.rs	/^    Runner(syn::Ident),$/;"	e	enum:MetaCommand
@@ -962,7 +880,6 @@ Runner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-d
 Runner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/types.rs	/^pub(crate) struct Runner {$/;"	s
 SIZE	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^static SIZE: Size = Size(1280, 720);$/;"	v
 Save	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    Save,$/;"	e	enum:Baseline
-ScaleSelf	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^pub trait ScaleSelf<T> {$/;"	i
 SeparatedList	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  SeparatedList,$/;"	e	enum:ErrorKind
 SeparatedNonEmptyList	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  SeparatedNonEmptyList,$/;"	e	enum:ErrorKind
 SeqInPlaceVisitor	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^        impl<'a, 'de, T, S> Visitor<'de> for SeqInPlaceVisitor<'a, T, S>$/;"	c	function:deserialize_in_place
@@ -978,8 +895,6 @@ SimdArray	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_si
 Sin	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin.rs	/^crate trait Sin {$/;"	i
 SinCosPi	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin_cos_pi.rs	/^crate trait SinCosPi: Sized {$/;"	i
 SinPi	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin_pi.rs	/^crate trait SinPi {$/;"	i
-SingularValue	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/decomposition.rs	/^pub trait SingularValue<T: Element> {$/;"	i
-Size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^pub trait Size {$/;"	i
 Size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Size(usize),$/;"	e	enum:Needed
 SizeHint	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub type SizeHint = (usize, Option<usize>);$/;"	t
 Slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait Slice<R> {$/;"	i
@@ -1006,7 +921,6 @@ SymmetricDifference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823
 SymmetricDifference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^impl<'a, T, S> Iterator for SymmetricDifference<'a, T, S>$/;"	c
 SymmetricDifference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^impl<'a, T, S> fmt::Debug for SymmetricDifference<'a, T, S>$/;"	c
 SymmetricDifference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^pub struct SymmetricDifference<'a, T: 'a, S: 'a> {$/;"	s
-SymmetricEigen	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/decomposition.rs	/^pub trait SymmetricEigen<T: Element> {$/;"	i
 T	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^impl<T: ?Sized> Itertools for T where T: Iterator { }$/;"	c
 T	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^impl<'a, T> AtEof for &'a [T] {$/;"	c
 T	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^impl<'a, T> InputLength for &'a [T] {$/;"	c
@@ -1042,8 +956,6 @@ TakeWhileRef	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/iterto
 TakeWhileRef	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<'a, I, F> fmt::Debug for TakeWhileRef<'a, I, F>$/;"	c
 TakeWhileRef	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub struct TakeWhileRef<'a, I: 'a, F> {$/;"	s
 Target	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    type Target = L::Target;$/;"	t
-Target	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    type Target = [T];$/;"	t	implementation:Conventional
-Target	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    type Target = [T];$/;"	t	implementation:Diagonal
 Target	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  type Target = &'a [u8];$/;"	t	implementation:CompleteByteSlice
 Target	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  type Target = &'a str;$/;"	t	implementation:CompleteStr
 Tee	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^impl<I> ExactSizeIterator for Tee<I>$/;"	c
@@ -1051,7 +963,6 @@ Tee	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.1
 Tee	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^pub struct Tee<I>$/;"	s
 TeeBuffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^struct TeeBuffer<A, I> {$/;"	s
 Throughput	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^pub enum Throughput {$/;"	g
-Transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^pub trait Transpose {$/;"	i
 Tuple	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^    type Tuple: Copy + Clone;$/;"	t	interface:SimdArray
 Tuple1Combination	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I: Iterator> Iterator for Tuple1Combination<I> {$/;"	c
 Tuple1Combination	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I> From<I> for Tuple1Combination<I> {$/;"	c
@@ -1089,13 +1000,11 @@ Update	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.
 Update	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, F> ExactSizeIterator for Update<I, F>$/;"	c
 Update	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, F> Iterator for Update<I, F>$/;"	c
 Update	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub struct Update<I, F> {$/;"	s
-Upper	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    Upper,$/;"	e	enum:Variant
 Vacant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    Vacant(VacantEntry<'a, K, V, S>),$/;"	e	enum:Entry
 VacantEntry	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^impl<'a, K: 'a + Debug + Eq + Hash, V: 'a, S: 'a + BuildHasher> Debug for VacantEntry<'a, K, V, /;"	c
 VacantEntry	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^impl<'a, K: 'a + Eq + Hash, V: 'a, S: BuildHasher> VacantEntry<'a, K, V, S> {$/;"	c
 VacantEntry	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^pub struct VacantEntry<'a, K: 'a, V: 'a, S: 'a> {$/;"	s
 ValidValue	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    enum ValidValue {$/;"	g	function:tests::map_res_err
-Validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^trait Validate {$/;"	i
 Value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    Value,$/;"	e	enum:ValueType
 Value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^            type Value = HashMap<K, V, S>;$/;"	t	function:deserialize
 Value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^            type Value = ();$/;"	t	function:deserialize_in_place
@@ -1112,10 +1021,6 @@ ValuesMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown
 ValuesMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^impl<'a, K, V> Iterator for ValuesMut<'a, K, V> {$/;"	c
 ValuesMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^impl<'a, K, V> fmt::Debug for ValuesMut<'a, K, V>$/;"	c
 ValuesMut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^pub struct ValuesMut<'a, K: 'a, V: 'a> {$/;"	s
-Variant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^impl Variant {$/;"	c
-Variant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^pub enum Variant {$/;"	g
-Variant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^impl Variant {$/;"	c
-Variant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^pub enum Variant {$/;"	g
 Vec	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^impl<T> Append<T> for Vec<T> {$/;"	c
 Verify	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Verify,$/;"	e	enum:ErrorKind
 WhileSome	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, A> Iterator for WhileSome<I>$/;"	c
@@ -1158,8 +1063,6 @@ abs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3
 abs_distributions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^pub(crate) fn abs_distributions($/;"	f
 absolute_estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub absolute_estimates: Estimates,$/;"	m	struct:MeasurementData
 acc	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^macro_rules! acc ($/;"	M
-acceleration	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/mod.rs	/^mod acceleration;$/;"	n
-acceleration	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^mod acceleration;$/;"	n
 adaptors	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod adaptors;$/;"	n
 add	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    fn add(&mut self, names: &[&str], idb: IndexBenchmark) {$/;"	P	implementation:IndexBenchmark
 add	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn add(a: SizeHint, b: SizeHint) -> SizeHint {$/;"	f
@@ -1222,7 +1125,6 @@ apply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src
 apply_m	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^macro_rules! apply_m ($/;"	M
 apply_test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^  fn apply_test() {$/;"	f	module:tests
 arch_specific	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/into_bits.rs	/^mod arch_specific;$/;"	n
-arithmetic	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^macro_rules! arithmetic($/;"	M
 arm_128_v7_neon_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/arm.rs	/^macro_rules! arm_128_v7_neon_impl {$/;"	M
 arm_m16x4_v7_neon_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/arm.rs	/^macro_rules! arm_m16x4_v7_neon_impl {$/;"	M
 arm_m32x2_v7_neon_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/arm.rs	/^macro_rules! arm_m32x2_v7_neon_impl {$/;"	M
@@ -1273,7 +1175,6 @@ b	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/seq
 b	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^    b: u8,$/;"	m	struct:tests::B
 b_orig	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    b_orig: J,$/;"	m	struct:Product
 backlog	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^    backlog: VecDeque<A>,$/;"	m	struct:TeeBuffer
-banded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^pub mod banded;$/;"	n
 base_avg_times	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub base_avg_times: Vec<f64>,$/;"	m	struct:ComparisonData
 base_dir_exists	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/mod.rs	/^fn base_dir_exists(id: &BenchmarkId, baseline: &str, output_directory: &str) -> bool {$/;"	f
 base_estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub base_estimates: Estimates,$/;"	m	struct:ComparisonData
@@ -1349,7 +1250,6 @@ buf	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.1
 buffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/program.rs	/^    buffer: String,$/;"	m	struct:Program
 buffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    buffer: Vec<I::Item>,$/;"	m	struct:LazyBuffer
 buffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    buffer: Vec<vec::IntoIter<I::Item>>,$/;"	m	struct:GroupInner
-buffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^macro_rules! buffer($/;"	M
 buffer_with_size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn buffer_with_size() {$/;"	f	module:tests
 build	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/derive.rs	/^    fn build(cmds: impl Iterator<Item = MetaCommand>) -> Result<AocMeta, Box<error::Error>> {$/;"	P	implementation:AocMeta
 bytes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/generic.rs	/^            bytes: [u8; Group::WIDTH],$/;"	m	struct:Group::static_empty::Dummy
@@ -1358,8 +1258,6 @@ bytes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src
 bytes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^mod bytes;$/;"	n
 bytes_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^macro_rules! bytes_impl ($/;"	M
 bytes_per_second	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/format.rs	/^pub fn bytes_per_second(bytes_per_second: f64) -> String {$/;"	f
-c32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub type c32 = num_complex::Complex<f32>;$/;"	t
-c64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub type c64 = num_complex::Complex<f64>;$/;"	t
 calculate_layout	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^fn calculate_layout<T>(buckets: usize) -> Option<(Layout, usize)> {$/;"	f
 call	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! call ($/;"	M
 call_m	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^macro_rules! call_m ($/;"	M
@@ -1433,15 +1331,6 @@ collect_from_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/i
 collect_from_iter_no_buf	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^    fn collect_from_iter_no_buf<I>(iter: I) -> Option<Self>$/;"	P	interface:TupleCollect
 collect_tuple	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn collect_tuple<T>(mut self) -> Option<T>$/;"	P	interface:Itertools
 collect_vec	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn collect_vec(self) -> Vec<Self::Item>$/;"	P	interface:Itertools
-column	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    column: usize,$/;"	m	struct:Iterator
-column	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^    fn column(&self) -> usize {$/;"	P	implementation:usize
-column	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^    fn column(&self) -> usize;$/;"	P	interface:Position
-columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub columns: usize,$/;"	m	struct:Banded
-columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub columns: usize,$/;"	m	struct:Compressed
-columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub columns: usize,$/;"	m	struct:Conventional
-columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub columns: usize,$/;"	m	struct:Diagonal
-columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^    fn columns(&self) -> usize {$/;"	P	implementation:usize
-columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^    fn columns(&self) -> usize;$/;"	P	interface:Size
 combinations	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^pub fn combinations<I>(iter: I, n: usize) -> Combinations<I>$/;"	f
 combinations	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn combinations(self, n: usize) -> Combinations<Self>$/;"	P	interface:Itertools
 combinations	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod combinations;$/;"	n
@@ -1475,7 +1364,6 @@ compile_count_fixed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823
 complete	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! complete ($/;"	M
 complete	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^  fn complete() {$/;"	f	module:tests
 complete_char	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/character.rs	/^  fn complete_char() {$/;"	f	module:tests
-compressed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^pub mod compressed;$/;"	n
 concat	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/concat_impl.rs	/^pub fn concat<I>(iterable: I) -> I::Item$/;"	f
 concat	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn concat(self) -> Self::Item$/;"	P	interface:Itertools
 concat_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod concat_impl;$/;"	n
@@ -1502,12 +1390,6 @@ consume	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.
 consumed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/map.rs	/^    consumed: Cell<bool>,$/;"	m	struct:Map
 contains	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn contains<Q: ?Sized>(&self, value: &Q) -> bool$/;"	f
 contains_key	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn contains_key<Q: ?Sized>(&self, k: &Q) -> bool$/;"	f
-conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^pub mod conventional;$/;"	n
-convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^mod convert;$/;"	n
-convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^mod convert;$/;"	n
-convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^mod convert;$/;"	n
-convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^mod convert;$/;"	n
-convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^mod convert;$/;"	n
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  fn convert(e: Err<I, F>) -> Self {$/;"	P	implementation:Err
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/simple_errors.rs	/^  fn convert(c: Context<I, F>) -> Self {$/;"	P	implementation:Context
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  fn convert(T) -> Self;$/;"	P	interface:Convert
@@ -1515,7 +1397,6 @@ convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/verbose_errors.rs	/^  fn convert(c: Context<I, F>) -> Self {$/;"	P	implementation:Context
 convert_special_to_empty_and_full_to_deleted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/generic.rs	/^    pub fn convert_special_to_empty_and_full_to_deleted(&self) -> Group {$/;"	P	implementation:Group
 convert_special_to_empty_and_full_to_deleted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/sse2.rs	/^    pub fn convert_special_to_empty_and_full_to_deleted(&self) -> Group {$/;"	P	implementation:Group
-coordinates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^    fn coordinates(&self) -> (usize, usize) {$/;"	P	interface:Position
 copy_new_dir_to_base	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/mod.rs	/^fn copy_new_dir_to_base(id: &str, baseline: &str, output_directory: &str) {$/;"	f
 cos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/math/float.rs	/^mod cos;$/;"	n
 cos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float.rs	/^crate mod cos;$/;"	n
@@ -1569,12 +1450,6 @@ debug	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0
 debug_enabled	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^fn debug_enabled() -> bool {$/;"	f
 debug_fmt_fields	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/impl_macros.rs	/^macro_rules! debug_fmt_fields {$/;"	M
 debug_script	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^fn debug_script(path: &PathBuf, figure: &Figure) {$/;"	f
-decompose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/decomposition.rs	/^    fn decompose(&self) -> Result<(Conventional<T>, Diagonal<T>)>;$/;"	P	interface:SymmetricEigen
-decompose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/decomposition.rs	/^    fn decompose(&self) -> Result<(Conventional<T>, Diagonal<T>, Conventional<T>)>;$/;"	P	interface:SingularValue
-decompose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^    fn decompose(&self) -> Result<(Conventional<f64>, Diagonal<f64>)> {$/;"	P	implementation:Conventional
-decompose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^    fn decompose(&self) -> Result<(Conventional<f64>, Diagonal<f64>, Conventional<f64>)> {$/;"	P	implementation:Conventional
-decomposition	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^mod decomposition;$/;"	n
-decomposition	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub mod decomposition;$/;"	n
 dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub fn dedup<I>(mut iter: I) -> Dedup<I>$/;"	f
 dedup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn dedup(self) -> Dedup<Self>$/;"	P	interface:Itertools
 default	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    fn default() -> Self {$/;"	P	implementation:PartialBenchmarkConfig
@@ -1590,23 +1465,16 @@ delimited	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1
 delimited_sep	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^macro_rules! delimited_sep ($/;"	M
 deref	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn deref(&self) -> &Self::Target {$/;"	f
 deref	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^fn deref() {$/;"	f
-deref	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn deref(&self) -> &Self::Target {$/;"	P	implementation:Conventional
-deref	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    fn deref(&self) -> &Self::Target {$/;"	P	implementation:Diagonal
 deref	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn deref(&self) -> &Self::Target {$/;"	P	implementation:CompleteByteSlice
 deref	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn deref(&self) -> &Self::Target {$/;"	P	implementation:CompleteStr
 deref_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn deref_mut(&mut self) -> &mut Self::Target {$/;"	f
-deref_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn deref_mut(&mut self) -> &mut Self::Target {$/;"	P	implementation:Conventional
-deref_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    fn deref_mut(&mut self) -> &mut Self::Target {$/;"	P	implementation:Diagonal
 derive	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/lib.rs	/^mod derive;$/;"	n
 description	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn description(&self) -> &str {$/;"	f
-description	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^    fn description(&self) -> &str {$/;"	P	implementation:Error
 description	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  fn description(&self) -> &str {$/;"	f
 description	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  pub fn description(&self) -> &str {$/;"	P	implementation:ErrorKind
 deserialize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>$/;"	f
 deserialize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>$/;"	f
 deserialize_in_place	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn deserialize_in_place<D>(deserializer: D, place: &mut Self) -> Result<(), D::Error>$/;"	f
-diagonal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^pub mod diagonal;$/;"	n
-diagonals	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub fn diagonals(&self) -> usize {$/;"	P	implementation:Banded
 diff	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod diff;$/;"	n
 diff_with	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/diff.rs	/^pub fn diff_with<I, J, F>(i: I, j: J, is_equal: F)$/;"	f
 difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn difference<'a, 'new>($/;"	f	function:assert_covariance
@@ -1614,7 +1482,6 @@ difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrow
 digit	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn digit<T>(input: T) -> IResult<T, T>$/;"	f
 digit0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn digit0<T>(input: T) -> IResult<T, T>$/;"	f
 digit1	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn digit1<T>(input: T) -> IResult<T, T>$/;"	f
-dimensions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^    fn dimensions(&self) -> (usize, usize) {$/;"	P	interface:Size
 directory_name	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    directory_name: String,$/;"	m	struct:BenchmarkId
 distributions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub distributions: Distributions,$/;"	m	struct:MeasurementData
 do_parse	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^  fn do_parse() {$/;"	f	module:tests
@@ -1653,7 +1520,6 @@ elapsed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0
 elapsed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    elapsed: Duration,$/;"	m	struct:Bencher
 elem	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    elem: Bucket<(K, V)>,$/;"	m	struct:OccupiedEntry
 element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/intersperse.rs	/^    element: I::Item,$/;"	m	struct:Intersperse
-element	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^mod element;$/;"	n
 elements_per_second	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/format.rs	/^pub fn elements_per_second(elements_per_second: f64) -> String {$/;"	f
 elt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/repeatn.rs	/^    elt: Option<A>,$/;"	m	struct:RepeatN
 enable_text_coloring	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub enable_text_coloring: bool,$/;"	m	struct:CliReport
@@ -1669,8 +1535,6 @@ eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/
 eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn eq(&self, other: &HashSet<T, S>) -> bool {$/;"	f
 eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/cmp.rs	/^mod eq;$/;"	n
 equal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^pub fn equal<I, J>(a: I, b: J) -> bool$/;"	f
-erase	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn erase() {$/;"	f	module:tests
-erase	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub unsafe fn erase(&mut self) {$/;"	P	implementation:Conventional
 erase_no_drop	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    pub unsafe fn erase_no_drop(&mut self, item: &Bucket<T>) {$/;"	P	implementation:RawTable
 err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^  fn err() {$/;"	f	module:tests
 error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod error;$/;"	n
@@ -1691,7 +1555,6 @@ estimate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-
 estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/compare.rs	/^fn estimates($/;"	f
 estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/mod.rs	/^fn estimates(avg_times: &Sample<f64>, config: &BenchmarkConfig) -> (Distributions, Estimates) {$/;"	f
 exact	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! exact ($/;"	M
-exec_fast	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn exec_fast(l: &[u8]) -> String {$/;"	f
 exp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/math/float.rs	/^mod exp;$/;"	n
 exp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float.rs	/^crate mod exp;$/;"	n
 exp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/exp.rs	/^    fn exp(self) -> Self;$/;"	P	interface:Exp
@@ -1741,7 +1604,6 @@ f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3
 f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 2]> for f32 {$/;"	c
 f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 4]> for f32 {$/;"	c
 f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 8]> for f32 {$/;"	c
-f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^impl ScaleSelf<f64> for [f64] {$/;"	c
 f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 2]> for f64 {$/;"	c
 f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 4]> for f64 {$/;"	c
 f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 8]> for f64 {$/;"	c
@@ -1797,7 +1659,6 @@ find_token	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.
 find_token	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn find_token(&self, token: u8) -> bool {$/;"	P	implementation:Input
 finish	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/fnv-1.0.6/lib.rs	/^    fn finish(&self) -> u64 {$/;"	P	implementation:FnvHasher
 finish	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/fx.rs	/^    fn finish(&self) -> u64 {$/;"	P	implementation:FxHasher
-finish	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    finish: usize,$/;"	m	struct:Iterator
 first	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    first: bool,$/;"	m	struct:Combinations
 first	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    first: Option<I::Item>,$/;"	m	struct:Chunk
 first	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    first: Option<I::Item>,$/;"	m	struct:Group
@@ -1809,8 +1670,6 @@ flat_map	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 flatten	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub fn flatten<I, J>(iterable: I) -> Flatten<I::IntoIter, J>$/;"	f
 flatten	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn flatten(self) -> Flatten<Self, <Self::Item as IntoIterator>::IntoIter>$/;"	P	interface:Itertools
 flip	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    pub fn flip(self) -> Either<R, L> {$/;"	P	implementation:Either
-flip	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn flip(&self) -> Self {$/;"	P	implementation:Variant
-flip	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    pub fn flip(&self) -> Self {$/;"	P	implementation:Variant
 float	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn float<T>(input: T) -> IResult<T, f32, u32>$/;"	f
 float	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/math.rs	/^mod float;$/;"	n
 float	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math.rs	/^crate mod float;$/;"	n
@@ -1840,7 +1699,6 @@ fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Iter
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/format.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
-fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Error
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn fmt(&self, f: &mut Formatter) -> Result {$/;"	P	implementation:CompleteStr
 fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod fmt;$/;"	n
@@ -1878,7 +1736,6 @@ format	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.
 format	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/format.rs	/^    fn format<F>(&self, f: &mut fmt::Formatter, mut cb: F) -> fmt::Result$/;"	f
 format	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn format(self, sep: &str) -> Format<Self>$/;"	P	interface:Itertools
 format	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod format;$/;"	n
-format	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub mod format;$/;"	n
 format_short_estimate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^            fn format_short_estimate(estimate: &Estimate) -> String {$/;"	f	method:CliReport::measurement_complete
 format_with	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn format_with<F>(self, sep: &str, format: F) -> FormatWith<Self, F>$/;"	P	interface:Itertools
 free	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^pub mod free;$/;"	n
@@ -1887,20 +1744,6 @@ from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2
 from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/error.rs	/^    pub from: PathBuf,$/;"	m	struct:CopyError
 from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn from(r: Result<R, L>) -> Self {$/;"	P	implementation:Either
 from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    fn from(iter: I) -> Self {$/;"	P	implementation:Tuple1Combination
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn from(matrix: &'l Banded<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn from(matrix: &'l Diagonal<T>) -> Self {$/;"	P	implementation:Banded
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn from(matrix: Banded<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn from(matrix: Diagonal<T>) -> Self {$/;"	P	implementation:Banded
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from(conventional: &'l Conventional<T>) -> Self {$/;"	P	implementation:Compressed
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from(matrix: &'l Compressed<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from(matrix: &'l Diagonal<T>) -> Self {$/;"	P	implementation:Compressed
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from(matrix: Compressed<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from(matrix: Conventional<T>) -> Self {$/;"	P	implementation:Compressed
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from(matrix: Diagonal<T>) -> Self {$/;"	P	implementation:Compressed
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^    fn from(matrix: &Diagonal<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^    fn from(matrix: Diagonal<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^    fn from(matrix: &'l Packed<T>) -> Self {$/;"	P	implementation:Conventional
-from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^    fn from(matrix: Packed<T>) -> Self {$/;"	P	implementation:Conventional
 from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^    fn from(i: u8) -> FakeUint {$/;"	P	implementation:tests::FakeUint
 from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^    fn from(i: &'a str) -> Self {$/;"	P	implementation:tests::ErrorStr
 from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^    fn from(i: u32) -> Self {$/;"	P	implementation:tests::ErrorStr
@@ -1921,20 +1764,11 @@ from_bits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_si
 from_bits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/into_bits.rs	/^    fn from_bits(t: T) -> Self;$/;"	P	interface:FromBits
 from_cast	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/cast.rs	/^    fn from_cast(_: T) -> Self;$/;"	P	interface:FromCast
 from_cast	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/cast.rs	/^    fn from_cast(t: Self) -> Self {$/;"	P	implementation:T
-from_conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from_conventional() {$/;"	f	module:tests
-from_diagonal_tall	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn from_diagonal_tall() {$/;"	f	module:tests
-from_diagonal_tall	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from_diagonal_tall() {$/;"	f	module:tests
-from_diagonal_wide	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn from_diagonal_wide() {$/;"	f	module:tests
-from_diagonal_wide	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn from_diagonal_wide() {$/;"	f	module:tests
 from_id	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    fn from_id(path_prefix: &str, id: &BenchmarkId) -> IndividualBenchmark {$/;"	P	implementation:IndividualBenchmark
 from_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn from_iter<T: IntoIterator<Item = (K, V)>>(iter: T) -> HashMap<K, V, S> {$/;"	f
 from_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn from_iter<I: IntoIterator<Item = T>>(iter: I) -> HashSet<T, S> {$/;"	f
 from_ptr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    unsafe fn from_ptr(ptr: *const T) -> Self {$/;"	P	implementation:Bucket
-from_slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub fn from_slice<S: Size>(size: S, values: &[T]) -> Self {$/;"	P	implementation:Conventional
-from_slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub fn from_slice<S: Size>(size: S, values: &[T]) -> Self {$/;"	P	implementation:Diagonal
 from_slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/slice.rs	/^mod from_slice;$/;"	n
-from_vec	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub fn from_vec<S: Size>(size: S, values: Vec<T>) -> Self {$/;"	P	implementation:Conventional
-from_vec	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub fn from_vec<S: Size>(size: S, values: Vec<T>) -> Self {$/;"	P	implementation:Diagonal
 from_vector	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/from.rs	/^mod from_vector;$/;"	n
 front	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    front: Option<J>,$/;"	m	struct:Flatten
 fs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod fs;$/;"	n
@@ -1963,8 +1797,6 @@ generator_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-
 get	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn get(&self) -> &V {$/;"	P	implementation:OccupiedEntry
 get	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn get<Q: ?Sized>(&self, k: &Q) -> Option<&V>$/;"	f
 get	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn get<Q: ?Sized>(&self, value: &Q) -> Option<&T>$/;"	f
-get	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn get() {$/;"	f	module:tests
-get	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn get<P: Position>(&self, position: P) -> T {$/;"	P	implementation:Compressed
 get_key_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn get_key_value<Q: ?Sized>(&self, k: &Q) -> Option<(&K, &V)>$/;"	f
 get_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn get_mut(&mut self) -> &mut V {$/;"	P	implementation:OccupiedEntry
 get_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn get_mut<Q: ?Sized>(&mut self, k: &Q) -> Option<&mut V>$/;"	f
@@ -1999,7 +1831,7 @@ headers	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-
 heap	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/kmerge_impl.rs	/^    heap: Vec<HeadTail<I>>,$/;"	m	struct:KMerge
 heap	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/kmerge_impl.rs	/^    heap: Vec<HeadTail<I>>,$/;"	m	struct:KMergeBy
 heapify	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/kmerge_impl.rs	/^fn heapify<T, S>(data: &mut [T], mut less_than: S)$/;"	f
-height	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    height: usize,$/;"	m	struct:LandClaim
+height	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    height: u16,$/;"	m	struct:LandClaim
 hex_digit	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn hex_digit<T>(input: T) -> IResult<T, T>$/;"	f
 hex_digit0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn hex_digit0<T>(input: T) -> IResult<T, T>$/;"	f
 hex_digit1	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn hex_digit1<T>(input: T) -> IResult<T, T>$/;"	f
@@ -2040,7 +1872,7 @@ i8	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.
 i8_tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn i8_tests() {$/;"	f	module:tests
 id	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    pub id: String,$/;"	m	struct:NamedRoutine
 id	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^    id: bool,$/;"	m	struct:Tee
-id	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    id: usize,$/;"	m	struct:LandClaim
+id	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    id: u16,$/;"	m	struct:LandClaim
 identity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.0-alpha1/src/lib.rs	/^pub fn identity<T>(t: T) -> T {$/;"	f
 imp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^mod imp;$/;"	n
 impl_arch	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/into_bits/arch_specific.rs	/^macro_rules! impl_arch {$/;"	M
@@ -2146,7 +1978,6 @@ impl_u	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-
 impl_unary_	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/macros.rs	/^macro_rules! impl_unary_ {$/;"	M
 impl_unary_t	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin_cos_pi.rs	/^macro_rules! impl_unary_t {$/;"	M
 impl_zip_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/ziptuple.rs	/^macro_rules! impl_zip_iter {$/;"	M
-implement	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/element.rs	/^macro_rules! implement($/;"	M
 in_progress	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^    fn in_progress(&self) -> bool {$/;"	f
 index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn index(&self, key: &Q) -> &V {$/;"	f
 index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    index: usize,$/;"	m	struct:ProbeSeq
@@ -2157,10 +1988,7 @@ index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7
 index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    index: usize,$/;"	m	struct:ChunkIndex
 index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    index: usize,$/;"	m	struct:Group
 index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/multipeek_impl.rs	/^    index: usize,$/;"	m	struct:MultiPeek
-index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn index(&self, index: P) -> &Self::Output {$/;"	P	implementation:Conventional
-index_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn index_mut(&mut self, index: P) -> &mut Self::Output {$/;"	P	implementation:Conventional
 indices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    indices: Vec<usize>,$/;"	m	struct:Combinations
-indices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub indices: Vec<usize>,$/;"	m	struct:Compressed
 inequality	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    inequality: String,$/;"	m	struct:Comparison
 infinite_many	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/multi.rs	/^  fn infinite_many() {$/;"	f	module:tests
 init_logging	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^pub fn init_logging() {$/;"	f
@@ -2204,18 +2032,10 @@ intersperse	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertoo
 intersperse	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn intersperse(self, element: Self::Item) -> Intersperse<Self>$/;"	P	interface:Itertools
 intersperse	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod intersperse;$/;"	n
 into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn into(self) -> Result<R, L> {$/;"	P	implementation:Either
-into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/convert.rs	/^    fn into(self) -> Vec<T> {$/;"	P	implementation:Conventional
-into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^    fn into(self) -> Vec<T> {$/;"	P	implementation:Diagonal
 into_bits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^crate mod into_bits;$/;"	n
 into_bits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/into_bits.rs	/^    fn into_bits(self) -> T;$/;"	P	interface:IntoBits
 into_bits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/into_bits.rs	/^    fn into_bits(self) -> U {$/;"	f
 into_buffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^    pub fn into_buffer(self) -> TupleBuffer<T> {$/;"	f
-into_conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^    fn into_conventional() {$/;"	f	module:tests
-into_conventional	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^    fn into_conventional() {$/;"	f	module:tests
-into_conventional_lower	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^    fn into_conventional_lower() {$/;"	f	module:tests
-into_conventional_tall	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn into_conventional_tall() {$/;"	f	module:tests
-into_conventional_upper	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^    fn into_conventional_upper() {$/;"	f	module:tests
-into_conventional_wide	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^    fn into_conventional_wide() {$/;"	f	module:tests
 into_error_kind	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  pub fn into_error_kind(self) -> ::util::ErrorKind<E> {$/;"	P	implementation:Err
 into_error_kind	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/simple_errors.rs	/^  pub fn into_error_kind(self) -> ErrorKind<E> {$/;"	P	implementation:Context
 into_error_kind	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  pub fn into_error_kind(self) -> ErrorKind<E> {$/;"	P	implementation:ErrorKind
@@ -2297,7 +2117,6 @@ is_special	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrow
 is_str	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn is_str(_: &str) {}$/;"	f	function:deref
 is_subset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn is_subset(&self, other: &HashSet<T, S>) -> bool {$/;"	f
 is_superset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn is_superset(&self, other: &HashSet<T, S>) -> bool {$/;"	f
-is_zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/element.rs	/^    fn is_zero(&self) -> bool;$/;"	P	interface:Element
 isize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 2]> for isize {$/;"	c
 isize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 4]> for isize {$/;"	c
 isize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 8]> for isize {$/;"	c
@@ -2354,9 +2173,6 @@ iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.
 iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^    iter: I,$/;"	m	struct:TupleWindows
 iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/unique_impl.rs	/^    iter: I,$/;"	m	struct:UniqueBy
 iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/unique_impl.rs	/^    iter: UniqueBy<I, I::Item, ()>,$/;"	m	struct:Unique
-iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub fn iter<'l>(&'l self) -> Iterator<'l, T> {$/;"	P	implementation:Banded
-iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn iter() {$/;"	f	module:tests
-iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn iter<'l>(&'l self) -> Iterator<'l, T> {$/;"	P	implementation:Compressed
 iter_count	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/format.rs	/^pub fn iter_count(iterations: u64) -> String {$/;"	f
 iter_counts	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub iter_counts: &'a Sample<f64>,$/;"	m	struct:MeasurementData
 iter_elements	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn iter_elements(&self) -> Self::IterElem {$/;"	P	implementation:str
@@ -2373,12 +2189,8 @@ iter_indices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.
 iter_indices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn iter_indices(&self) -> Self::Iter {$/;"	P	implementation:Input
 iter_key	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn iter_key<'a, 'new>(v: Iter<'a, &'static str, u8>) -> Iter<'a, &'new str, u8> {$/;"	f	function:assert_covariance
 iter_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn iter_mut(&mut self) -> IterMut<K, V> {$/;"	f
-iter_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn iter_mut() {$/;"	f	module:tests
-iter_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn iter_mut<'l>(&'l mut self) -> IteratorMut<'l, T> {$/;"	P	implementation:Compressed
 iter_orig	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^    iter_orig: I,$/;"	m	struct:MultiProductIter
-iter_tall	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn iter_tall() {$/;"	f	module:tests
 iter_val	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn iter_val<'a, 'new>(v: Iter<'a, u8, &'static str>) -> Iter<'a, u8, &'new str> {$/;"	f	function:assert_covariance
-iter_wide	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn iter_wide() {$/;"	f	module:tests
 iter_with_large_drop	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn iter_with_large_drop<O, R>(&mut self, mut routine: R)$/;"	P	implementation:Bencher
 iter_with_large_setup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn iter_with_large_setup<I, S, R>(&mut self, mut setup: S, mut routine: R)$/;"	P	implementation:Bencher
 iter_with_setup	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn iter_with_setup<I, O, S, R>(&mut self, mut setup: S, mut routine: R)$/;"	P	implementation:Bencher
@@ -2387,7 +2199,6 @@ iterate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0
 iterate_last	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^    fn iterate_last($/;"	f
 iterated	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    iterated: bool,$/;"	m	struct:Bencher
 iteration_count	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/csv_report.rs	/^    iteration_count: u64,$/;"	m	struct:CsvRow
-iterator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^macro_rules! iterator($/;"	M
 iters	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    iters: u64,$/;"	m	struct:Bencher
 iuf	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/minimal.rs	/^mod iuf;$/;"	n
 izip	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^macro_rules! izip {$/;"	M
@@ -2535,8 +2346,6 @@ macros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-
 macros_private	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod macros_private;$/;"	n
 mad	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    mad: ConfidenceInterval,$/;"	m	struct:Context
 main_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^pub fn main_impl(input: pm::TokenStream) -> pm::TokenStream {$/;"	f
-major	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    major: usize,$/;"	m	struct:Iterator
-major	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    major: usize,$/;"	m	struct:IteratorMut
 make_filename_safe	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^fn make_filename_safe(string: &str) -> String {$/;"	f
 make_hash	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^fn make_hash<K: Hash + ?Sized>(hash_builder: &impl BuildHasher, val: &K) -> u64 {$/;"	f
 manual_configurable_endianness_test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn manual_configurable_endianness_test() {$/;"	f	module:tests
@@ -2579,13 +2388,8 @@ match_empty_or_deleted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec
 match_empty_or_deleted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/sse2.rs	/^    pub fn match_empty_or_deleted(&self) -> BitMask {$/;"	P	implementation:Group
 math	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod math;$/;"	n
 math	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen.rs	/^crate mod math;$/;"	n
-matrix	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    matrix: &'l Banded<T>,$/;"	m	struct:Iterator
-matrix	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    matrix: &'l Compressed<T>,$/;"	m	struct:Iterator
-matrix	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    matrix: &'l mut Compressed<T>,$/;"	m	struct:IteratorMut
-matrix	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^macro_rules! matrix {$/;"	M
 max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn max<I>(iterable: I) -> Option<I::Item>$/;"	f
 max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn max(a: SizeHint, b: SizeHint) -> SizeHint {$/;"	f
-max_difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^macro_rules! max_difference($/;"	M
 mean	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    mean: ConfidenceInterval,$/;"	m	struct:Context
 measure_only	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    measure_only: bool,$/;"	m	struct:Criterion
 measurement_complete	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/csv_report.rs	/^    fn measurement_complete($/;"	P	implementation:FileCsvReport
@@ -2614,7 +2418,6 @@ methods	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn min<I>(iterable: I) -> Option<I::Item>$/;"	f
 min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^    min: usize,$/;"	m	struct:PadUsing
 min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn min(a: SizeHint, b: SizeHint) -> SizeHint {$/;"	f
-min	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^macro_rules! min($/;"	M
 min_max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/reductions.rs	/^mod min_max;$/;"	n
 minimal	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod minimal;$/;"	n
 minmax	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn minmax(self) -> MinMaxResult<Self::Item>$/;"	P	interface:Itertools
@@ -2641,27 +2444,6 @@ multi_cartesian_product	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9e
 multi_product	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^mod multi_product;$/;"	n
 multipeek	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/multipeek_impl.rs	/^pub fn multipeek<I>(iterable: I) -> MultiPeek<I::IntoIter>$/;"	f
 multipeek_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod multipeek_impl;$/;"	n
-multiply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply(&self, right: &Diagonal<T>) -> Self {$/;"	f
-multiply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn multiply(&self, right: &[f64]) -> Self {$/;"	P	implementation:Conventional
-multiply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn multiply() {$/;"	f	module:tests
-multiply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^fn multiply($/;"	f
-multiply	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^    fn multiply(&self, &Right) -> Output;$/;"	P	interface:Multiply
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply_into(&self, right: &Compressed<T>, result: &mut [T]) {$/;"	f
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply_into(&self, right: &[T], result: &mut [T]) {$/;"	f
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn multiply_into(&self, right: &Self, result: &mut [f64]) {$/;"	P	implementation:Conventional
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn multiply_into(&self, right: &Vec<f64>, result: &mut [f64]) {$/;"	P	implementation:Conventional
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn multiply_into(&self, right: &[f64], result: &mut [f64]) {$/;"	P	implementation:Conventional
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn multiply_into() {$/;"	f	module:tests
-multiply_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^    fn multiply_into(&self, &Right, &mut Output);$/;"	P	interface:MultiplyInto
-multiply_into_left	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply_into_left() {$/;"	f	module:tests
-multiply_into_right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply_into_right() {$/;"	f	module:tests
-multiply_matrix_left	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^fn multiply_matrix_left<T>(a: &Compressed<T>, b: &[T], c: &mut [T], m: usize, p: usize, n: usize/;"	f
-multiply_matrix_right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^fn multiply_matrix_right<T>(a: &[T], b: &Compressed<T>, c: &mut [T], m: usize, p: usize, n: usiz/;"	f
-multiply_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply_self(&mut self, right: &Diagonal<T>) {$/;"	f
-multiply_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn multiply_self() {$/;"	f	module:tests
-multiply_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^    fn multiply_self(&mut self, right: &Diagonal<T>) {$/;"	f
-multiply_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^    fn multiply_self() {$/;"	f	module:tests
-multiply_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^    fn multiply_self(&mut self, &Right);$/;"	P	interface:MultiplySelf
 multispace	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn multispace<T>(input: T) -> IResult<T, T>$/;"	f
 multispace0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn multispace0<T>(input: T) -> IResult<T, T>$/;"	f
 multispace1	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn multispace1<T>(input: T) -> IResult<T, T>$/;"	f
@@ -2703,17 +2485,6 @@ new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.1
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/kmerge_impl.rs	/^    fn new(mut it: I) -> Option<HeadTail<I>> {$/;"	f
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^pub fn new<I>(iter: I) -> (Tee<I>, Tee<I>)$/;"	f
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^    fn new(buf: T::Buffer) -> Self {$/;"	f
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn new(matrix: &'l Banded<T>) -> Iterator<'l, T> {$/;"	P	implementation:Iterator
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub fn new<S: Size>(size: S, superdiagonals: usize, subdiagonals: usize) -> Self {$/;"	P	implementation:Banded
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^macro_rules! new($/;"	M
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn new<S: Size>(size: S, variant: Variant) -> Self {$/;"	P	implementation:Compressed
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^macro_rules! new($/;"	M
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub fn new<S: Size>(size: S) -> Self {$/;"	P	implementation:Conventional
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^macro_rules! new($/;"	M
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub fn new<S: Size>(size: S) -> Self {$/;"	P	implementation:Diagonal
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^macro_rules! new($/;"	M
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    pub fn new<S: Size>(size: S, variant: Variant) -> Self {$/;"	P	implementation:Packed
-new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^macro_rules! new($/;"	M
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^    pub fn new() -> Parser<'a> {$/;"	P	implementation:tests::Parser
 new_builder	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn new_builder(&self) -> Self::Extender;$/;"	P	interface:ExtendInto
 new_builder	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn new_builder(&self) -> String {$/;"	P	implementation:char
@@ -2772,7 +2543,6 @@ next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.
 next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	P	implementation:WithPosition
 next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/zip_eq_impl.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	f
 next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/zip_longest.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	f
-next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	P	implementation:Iterator
 next_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn next_back(&mut self) -> Option<Self::Item> {$/;"	f
 next_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    fn next_back(&mut self) -> Option<Self::Item> {$/;"	f
 next_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^    fn next_back(&mut self) -> Option<I::Item> {$/;"	f
@@ -2793,18 +2563,6 @@ non_empty	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1
 non_privitive_type	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^  fn non_privitive_type() {$/;"	f	module:tests
 none_of	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/character.rs	/^  fn none_of() {$/;"	f	module:tests
 none_of	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/character.rs	/^macro_rules! none_of ($/;"	M
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn nonzeros(&self) -> usize {$/;"	P	implementation:Banded
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn nonzeros() {$/;"	f	module:tests
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn nonzeros(&self) -> usize {$/;"	P	implementation:Compressed
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn nonzeros() {$/;"	f	module:tests
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub nonzeros: usize,$/;"	m	struct:Compressed
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn nonzeros(&self) -> usize {$/;"	P	implementation:Conventional
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn nonzeros() {$/;"	f	module:tests
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    fn nonzeros(&self) -> usize {$/;"	P	implementation:Diagonal
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    fn nonzeros() {$/;"	f	module:tests
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    fn nonzeros(&self) -> usize {$/;"	P	implementation:Packed
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    fn nonzeros() {$/;"	f	module:tests
-nonzeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^    fn nonzeros(&self) -> usize;$/;"	P	interface:Matrix
 not	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^  fn not() {$/;"	f	module:tests
 not	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! not($/;"	M
 not_line_ending	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn not_line_ending<T>(input: T) -> IResult<T, T>$/;"	f
@@ -2827,17 +2585,10 @@ offset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/sr
 offset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn offset(&self, second: &CompleteByteSlice<'a>) -> usize {$/;"	P	implementation:CompleteByteSlice
 offset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn offset(&self, second: &CompleteStr<'a>) -> usize {$/;"	P	implementation:CompleteStr
 offset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn offset(&self, second: &Input<T>) -> usize {$/;"	P	implementation:Input
-offsets	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub offsets: Vec<usize>,$/;"	m	struct:Compressed
 oldest_buffered_group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    oldest_buffered_group: usize,$/;"	m	struct:GroupInner
 one_of	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bytes.rs	/^  macro_rules! one_of ($/;"	M	module:tests
 one_of	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/character.rs	/^  fn one_of() {$/;"	f	module:tests
 one_of	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/character.rs	/^macro_rules! one_of ($/;"	M
-operation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^mod operation;$/;"	n
-operation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^mod operation;$/;"	n
-operation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^mod operation;$/;"	n
-operation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^mod operation;$/;"	n
-operation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^mod operation;$/;"	n
-operation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub mod operation;$/;"	n
 ops	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod ops;$/;"	n
 opt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^  fn opt() {$/;"	f	module:tests
 opt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! opt($/;"	M
@@ -2860,7 +2611,6 @@ output_directory	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/cr
 owner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^    owner: bool,$/;"	m	struct:TeeBuffer
 p_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    p_value: String,$/;"	m	struct:Comparison
 p_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub p_value: f64,$/;"	m	struct:ComparisonData
-packed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^pub mod packed;$/;"	n
 pad_tail	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod pad_tail;$/;"	n
 pad_using	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn pad_using<F>(self, min: usize, f: F) -> PadUsing<Self, F>$/;"	P	interface:Itertools
 pad_using	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^pub fn pad_using<I, F>(iter: I, min: usize, filler: F) -> PadUsing<I, F>$/;"	f
@@ -2888,8 +2638,6 @@ parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part1(input: &[isize]) -> isize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1(input: &str) -> u32 {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn part1(input: &Vec<LandClaim>) -> usize {$/;"	f
-part1_birk	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1_birk(input: &str) -> u32 {$/;"	f
-part1_birk_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part1_birk_example() {$/;"	f	module:tests
 part1_burnt	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1_burnt(input: &str) -> u32 {$/;"	f
 part1_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
 part1_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
@@ -2900,8 +2648,7 @@ part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_fnv	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part2_fnv(input: &[isize]) -> isize {$/;"	f
 part2_hb	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part2_hb(input: &[isize]) -> isize {$/;"	f
-part2_hb	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn part2_hb<'a>(input: &'a str) -> String {$/;"	f
-part2_hb_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part2_hb_example() {$/;"	f	module:tests
+part2_simd	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn part2_simd<'a>(input: &'a str) -> String {$/;"	f
 partial_eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/cmp.rs	/^mod partial_eq;$/;"	n
 partial_ord	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/cmp.rs	/^mod partial_ord;$/;"	n
 partition	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^pub fn partition<'a, A: 'a, I, F>(iter: I, mut pred: F) -> usize$/;"	f
@@ -2944,7 +2691,6 @@ point_estimate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/crit
 pointer_sized_int	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen.rs	/^crate mod pointer_sized_int;$/;"	n
 pool	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    pool: LazyBuffer<I>,$/;"	m	struct:Combinations
 pos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^    pos: usize,$/;"	m	struct:PadUsing
-position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^mod position;$/;"	n
 position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn position<P>(&self, predicate: P) -> Option<usize>$/;"	P	implementation:str
 position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn position<P>(&self, predicate: P) -> Option<usize>$/;"	P	implementation:u8
 position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn position<P>(&self, predicate: P) -> Option<usize>$/;"	P	interface:InputIter
@@ -2969,7 +2715,6 @@ preceded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 preceded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^macro_rules! preceded($/;"	M
 preceded	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^  fn preceded() {$/;"	f	module:tests
 preceded_sep	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^macro_rules! preceded_sep ($/;"	M
-prelude	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^pub mod prelude;$/;"	n
 prelude	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^    pub mod prelude {$/;"	n	module:lib::std
 prepare_errors	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn prepare_errors<O, E: Clone>(input: &[u8], res: IResult<&[u8], O, E>) -> Option<Vec<(Error/;"	f
 print	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn print<T: Debug>(input: T) -> IResult<T, ()> {$/;"	f
@@ -2996,7 +2741,6 @@ put_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-
 put_back_n	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/put_back_n_impl.rs	/^pub fn put_back_n<I>(iterable: I) -> PutBackN<I::IntoIter>$/;"	f
 put_back_n_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod put_back_n_impl;$/;"	n
 r2	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    r2: ConfidenceInterval,$/;"	m	struct:Context
-raise	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^macro_rules! raise($/;"	M
 raw	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/lib.rs	/^mod raw;$/;"	n
 rcbuffer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^    rcbuffer: Rc<RefCell<TeeBuffer<I::Item, I>>>,$/;"	m	struct:Tee
 rciter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/rciter_impl.rs	/^    pub rciter: Rc<RefCell<I>>,$/;"	m	struct:RcIter
@@ -3094,17 +2838,6 @@ reset	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7
 reset_color	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn reset_color(v: &mut Vec<u8>) {$/;"	f
 reset_peek	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/multipeek_impl.rs	/^    pub fn reset_peek(&mut self) {$/;"	f
 resize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    fn resize(&mut self, capacity: usize, hasher: impl Fn(&T) -> u64) {$/;"	P	implementation:RawTable
-resize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn resize<S: Size>(&mut self, size: S) {$/;"	P	implementation:Compressed
-resize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub fn resize<S: Size>(&mut self, size: S) {$/;"	P	implementation:Conventional
-resize_fewer_columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn resize_fewer_columns() {$/;"	f	module:tests
-resize_fewer_columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn resize_fewer_columns() {$/;"	f	module:tests
-resize_fewer_rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn resize_fewer_rows() {$/;"	f	module:tests
-resize_fewer_rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn resize_fewer_rows() {$/;"	f	module:tests
-resize_more_columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn resize_more_columns() {$/;"	f	module:tests
-resize_more_columns	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn resize_more_columns() {$/;"	f	module:tests
-resize_more_columns_rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn resize_more_columns_rows() {$/;"	f	module:tests
-resize_more_rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn resize_more_rows() {$/;"	f	module:tests
-resize_more_rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn resize_more_rows() {$/;"	f	module:tests
 rest	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn rest<T>(input: T) -> IResult<T, T>$/;"	f
 rest_len	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn rest_len<T>(input: T) -> IResult<T, usize>$/;"	f
 rest_len_on_slices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn rest_len_on_slices() {$/;"	f	module:tests
@@ -3117,7 +2850,6 @@ ret_int2	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 ret_int2	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^    fn ret_int2(i: &[u8]) -> IResult<&[u8], u8> {$/;"	f	function:tests::do_parse
 retain	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn retain<F>(&mut self, mut f: F)$/;"	f
 retain	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn retain<F>(&mut self, mut f: F)$/;"	f
-retain	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn retain<F>(&mut self, mut condition: F)$/;"	P	implementation:Compressed
 retain_baseline	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn retain_baseline(mut self, baseline: String) -> Criterion {$/;"	P	implementation:Criterion
 return_error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! return_error ($/;"	M
 rev	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn rev<I>(iterable: I) -> iter::Rev<I::IntoIter>$/;"	f
@@ -3129,17 +2861,6 @@ rot90l	/home/atraii/Downloads/tmp/advent2018-rs/src/utils.rs	/^    pub fn rot90l
 routine	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod routine;$/;"	n
 routines	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    routines: Vec<NamedRoutine<()>>,$/;"	m	struct:Benchmark
 routines	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    routines: Vec<NamedRoutine<T>>,$/;"	m	struct:ParameterizedBenchmark
-row	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^    fn row(&self) -> usize {$/;"	P	implementation:usize
-row	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^    fn row(&self) -> usize;$/;"	P	interface:Position
-row_finish	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^macro_rules! row_finish($/;"	M
-row_range	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^macro_rules! row_range($/;"	M
-row_start	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^macro_rules! row_start($/;"	M
-rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub rows: usize,$/;"	m	struct:Banded
-rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub rows: usize,$/;"	m	struct:Compressed
-rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub rows: usize,$/;"	m	struct:Conventional
-rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub rows: usize,$/;"	m	struct:Diagonal
-rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^    fn rows(&self) -> usize {$/;"	P	implementation:usize
-rows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^    fn rows(&self) -> usize;$/;"	P	interface:Size
 rsqrte	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/math/float.rs	/^mod rsqrte;$/;"	n
 run	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.0-alpha1/src/lib.rs	/^    fn run(&self) -> Box<dyn Display>;$/;"	P	interface:Runner
 run	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    fn run(self, group_id: &str, c: &Criterion) {$/;"	P	implementation:Benchmark
@@ -3165,9 +2886,6 @@ scalar_arithmetic	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/p
 scalar_bitwise	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/ops.rs	/^mod scalar_bitwise;$/;"	n
 scalar_mask_bitwise	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/ops.rs	/^mod scalar_mask_bitwise;$/;"	n
 scalar_shifts	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/ops.rs	/^mod scalar_shifts;$/;"	n
-scale_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn scale_self(&mut self, alpha: f64) {$/;"	P	implementation:f64
-scale_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^    fn scale_self() {$/;"	f	module:tests
-scale_self	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^    fn scale_self(&mut self, T);$/;"	P	interface:ScaleSelf
 scale_time	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^fn scale_time(ns: f64) -> (f64, &'static str) {$/;"	f
 se	/home/atraii/Downloads/tmp/advent2018-rs/src/utils.rs	/^    pub fn se() -> Self {$/;"	P	implementation:Pt
 sealed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/lib.rs	/^mod sealed;$/;"	n
@@ -3193,8 +2911,6 @@ serialize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown
 serialize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>$/;"	f
 set	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/lib.rs	/^mod set;$/;"	n
 set	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn set<'new>(v: HashSet<&'static str>) -> HashSet<&'new str> {$/;"	f	function:assert_covariance
-set	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn set() {$/;"	f	module:tests
-set	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn set<P: Position>(&mut self, position: P, value: T) {$/;"	P	implementation:Compressed
 set_ctrl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    unsafe fn set_ctrl(&self, index: usize, ctrl: u8) {$/;"	P	implementation:RawTable
 set_from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn set_from<'a, A: 'a, J>(&mut self, from: J) -> usize$/;"	P	interface:Itertools
 shl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^    fn shl(self, shift: usize) -> FakeUint {$/;"	P	implementation:tests::FakeUint
@@ -3276,12 +2992,7 @@ sin_v4f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_si
 sin_v4f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin.rs	/^    fn sin_v4f64(x: f64x4) -> f64x4;$/;"	f
 sin_v8f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin.rs	/^    fn sin_v8f32(x: f32x8) -> f32x8;$/;"	f
 sin_v8f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/sin.rs	/^    fn sin_v8f64(x: f64x8) -> f64x8;$/;"	f
-singular_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^    fn singular_value() {$/;"	f	module:tests
-singular_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^fn singular_value($/;"	f
 size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    size: usize,$/;"	m	struct:ChunkIndex
-size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^macro_rules! size($/;"	M
-size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    pub size: usize,$/;"	m	struct:Packed
-size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^mod size;$/;"	n
 size_hint	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn size_hint(&self) -> (usize, Option<usize>) {$/;"	f
 size_hint	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/lib.rs	/^mod size_hint {$/;"	n
 size_hint	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn size_hint(&self) -> (usize, Option<usize>) {$/;"	P	implementation:Drain
@@ -3392,7 +3103,6 @@ start	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2
 start	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/program.rs	/^    fn start(&mut self, parameter: &T) -> Option<Program> {$/;"	f
 start	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/routine.rs	/^    fn start(&mut self, _: &T) -> Option<Program> {$/;"	f
 start	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/routine.rs	/^    fn start(&mut self, parameter: &T) -> Option<Program>;$/;"	P	interface:Routine
-start	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    start: usize,$/;"	m	struct:Iterator
 state	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/sources.rs	/^    pub state: St,$/;"	m	struct:Unfold
 state	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/sources.rs	/^    state: St,$/;"	m	struct:Iterate
 static_empty	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/generic.rs	/^    pub fn static_empty() -> &'static [u8] {$/;"	P	implementation:Group
@@ -3411,7 +3121,6 @@ step	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.
 step	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn step(self, n: usize) -> Step<Self>$/;"	P	interface:Itertools
 step_buffering	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    fn step_buffering(&mut self, client: usize) -> Option<I::Item> {$/;"	f
 step_current	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    fn step_current(&mut self) -> Option<I::Item> {$/;"	f
-storage	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^macro_rules! storage($/;"	M
 store_aligned	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/generic.rs	/^    pub unsafe fn store_aligned(&self, ptr: *mut u8) {$/;"	P	implementation:Group
 store_aligned	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/sse2.rs	/^    pub unsafe fn store_aligned(&self, ptr: *mut u8) {$/;"	P	implementation:Group
 str	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^static DEFAULT_FONT: &'static str = "Helvetica";$/;"	v
@@ -3438,9 +3147,7 @@ structs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0
 sub	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn sub(self, rhs: &HashSet<T, S>) -> HashSet<T, S> {$/;"	f
 sub_benchmarks	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    sub_benchmarks: Vec<IndexBenchmark>,$/;"	m	struct:IndexBenchmark
 sub_scalar	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn sub_scalar(sh: SizeHint, x: usize) -> SizeHint {$/;"	f
-subdiagonals	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub subdiagonals: usize,$/;"	m	struct:Banded
 succ	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^macro_rules! succ ($/;"	M
-success	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^macro_rules! success($/;"	M
 sum2	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    fn sum2(a: u8, b: u8) -> u8 {$/;"	f	function:tests::apply_test
 sum3	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    fn sum3(a: u8, b: u8, c: u8) -> u8 {$/;"	f	function:tests::apply_test
 summarize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    fn summarize(&self, context: &ReportContext, all_ids: &[BenchmarkId]) {$/;"	P	implementation:Html
@@ -3449,7 +3156,6 @@ summarize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion
 summary	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^pub mod summary;$/;"	n
 summary_scale	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn summary_scale(mut self, new_scale: AxisScale) -> PlotConfiguration {$/;"	P	implementation:PlotConfiguration
 summary_scale	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    summary_scale: AxisScale,$/;"	m	struct:PlotConfiguration
-superdiagonals	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub superdiagonals: usize,$/;"	m	struct:Banded
 sw	/home/atraii/Downloads/tmp/advent2018-rs/src/utils.rs	/^    pub fn sw() -> Self {$/;"	P	implementation:Pt
 swap_bytes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api.rs	/^mod swap_bytes;$/;"	n
 swap_bytes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen.rs	/^crate mod swap_bytes;$/;"	n
@@ -3462,8 +3168,6 @@ switch	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/sr
 switch_sep	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^macro_rules! switch_sep ($/;"	M
 symmetric_difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    fn symmetric_difference<'a, 'new>($/;"	f	function:assert_covariance
 symmetric_difference	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn symmetric_difference<'a>($/;"	f
-symmetric_eigen	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^    fn symmetric_eigen() {$/;"	f	module:tests
-symmetric_eigen	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^fn symmetric_eigen(matrix: &mut [f64], values: &mut [f64], m: usize) -> Result<()> {$/;"	f
 t	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/ziptuple.rs	/^    t: T,$/;"	m	struct:Zip
 t_distribution	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub t_distribution: Distribution<f64>,$/;"	m	struct:ComparisonData
 t_test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/compare.rs	/^fn t_test($/;"	f
@@ -3554,8 +3258,6 @@ take_while_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.
 take_while_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^macro_rules! take_while_s ($/;"	M
 take_while_s_succeed_none	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^  fn take_while_s_succeed_none() {$/;"	f	module:test
 take_while_s_succeed_some	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^  fn take_while_s_succeed_some() {$/;"	f	module:test
-taken	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    taken: usize,$/;"	m	struct:Iterator
-taken	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    taken: usize,$/;"	m	struct:IteratorMut
 tap	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! tap ($/;"	M
 tee	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn tee(self) -> (Tee<Self>, Tee<Self>)$/;"	P	interface:Itertools
 tee	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod tee;$/;"	n
@@ -3582,6 +3284,7 @@ test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/
 test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^    fn test(input: &str) -> IResult<&str, &str> {$/;"	f	function:test::take_while_s_succeed_some
 test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^mod test {$/;"	n
 test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^    fn test(&self) -> bool;$/;"	P	interface:Mask
+test	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^mod test {$/;"	n
 test_apply_m	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^  fn test_apply_m() {$/;"	f	module:tests
 test_benchmark_id_make_directory_name_unique	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn test_benchmark_id_make_directory_name_unique() {$/;"	f	module:test
 test_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/testing/utils.rs	/^pub fn test_cmp<T>($/;"	f
@@ -3609,21 +3312,6 @@ test_select	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_
 test_shuffle1_dyn	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/shuffle1_dyn.rs	/^macro_rules! test_shuffle1_dyn {$/;"	M
 test_shuffle1_dyn_mask	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/shuffle1_dyn.rs	/^macro_rules! test_shuffle1_dyn_mask {$/;"	M
 testing	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/lib.rs	/^mod testing;$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/convert.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/operation.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/convert.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/decomposition/acceleration.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/acceleration.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/convert.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/convert.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^mod tests {$/;"	n
-tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/operation.rs	/^mod tests {$/;"	n
 tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^mod tests {$/;"	n
 tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^mod tests {$/;"	n
 tests	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bytes.rs	/^mod tests {$/;"	n
@@ -3678,17 +3366,6 @@ top	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.1
 top_group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    top_group: usize,$/;"	m	struct:GroupInner
 trailing_zeros	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/bitmask.rs	/^    pub fn trailing_zeros(self) -> usize {$/;"	P	implementation:BitMask
 traits	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^mod traits;$/;"	n
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/operation.rs	/^    fn transpose(&self) -> Self {$/;"	P	implementation:Banded
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/operation.rs	/^    fn transpose() {$/;"	f	module:tests
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn transpose(&self) -> Self {$/;"	P	implementation:Compressed
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/operation.rs	/^    fn transpose() {$/;"	f	module:tests
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^    fn transpose(&self) -> Self {$/;"	P	implementation:Conventional
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/operation/mod.rs	/^    fn transpose() {$/;"	f	module:tests
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/operation.rs	/^    fn transpose(&self) -> Self {$/;"	P	implementation:Diagonal
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/operation.rs	/^    fn transpose(&self) -> Self {$/;"	P	implementation:Packed
-transpose	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/operation.rs	/^    fn transpose(&self) -> Self;$/;"	P	interface:Transpose
-transpose_lower	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/operation.rs	/^    fn transpose_lower() {$/;"	f	module:tests
-transpose_upper	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/operation.rs	/^    fn transpose_upper() {$/;"	f	module:tests
 tree_fold1	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn tree_fold1<F>(mut self, mut f: F) -> Option<Self::Item>$/;"	P	interface:Itertools
 try_else_return	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/macros_private.rs	/^macro_rules! try_else_return {$/;"	M
 try_gen	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.0-alpha1/src/lib.rs	/^    fn try_gen(input: ArcStr) -> Result<Self, Box<dyn Error>> where Self: Sized {$/;"	P	interface:Runner
@@ -3772,10 +3449,6 @@ upper_bound	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criteri
 upper_hex	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/fmt.rs	/^mod upper_hex;$/;"	n
 url	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    url: String,$/;"	m	struct:Plot
 used	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/unique_impl.rs	/^    used: HashMap<V, ()>,$/;"	m	struct:UniqueBy
-usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^impl Position for (usize, usize) {$/;"	c
-usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/position.rs	/^impl Position for usize {$/;"	c
-usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^impl Size for (usize, usize) {$/;"	c
-usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/size.rs	/^impl Size for usize {$/;"	c
 usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^impl<'a> InputLength for (&'a [u8], usize) {$/;"	c
 usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 2]> for usize {$/;"	c
 usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/shuffle.rs	/^impl Shuffle<[u32; 4]> for usize {$/;"	c
@@ -3812,28 +3485,15 @@ vPtr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.
 vPtr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/lib.rs	/^mod vPtr;$/;"	n
 vSize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen.rs	/^crate mod vSize;$/;"	n
 vSize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/lib.rs	/^mod vSize;$/;"	n
-validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn validate(&self) {$/;"	P	implementation:Banded
-validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn validate(&self) {$/;"	P	implementation:Compressed
-validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    fn validate(&self) {$/;"	P	implementation:Diagonal
-validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^    fn validate(&self);$/;"	P	interface:Validate
-validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/mod.rs	/^macro_rules! validate($/;"	M
-validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    fn validate(&self) {$/;"	P	implementation:Packed
 validate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    fn validate(value: u8) -> Result<ValidValue, ParseError> {$/;"	f	function:tests::map_res_err
 value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/csv_report.rs	/^    value: Option<&'a str>,$/;"	m	struct:CsvRow
 value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! value ($/;"	M
 value_str	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub value_str: Option<String>,$/;"	m	struct:BenchmarkId
 values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    values: Vec<T>,$/;"	m	struct:ParameterizedBenchmark
 values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn values(&self) -> Values<K, V> {$/;"	f
-values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    pub values: Vec<T>,$/;"	m	struct:Banded
-values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub values: Vec<T>,$/;"	m	struct:Compressed
-values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub values: Vec<T>,$/;"	m	struct:Conventional
-values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub values: Vec<T>,$/;"	m	struct:Diagonal
-values	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    pub values: Vec<T>,$/;"	m	struct:Packed
 values_key	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn values_key<'a, 'new>(v: Values<'a, &'static str, u8>) -> Values<'a, &'new str, u8> {$/;"	f	function:assert_covariance
 values_mut	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn values_mut(&mut self) -> ValuesMut<K, V> {$/;"	f
 values_val	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    fn values_val<'a, 'new>(v: Values<'a, u8, &'static str>) -> Values<'a, u8, &'new str> {$/;"	f	function:assert_covariance
-variant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub variant: Variant,$/;"	m	struct:Compressed
-variant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    pub variant: Variant,$/;"	m	struct:Packed
 vector_arithmetic	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/ops.rs	/^mod vector_arithmetic;$/;"	n
 vector_bitwise	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/ops.rs	/^mod vector_bitwise;$/;"	n
 vector_float_min_max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/ops.rs	/^mod vector_float_min_max;$/;"	n
@@ -3872,11 +3532,10 @@ while_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 while_some	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^pub fn while_some<I>(iter: I) -> WhileSome<I> {$/;"	f
 while_some	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn while_some<A>(self) -> WhileSome<Self>$/;"	P	interface:Itertools
 whitespace	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^pub mod whitespace;$/;"	n
-width	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    width: usize,$/;"	m	struct:LandClaim
+width	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    width: u16,$/;"	m	struct:LandClaim
 with_capacity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn with_capacity(capacity: usize) -> HashMap<K, V, DefaultHashBuilder> {$/;"	P	implementation:HashMap
 with_capacity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/raw/mod.rs	/^    pub fn with_capacity(capacity: usize) -> RawTable<T> {$/;"	P	implementation:RawTable
 with_capacity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn with_capacity(capacity: usize) -> HashSet<T, DefaultHashBuilder> {$/;"	P	implementation:HashSet
-with_capacity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    pub fn with_capacity<S: Size>(size: S, variant: Variant, capacity: usize) -> Self {$/;"	P	implementation:Compressed
 with_capacity_and_hasher	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/map.rs	/^    pub fn with_capacity_and_hasher(capacity: usize, hash_builder: S) -> HashMap<K, V, S> {$/;"	f
 with_capacity_and_hasher	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/set.rs	/^    pub fn with_capacity_and_hasher(capacity: usize, hasher: S) -> HashSet<T, S> {$/;"	f
 with_filter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn with_filter<S: Into<String>>(mut self, filter: S) -> Criterion {$/;"	P	implementation:Criterion
@@ -3894,8 +3553,6 @@ with_position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itert
 with_program	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    pub fn with_program<S, F>(mut self, id: S, program: F) -> ParameterizedBenchmark<T>$/;"	f
 with_program	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    pub fn with_program<S>(mut self, id: S, program: Command) -> Benchmark$/;"	P	implementation:Benchmark
 with_solver	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/types.rs	/^    pub fn with_solver(&mut self, solver: Solver) {$/;"	P	implementation:Runner
-with_uninitialized	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    pub unsafe fn with_uninitialized<S: Size>(size: S) -> Self {$/;"	P	implementation:Conventional
-with_uninitialized	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    pub unsafe fn with_uninitialized<S: Size>(size: S) -> Self {$/;"	P	implementation:Diagonal
 with_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    pub fn with_value(mut self, value: I::Item) -> Self {$/;"	f
 without_plots	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn without_plots(mut self) -> Criterion {$/;"	P	implementation:Criterion
 work	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^    fn work(input: &[u8]) -> IResult<&[u8], &[u8], ErrorStr> {$/;"	f	function:tests::alt
@@ -3919,7 +3576,7 @@ write_u8	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-
 write_usize	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.6/src/fx.rs	/^    fn write_usize(&mut self, i: usize) {$/;"	P	implementation:FxHasher
 writer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/csv_report.rs	/^    writer: Writer<W>,$/;"	m	struct:CsvReportWriter
 ws	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^macro_rules! ws ($/;"	M
-x	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    x: usize,$/;"	m	struct:LandClaim
+x	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    x: u16,$/;"	m	struct:LandClaim
 x86_intr_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^macro_rules! x86_intr_impl {$/;"	M
 x86_m32x4_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^macro_rules! x86_m32x4_impl {$/;"	M
 x86_m32x4_sse_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86/sse.rs	/^macro_rules! x86_m32x4_sse_impl {$/;"	M
@@ -3936,16 +3593,9 @@ x86_m8x32_avx_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/
 x86_m8x32_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^macro_rules! x86_m8x32_impl {$/;"	M
 x86_m8x8_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^macro_rules! x86_m8x8_impl {$/;"	M
 x86_m8x8_mmx_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86/mmx.rs	/^macro_rules! x86_m8x8_mmx_impl {$/;"	M
-y	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    y: usize,$/;"	m	struct:LandClaim
+y	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    y: u16,$/;"	m	struct:LandClaim
 year	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0-alpha1/src/out.rs	/^    year: u32,$/;"	m	struct:LibInfos
 yellow	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn yellow(&self, s: String) -> String {$/;"	P	implementation:CliReport
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/element.rs	/^    fn zero() -> Self;$/;"	P	interface:Element
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/banded/mod.rs	/^    fn zero<S: Size>(size: S) -> Self {$/;"	P	implementation:Banded
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/compressed/mod.rs	/^    fn zero<S: Size>(size: S) -> Self {$/;"	P	implementation:Compressed
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/conventional/mod.rs	/^    fn zero<S: Size>(size: S) -> Self {$/;"	P	implementation:Conventional
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/diagonal/mod.rs	/^    fn zero<S: Size>(size: S) -> Self {$/;"	P	implementation:Diagonal
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/format/packed/mod.rs	/^    fn zero<S: Size>(size: S) -> Self {$/;"	P	implementation:Packed
-zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/matrix-0.21.12/src/lib.rs	/^    fn zero<S: Size>(S) -> Self;$/;"	P	interface:Matrix
 zip	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/free.rs	/^pub fn zip<I, J>(i: I, j: J) -> Zip<I::IntoIter, J::IntoIter>$/;"	f
 zip_eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn zip_eq<J>(self, other: J) -> ZipEq<Self, J::IntoIter>$/;"	P	interface:Itertools
 zip_eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/zip_eq_impl.rs	/^pub fn zip_eq<I, J>(i: I, j: J) -> ZipEq<I::IntoIter, J::IntoIter>$/;"	f
