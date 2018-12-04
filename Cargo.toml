@@ -12,8 +12,6 @@ hashbrown = "0.1"
 fnv = "1.0.3"
 nom = "4"
 packed_simd = "0.3"
-# petgraph = "*"
-# regex = "*"
 
 [dev-dependencies]
 criterion = "*"

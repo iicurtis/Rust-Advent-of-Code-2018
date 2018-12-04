@@ -143,8 +143,7 @@ fn mostoccuring(input: Vec<usize>) -> (usize, usize) {
         .expect("Time table empty");
 }
 
-#[aoc(day4, part1)]
-fn part1(input: &Vec<Event>) -> usize {
+fn get_sleepmin(input: &Vec<Event>) -> SleepMin {
     let mut guards = SleepMin::new();
     let mut sleepstart = HashMap::new();
     let mut guard = 0;
@@ -163,46 +162,34 @@ fn part1(input: &Vec<Event>) -> usize {
             }
         };
     }
+    return guards;
+}
 
-    let sleepyguard: usize = guards
+#[aoc(day4, part1)]
+fn part1(input: &Vec<Event>) -> usize {
+    let mut guards_sleepmin = get_sleepmin(input);
+    let sleepyguard: usize = guards_sleepmin
         .clone()
         .into_iter()
         .max_by_key(|(_, c)| c.len())
         .map(|(val, _)| val)
         .expect("Guard list empty");
-    let (mostmin, _) = mostoccuring(guards.entry(sleepyguard).or_default().to_vec());
+    let (mostmin, _) = mostoccuring(guards_sleepmin.entry(sleepyguard).or_default().to_vec());
     return mostmin * sleepyguard;
 }
 
 #[aoc(day4, part2)]
 fn part2(input: &Vec<Event>) -> usize {
-    let mut guards = SleepMin::new();
-    let mut sleepstart = HashMap::new();
-    let mut guard = 0;
-    for event in input {
-        match event.action {
-            Action::ShiftStart(id) => {
-                guard = id;
-            }
-            Action::Asleep => {
-                sleepstart.insert(guard, event.date);
-            }
-            Action::Wake => {
-                guards.entry(guard).or_default().extend(
-                    timefrom(*sleepstart.entry(guard).or_insert(event.date), event.date).clone(),
-                );
-            }
-        };
-    }
+    let mut guards_sleepmin = get_sleepmin(input);
 
-    let freqsleep: usize = guards
+    let freqsleep: usize = guards_sleepmin
         .clone()
         .into_iter()
         .max_by_key(|(_, c)| mostoccuring(c.to_vec()).1)
         .map(|(v, _)| v)
         .expect("We couldn't get the freq");
 
-    let (freqmin, _) = mostoccuring(guards.entry(freqsleep).or_default().to_vec());
+    let (freqmin, _) = mostoccuring(guards_sleepmin.entry(freqsleep).or_default().to_vec());
     return freqsleep * freqmin;
 }
 
