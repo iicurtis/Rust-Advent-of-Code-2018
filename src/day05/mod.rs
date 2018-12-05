@@ -44,20 +44,6 @@ fn part1(input: &Vec<u8>) -> usize {
 
 #[aoc(day5, part2)]
 fn part2(input: &Vec<u8>) -> usize {
-    let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
-    (b'A'..b'Z' + 1)
-        .map(|letter| {
-            polymer.clear();
-            let filtered = input.iter().cloned().filter(|b| b & !32 != letter);
-            collapse(filtered, &mut polymer);
-            polymer.len()
-        })
-        .min()
-        .expect("Couldn't get min")
-}
-
-#[aoc(day5, part2, rayon)]
-fn part2_rayon(input: &Vec<u8>) -> usize {
     // I was using for loops before I stole this style from CryZe
     (b'A'..b'Z' + 1)
         .into_par_iter()

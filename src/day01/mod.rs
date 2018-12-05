@@ -14,9 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use fnv;
 use hashbrown;
-use std::collections::HashSet;
 
 #[aoc_generator(day1)]
 fn parse_input(input: &str) -> Vec<isize> {
@@ -33,43 +31,11 @@ fn part1(input: &[isize]) -> isize {
 
 #[aoc(day1, part2)]
 fn part2(input: &[isize]) -> isize {
-    let mut seen = HashSet::new();
+    let mut seen = hashbrown::HashSet::with_capacity(input.len());
     let mut sum = 0;
     seen.insert(sum);
 
-    for freq in input.iter().cycle() {
-        sum += freq;
-        if !seen.insert(sum) {
-            break;
-        }
-    }
-
-    return sum;
-}
-
-#[aoc(day1, part2, hashbrown)]
-fn part2_hb(input: &[isize]) -> isize {
-    let mut seen = hashbrown::HashSet::new();
-    let mut sum = 0;
-    seen.insert(sum);
-
-    for freq in input.iter().cycle() {
-        sum += freq;
-        if !seen.insert(sum) {
-            break;
-        }
-    }
-
-    return sum;
-}
-
-#[aoc(day1, part2, fnv)]
-fn part2_fnv(input: &[isize]) -> isize {
-    let mut seen = fnv::FnvHashSet::default();
-    let mut sum = 0;
-    seen.insert(sum);
-
-    for freq in input.iter().cycle() {
+    for freq in input.into_iter().cycle() {
         sum += freq;
         if !seen.insert(sum) {
             break;

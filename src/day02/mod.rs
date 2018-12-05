@@ -15,48 +15,10 @@
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 use hashbrown;
-use itertools::Itertools;
 use std::str;
+use std::hint::unreachable_unchecked;
 
 #[aoc(day2, part1)]
-fn part1(input: &str) -> u32 {
-    let mut doubles = 0;
-    let mut triples = 0;
-
-    for line in input.lines() {
-        let mut chars: Vec<char> = line.chars().collect();
-
-        chars.sort_by(|a, b| b.cmp(a));
-        // let repeated: String = chars.iter().collect();
-        let counts = chars
-            .into_iter()
-            .map(|c| (c, 1))
-            .coalesce(|(c, n), (d, m)| {
-                if c == d {
-                    Ok((c, n + m))
-                } else {
-                    Err(((c, n), (d, m)))
-                }
-            });
-
-        let mut first_double = true;
-        let mut first_triple = true;
-        for (_, n) in counts {
-            if n == 2 && first_double {
-                doubles += 1;
-                first_double = false;
-            } else if n == 3 && first_triple {
-                triples += 1;
-                first_triple = false;
-            }
-        }
-    }
-    let checksum = doubles * triples;
-
-    return checksum;
-}
-
-#[aoc(day2, part1, burntsushi)]
 // https://github.com/BurntSushi/advent-of-code/blob/master/2018/aoc02/src/main.rs
 fn part1_burnt(input: &str) -> u32 {
     let mut frequencies = [0u8; 256];
@@ -106,7 +68,7 @@ pub fn part2_simd<'a>(input: &'a str) -> String {
                 let a: [u8; 32] = a.into();
                 let b: [u8; 32] = b.into();
                 for (&a, &b) in a.iter().zip(&b) {
-                    if a == b {
+                    if a == b && a != 0 {
                         buf.push(a as char);
                     }
                 }
@@ -114,32 +76,7 @@ pub fn part2_simd<'a>(input: &'a str) -> String {
             }
         }
     }
-    return String::from("fail");
-}
-
-#[aoc(day2, part2)]
-pub fn part2<'a>(input: &'a str) -> String {
-    let lines = input.lines().collect::<Vec<_>>();
-
-    let mut map = hashbrown::HashMap::new();
-
-    for index in 0..lines.first().unwrap().len() - 1 {
-        for line in &lines {
-            let line = (&line[..index], &line[index + 1..]);
-            match map.entry(line) {
-                hashbrown::hash_map::Entry::Vacant(vacant) => {
-                    vacant.insert(());
-                }
-                _ => {
-                    let mut ans = line.0.to_string();
-                    ans.push_str(line.1);
-                    return ans;
-                }
-            };
-        }
-        map.clear();
-    }
-    return String::from("Fail");
+    unsafe { unreachable_unchecked() };
 }
 
 #[cfg(test)]
@@ -151,11 +88,11 @@ mod tests {
 
     #[test]
     fn part1_example() {
-        assert_eq!(part1(INPUT_PART1), 12);
+        assert_eq!(part1_burnt(INPUT_PART1), 12);
     }
 
     #[test]
     fn part2_example() {
-        assert_eq!(part2(INPUT_PART2), "fgij");
+        assert_eq!(part2_simd(INPUT_PART2), "fgij");
     }
 }
