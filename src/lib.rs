@@ -3,6 +3,7 @@ extern crate aoc_runner;
 extern crate aoc_runner_derive;
 extern crate hashbrown;
 extern crate nom;
+extern crate rayon;
 
 mod day01;
 mod day02;

@@ -14,87 +14,61 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+use rayon::prelude::*;
+
 #[aoc_generator(day5)]
 fn parse_input(input: &str) -> Vec<u8> {
     let chars: Vec<u8> = input.trim().as_bytes().to_owned();
     return chars;
 }
 
-fn is_caps(a: u8, b: u8) -> bool {
-    if a > b {
-        if a - b == 32 {
-            return true;
+fn collapse(input: impl IntoIterator<Item = u8>, polymer: &mut Vec<u8>) {
+    let mut unit = b'\0';
+    for next in input {
+        if next ^ 0x20 == unit {
+            polymer.pop();
+            unit = polymer.last().cloned().unwrap_or_default();
         } else {
-            return false;
+            unit = next;
+            let _ = polymer.push(next);
         }
-    } else {
-        if b - a == 32 {
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
-
-fn is_let(a: u8, b: u8) -> bool {
-    let mut a = a;
-    if a >= 97 {
-        a -= 32;
-    }
-    if a - 65 == b {
-        return true;
-    } else {
-        return false;
     }
 }
 
 #[aoc(day5, part1)]
 fn part1(input: &Vec<u8>) -> usize {
-    let mut next = 1;
     let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
-    polymer.push(input[0]);
-    while next < input.len() {
-        'inner: while is_caps(*polymer.last().unwrap(), input[next]) && next < input.len() - 1 {
-            next += 1;
-            polymer.pop();
-            if polymer.is_empty() {
-                break 'inner;
-            }
-        }
-        polymer.push(input[next]);
-        next += 1;
-    }
+    collapse(input.clone(), &mut polymer);
     return polymer.len();
 }
 
 #[aoc(day5, part2)]
 fn part2(input: &Vec<u8>) -> usize {
-    let mut pol_size: [usize; 26] = [0; 26];
-    for (i, x) in pol_size.iter_mut().enumerate() {
-        let mut next = 1;
-        let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
-        polymer.push(input[0]);
-        'outer: while next < input.len() {
-            'inner: while is_caps(*polymer.last().unwrap(), input[next]) && next < input.len() - 1 {
-                next += 1;
-                polymer.pop();
-                if polymer.is_empty() {
-                    break 'inner;
-                }
-            }
-            polymer.push(input[next]);
-            if is_let(*polymer.last().unwrap(), i as u8) {
-                polymer.pop();
-                if polymer.is_empty() {
-                    next += 1;
-                    polymer.push(input[next]);
-                }
-            }
-            next += 1;
-        }
-        *x = polymer.len();
-    }
-    return *pol_size.iter().min().unwrap();
+    let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
+    (b'A'..b'Z' + 1)
+        .map(|letter| {
+            polymer.clear();
+            let filtered = input.iter().cloned().filter(|b| b & !32 != letter);
+            collapse(filtered, &mut polymer);
+            polymer.len()
+        })
+        .min()
+        .expect("Couldn't get min")
+}
+
+#[aoc(day5, part2, rayon)]
+fn part2_rayon(input: &Vec<u8>) -> usize {
+    // I was using for loops before I stole this style from CryZe
+    (b'A'..b'Z' + 1)
+        .into_par_iter()
+        .map(|letter| {
+            let mut polymer: Vec<u8> = Vec::new();
+            let filtered = input.iter().cloned().filter(|b| b & !32 != letter);
+            collapse(filtered, &mut polymer);
+            polymer.len()
+        })
+        .min()
+        .expect("Couldn't get min")
 }
 
 #[cfg(test)]
