@@ -42,6 +42,27 @@ fn part1(input: &Vec<u8>) -> usize {
     return polymer.len();
 }
 
+// #[aoc(day5, part1, rayon)]
+// fn part1_rayon(input: &Vec<u8>) -> usize {
+    // let split_poly: Vec<u8> = input
+        // .par_chunks(32)
+        // .map(|n| {
+            // let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
+            // collapse(n.iter().cloned(), &mut polymer);
+            // polymer
+        // })
+        // .reduce(
+            // || Vec::new(),
+            // |mut a: Vec<u8>, b: Vec<u8>| {
+                // a.extend(b);
+                // a
+            // },
+        // );
+    // let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
+    // collapse(split_poly, &mut polymer);
+    // return polymer.len();
+// }
+
 #[aoc(day5, part2)]
 fn part2(input: &Vec<u8>) -> usize {
     // I was using for loops before I stole this style from CryZe

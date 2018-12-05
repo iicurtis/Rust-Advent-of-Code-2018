@@ -14,7 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-use hashbrown::HashSet;
+use packed_simd::u16x32;
+use std::cmp::min;
 use std::str;
 
 #[derive(Debug)]
@@ -29,7 +30,7 @@ pub struct LandClaim {
 #[aoc_generator(day3)]
 fn parse_input(input: &str) -> Vec<LandClaim> {
     let mut input_vec: Vec<LandClaim> = Vec::new();
-    for line in input.lines() {
+    for line in input.trim().lines() {
         let all_the_things = line
             .split(|c| c == ' ' || c == '@' || c == ',' || c == ':' || c == 'x' || c == '#')
             .filter_map(|c| c.parse::<u16>().ok())
@@ -51,12 +52,21 @@ fn parse_input(input: &str) -> Vec<LandClaim> {
 }
 
 #[aoc(day3, part1)]
+// This is GALAXY BRAIN MODE
 fn part1(input: &Vec<LandClaim>) -> usize {
-    let mut claims: Vec<usize> = vec![0; 1 << 20];
+    let mut claims: Vec<u16> = vec![0; 1 << 20];
+
+    // claim mask: this only adds 1 to the part of the 32 vec we just
+    // grabbed that is actually on the claim
+    let claim_mask = claim_masks();
+
     for claim in input.iter() {
-        for x in claim.x..claim.x + claim.width {
+        for x in (claim.x..claim.x + claim.width).step_by(32) {
             for y in claim.y..claim.y + claim.height {
-                claims[x as usize + y as usize * 1024] += 1;
+                let start_idx = y as usize * 1024 + x as usize;
+                let mask = claim_mask[min(31, claim.x + claim.width - x - 1) as usize];
+                let values = u16x32::from_slice_unaligned(&claims[start_idx..]);
+                (values + mask).write_to_slice_unaligned(&mut claims[start_idx..]);
             }
         }
     }
@@ -66,54 +76,106 @@ fn part1(input: &Vec<LandClaim>) -> usize {
 
 #[aoc(day3, part2)]
 fn part2(input: &Vec<LandClaim>) -> usize {
-    let mut claims: Vec<u16> = vec![0; 1 << 20];
-    let mut all_ids = HashSet::new();
+    let cloth_masks = claim_masks();
+
+    let mut claims = vec![0; 1 << 20];
+
+    // u16x32 idea borrowed from Globidev
+    // This method is actually slower than my original method, but with SIMD it comes out nearly 4x
+    // faster. Unfortunately theres no good way to bulk replace ids
     for claim in input.iter() {
-        let mut overlap = false;
-        for x in claim.x..claim.x + claim.width {
+        for x in (claim.x..claim.x + claim.width).step_by(32) {
             for y in claim.y..claim.y + claim.height {
-                let idx = x as usize + y as usize * 1024;
-                if claims[idx] == 0 {
-                    claims[idx] = claim.id;
-                } else {
-                    overlap = true;
-                    all_ids.remove(&claims[idx]);
-                }
+                let start_idx = y as usize * 1024 + x as usize;
+                let mask = cloth_masks[min(31, claim.x + claim.width - x - 1) as usize];
+                let values = u16x32::from_slice_unaligned(&claims[start_idx..]);
+                (values + mask).write_to_slice_unaligned(&mut claims[start_idx..]);
             }
-        }
-        if !overlap {
-            all_ids.insert(claim.id);
         }
     }
 
-    match all_ids.iter().next() {
-        Some(id) => *id as usize,
-        None => 0,
+    'outer: for claim in input.iter() {
+        for x in claim.x..claim.x + claim.width {
+            for y in claim.y..claim.y + claim.height {
+                if claims[y as usize * 1024 + x as usize] > 1 {
+                    continue 'outer;
+                }
+            }
+        }
+        return claim.id as usize;
     }
+
+    panic!("No solution")
+}
+
+fn claim_masks() -> Vec<u16x32> {
+    (0..32)
+        .map(|stop| {
+            let mut slice = [0; 32];
+            for i in 0..stop + 1 {
+                slice[i] = 1
+            }
+            u16x32::from_slice_unaligned(&slice)
+        })
+        .collect()
+    // [
+    //     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+    //     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    // ];
 }
 
 #[cfg(test)]
 mod test {
     use super::*;
 
-    // #[test]
-    // fn test_part1() {
-    // let input = r#"
-    // #1 @ 1,3: 4x4
-    // #2 @ 3,1: 4x4
-    // #3 @ 5,5: 2x2
-    // "#;
-    // assert_eq!(part1(&parse_input(input)), 4);
-    // }
+    #[test]
+    fn test_part1() {
+        let input = r#"
+    #1 @ 1,3: 4x4
+    #2 @ 3,1: 4x4
+    #3 @ 5,5: 2x2
+    "#;
+        assert_eq!(part1(&parse_input(input)), 4);
+    }
 
-    // #[test]
-    // fn test_part2() {
-    // let input = r#"
-    // #1 @ 1,3: 4x4
-    // #2 @ 3,1: 4x4
-    // #3 @ 5,5: 2x2
-    // "#;
-    // assert_eq!(part2(&parse_input(input)), 3);
-    // }
+    #[test]
+    fn test_part2() {
+        let input = r#"
+    #1 @ 1,3: 4x4
+    #2 @ 3,1: 4x4
+    #3 @ 5,5: 2x2
+    "#;
+        assert_eq!(part2(&parse_input(input)), 3);
+    }
 
 }
