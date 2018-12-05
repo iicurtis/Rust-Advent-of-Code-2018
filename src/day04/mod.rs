@@ -121,31 +121,17 @@ fn parse_input(input: &str) -> Vec<Event> {
     return events;
 }
 
-type SleepMin = HashMap<usize, Vec<usize>>;
-
-fn timefrom(start: Date, end: Date) -> Vec<usize> {
-    if start.min < end.min {
-        return (start.min..end.min).collect();
-    } else {
-        return (start.min..60).collect();
-    }
+#[derive(Clone, Copy)]
+struct Guard {
+    slept: usize,
+    days: [usize; 60],
 }
 
-fn mostoccuring(input: Vec<usize>) -> (usize, usize) {
-    let mut count = HashMap::new();
-    for n in input.iter() {
-        *count.entry(n).or_insert(0) += 1;
-    }
-    return count
-        .into_iter()
-        .max_by_key(|&(_, c)| c)
-        .map(|(val, c)| (*val as usize, c as usize))
-        .expect("Time table empty");
-}
+type SleepMin = HashMap<usize, Guard>;
 
 fn get_sleepmin(input: &Vec<Event>) -> SleepMin {
     let mut guards = SleepMin::new();
-    let mut sleepstart = HashMap::new();
+    let mut sleepstart = 0;
     let mut guard = 0;
     for event in input {
         match event.action {
@@ -153,12 +139,17 @@ fn get_sleepmin(input: &Vec<Event>) -> SleepMin {
                 guard = id;
             }
             Action::Asleep => {
-                sleepstart.insert(guard, event.date);
+                sleepstart = event.date.min;
             }
             Action::Wake => {
-                guards.entry(guard).or_default().extend(
-                    timefrom(*sleepstart.entry(guard).or_insert(event.date), event.date).clone(),
-                );
+                let v = guards.entry(guard).or_insert(Guard {
+                    slept: 0,
+                    days: [0; 60],
+                });
+                for n in &mut v.days[sleepstart..event.date.min] {
+                    *n += 1;
+                }
+                v.slept += event.date.min - sleepstart;
             }
         };
     }
@@ -167,29 +158,44 @@ fn get_sleepmin(input: &Vec<Event>) -> SleepMin {
 
 #[aoc(day4, part1)]
 fn part1(input: &Vec<Event>) -> usize {
-    let mut guards_sleepmin = get_sleepmin(input);
-    let sleepyguard: usize = guards_sleepmin
-        .clone()
+    let guards_sleepmin = get_sleepmin(input);
+    let (guard_id, sleep_sched) = guards_sleepmin
         .into_iter()
-        .max_by_key(|(_, c)| c.len())
-        .map(|(val, _)| val)
+        .max_by_key(|(_, c)| c.slept)
         .expect("Guard list empty");
-    let (mostmin, _) = mostoccuring(guards_sleepmin.entry(sleepyguard).or_default().to_vec());
-    return mostmin * sleepyguard;
+    let mostmin = sleep_sched
+        .days
+        .iter()
+        .enumerate()
+        .max_by_key(|&(_, v)| v)
+        .map(|(i, _)| i)
+        .expect("No max found");
+    return mostmin * guard_id;
 }
 
 #[aoc(day4, part2)]
 fn part2(input: &Vec<Event>) -> usize {
-    let mut guards_sleepmin = get_sleepmin(input);
+    let guards_sleepmin = get_sleepmin(input);
 
-    let freqsleep: usize = guards_sleepmin
+    let (freqsleep, freqmin) = guards_sleepmin
         .clone()
         .into_iter()
-        .max_by_key(|(_, c)| mostoccuring(c.to_vec()).1)
-        .map(|(v, _)| v)
+        .map(|(id, guard)| {
+            (
+                id,
+                guard
+                    .days
+                    .iter()
+                    .cloned()
+                    .enumerate()
+                    .max_by_key(|&(_, v)| v) // max by value of minutes asleep in day
+                    .map(|(i, _)| i) // but we only care what  minute it was (the enumeration)
+                    .expect("Minute list has no max"),
+            )
+        })
+        .max_by_key(|&(_, c)| c)
         .expect("We couldn't get the freq");
 
-    let (freqmin, _) = mostoccuring(guards_sleepmin.entry(freqsleep).or_default().to_vec());
     return freqsleep * freqmin;
 }
 
@@ -238,8 +244,7 @@ mod test {
 [1518-11-04 00:46] wakes up
 [1518-11-05 00:03] Guard #99 begins shift
 [1518-11-05 00:45] falls asleep
-[1518-11-05 00:55] wakes up
-"#;
+[1518-11-05 00:55] wakes up"#;
         assert_eq!(part2(&parse_input(input)), 4455);
     }
 
