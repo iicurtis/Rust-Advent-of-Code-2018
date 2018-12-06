@@ -22,60 +22,117 @@ fn parse_input(input: &str) -> Vec<u8> {
     return chars;
 }
 
-fn collapse(input: impl IntoIterator<Item = u8>, polymer: &mut Vec<u8>) {
-    let mut unit = b'\0';
-    for next in input {
-        if next ^ 0x20 == unit {
-            polymer.pop();
-            unit = polymer.last().cloned().unwrap_or_default();
+fn collapse(input: &mut Vec<u8>) -> usize {
+    let mut new_len = 0;
+    for i in 0..input.len() {
+        if new_len > 0 && input[new_len - 1] ^ 0x20 == input[i] {
+            new_len -= 1;
         } else {
-            unit = next;
-            let _ = polymer.push(next);
+            input[new_len] = input[i];
+            new_len += 1;
         }
     }
+    return new_len;
 }
 
 #[aoc(day5, part1)]
 fn part1(input: &Vec<u8>) -> usize {
-    let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
-    collapse(input.clone(), &mut polymer);
-    return polymer.len();
+    let mut input = input.clone();
+    let len = collapse(&mut input);
+    return len;
 }
 
 // #[aoc(day5, part1, rayon)]
 // fn part1_rayon(input: &Vec<u8>) -> usize {
-    // let split_poly: Vec<u8> = input
-        // .par_chunks(32)
-        // .map(|n| {
-            // let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
-            // collapse(n.iter().cloned(), &mut polymer);
-            // polymer
-        // })
-        // .reduce(
-            // || Vec::new(),
-            // |mut a: Vec<u8>, b: Vec<u8>| {
-                // a.extend(b);
-                // a
-            // },
-        // );
-    // let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
-    // collapse(split_poly, &mut polymer);
-    // return polymer.len();
+// let split_poly: Vec<u8> = input
+// .par_chunks(32)
+// .map(|n| {
+// let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
+// collapse(n.iter().cloned(), &mut polymer);
+// polymer
+// })
+// .reduce(
+// || Vec::new(),
+// |mut a: Vec<u8>, b: Vec<u8>| {
+// a.extend(b);
+// a
+// },
+// );
+// let mut polymer: Vec<u8> = Vec::with_capacity(input.len());
+// collapse(split_poly, &mut polymer);
+// return polymer.len();
 // }
 
 #[aoc(day5, part2)]
 fn part2(input: &Vec<u8>) -> usize {
+    let mut input = input.clone();
+    let reduced_len = collapse(&mut input);
     // I was using for loops before I stole this style from CryZe
-    (b'A'..b'Z' + 1)
+    (b'a'..b'z' + 1)
         .into_par_iter()
         .map(|letter| {
-            let mut polymer: Vec<u8> = Vec::new();
-            let filtered = input.iter().cloned().filter(|b| b & !32 != letter);
-            collapse(filtered, &mut polymer);
-            polymer.len()
+            let mut new_len = 0;
+            let mut input_clone = [0; 1 << 16];
+            for i in 0..reduced_len {
+                if input[i] | 0x20 == letter {
+                    continue;
+                }
+
+                if new_len > 0 && input_clone[new_len - 1] ^ 0x20 == input[i] {
+                    new_len -= 1;
+                } else {
+                    input_clone[new_len] = input[i];
+                    new_len += 1;
+                }
+            }
+            new_len
         })
         .min()
         .expect("Couldn't get min")
+}
+
+#[aoc(day5, part2, globi)]
+fn part2_globi(input: &Vec<u8>) -> usize {
+    let mut input = input.clone();
+    let len = input.len();
+    let mut reduced_len = 0;
+
+    for i in 0..len {
+        if reduced_len > 0 && opposites(input[reduced_len - 1], input[i]) {
+            reduced_len -= 1;
+        } else {
+            input[reduced_len] = input[i];
+            reduced_len += 1;
+        }
+    }
+
+    (b'a'..b'z' + 1)
+        .into_par_iter()
+        .map(|lower| {
+            let mut pass_length = 0;
+            let mut unblocked = [0; 16384];
+
+            for i in 0..reduced_len {
+                if input[i] | 32 == lower {
+                    continue;
+                }
+
+                if pass_length > 0 && opposites(unblocked[pass_length - 1], input[i]) {
+                    pass_length -= 1;
+                } else {
+                    unblocked[pass_length] = input[i];
+                    pass_length += 1;
+                }
+            }
+
+            pass_length
+        })
+        .min()
+        .expect("Empty polymer")
+}
+
+fn opposites(u1: u8, u2: u8) -> bool {
+    u1 ^ 32 == u2
 }
 
 #[cfg(test)]
