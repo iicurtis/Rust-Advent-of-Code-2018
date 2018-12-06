@@ -381,6 +381,7 @@ Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/i
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^impl<I, F, E: From<F>> Convert<Err<I, F>> for Err<I, E> {$/;"	c
 Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^pub enum Err<I, E = u32> {$/;"	g
 Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^        type Err = ParseError;$/;"	t	implementation:parsers::Event
+Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    type Err = Box<Error>;$/;"	t	implementation:Point
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Error(Context<I, E>),$/;"	e	enum:Err
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  Error,$/;"	e	enum:CompareResult
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^        type Error = ();$/;"	t	implementation:private::Option
@@ -1413,6 +1414,8 @@ PlotConfiguration	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/c
 Plotting	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    impl Plotting {$/;"	c	module:plotting
 Plotting	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub enum Plotting {$/;"	g	module:plotting
 Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^impl Display for Point {$/;"	c
+Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^impl Point {$/;"	c
+Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^impl std::str::FromStr for Point {$/;"	c
 Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^pub struct Point {$/;"	s
 Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^impl<T> Position<T> {$/;"	c
 Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^pub enum Position<T> {$/;"	g
@@ -1976,6 +1979,7 @@ abs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3
 abs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float.rs	/^crate mod abs;$/;"	n
 abs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/abs.rs	/^    fn abs(self) -> Self;$/;"	P	interface:Abs
 abs_distributions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/mod.rs	/^pub(crate) fn abs_distributions($/;"	f
+abs_s	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn abs_s(vec: i32x16) -> i32x16 {$/;"	f
 absolute_estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub absolute_estimates: Estimates,$/;"	m	struct:MeasurementData
 acc	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^macro_rules! acc ($/;"	M
 action	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    action: Action,$/;"	m	struct:Event
@@ -3333,6 +3337,7 @@ from_par_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon
 from_ptr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/mod.rs	/^    unsafe fn from_ptr(ptr: *const T) -> Self {$/;"	P	implementation:Bucket
 from_slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/slice.rs	/^mod from_slice;$/;"	n
 from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^        fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:parsers::Event
+from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:Point
 from_vector	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/from.rs	/^mod from_vector;$/;"	n
 front	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    front: Option<J>,$/;"	m	struct:Flatten
 fs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod fs;$/;"	n
@@ -3991,6 +3996,7 @@ kmerge	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.
 kmerge_by	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/kmerge_impl.rs	/^pub fn kmerge_by<I, F>(iterable: I, mut less_than: F)$/;"	f
 kmerge_by	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn kmerge_by<F>(self, first: F)$/;"	P	interface:Itertools
 kmerge_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod kmerge_impl;$/;"	n
+l1dist	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    fn l1dist(self, other: Point) -> i32 {$/;"	P	implementation:Point
 last	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn last(self) -> Option<Self::Item> {$/;"	f
 last	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    last: Option<I::Item>,$/;"	m	struct:CoalesceCore
 last	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^    fn last(self) -> Option<Self::Item> {$/;"	f
@@ -4183,7 +4189,6 @@ mad	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5
 main_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/out.rs	/^pub fn main_impl(input: pm::TokenStream) -> pm::TokenStream {$/;"	f
 make_filename_safe	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^fn make_filename_safe(string: &str) -> String {$/;"	f
 make_hash	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^fn make_hash<K: Hash + ?Sized>(hash_builder: &impl BuildHasher, val: &K) -> u64 {$/;"	f
-manhatten	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^pub fn manhatten(a: Point, b: Point) -> i32 {$/;"	f
 manual_configurable_endianness_test	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn manual_configurable_endianness_test() {$/;"	f	module:tests
 many0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/multi.rs	/^  fn many0() {$/;"	f	module:tests
 many0	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/multi.rs	/^macro_rules! many0($/;"	M
@@ -4389,6 +4394,7 @@ named_attr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.
 ne	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^    fn ne<I>(self, other: I) -> bool$/;"	P	interface:IndexedParallelIterator
 need_more	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub fn need_more<I: AtEof, O, E>(input: I, needed: Needed) -> IResult<I, O, E> {$/;"	f
 need_more_err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub fn need_more_err<I: AtEof, O, E>(input: I, needed: Needed, err: ErrorKind<E>) -> IResult<I, /;"	f
+neighbors	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    fn neighbors(self) -> Vec<Point> {$/;"	P	implementation:Point
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/map.rs	/^    pub(crate) fn new() -> Map {$/;"	P	implementation:Map
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/types.rs	/^    pub fn new($/;"	P	implementation:Generator
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/types.rs	/^    pub fn new(name: &syn::Ident, _out_t: &syn::Type, special_type: Option<SpecialType>) -> Solv/;"	P	implementation:Solver
@@ -4741,6 +4747,7 @@ part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn part2(input
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_globi	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn part2_globi(input: &Vec<u8>) -> usize {$/;"	f
+part2_orig	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn part2_orig(input: &Vec<Point>) -> usize {$/;"	f
 part2_simd	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn part2_simd<'a>(input: &'a str) -> String {$/;"	f
 partial_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^    fn partial_cmp<I>(self, other: I) -> Option<Ordering>$/;"	P	interface:IndexedParallelIterator
 partial_eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/cmp.rs	/^mod partial_eq;$/;"	n
@@ -5117,6 +5124,7 @@ significance_threshold	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec
 simd_add	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/llvm.rs	/^    crate fn simd_add<T>(x: T, y: T) -> T;$/;"	f
 simd_and	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/llvm.rs	/^    crate fn simd_and<T>(x: T, y: T) -> T;$/;"	f
 simd_cast	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/llvm.rs	/^    crate fn simd_cast<T, U>(x: T) -> U;$/;"	f
+simd_dist_l1	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn simd_dist_l1(x1: i32x16, y1: i32x16, x2: i32x16, y2: i32x16) -> i32x16 {$/;"	f
 simd_div	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/llvm.rs	/^    crate fn simd_div<T>(x: T, y: T) -> T;$/;"	f
 simd_eq	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/llvm.rs	/^    crate fn simd_eq<T, U>(x: T, y: T) -> U;$/;"	f
 simd_extract	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/llvm.rs	/^    crate fn simd_extract<T, U>(x: T, idx: u32) -> U;$/;"	f
