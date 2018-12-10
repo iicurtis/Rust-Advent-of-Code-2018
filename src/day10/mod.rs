@@ -70,7 +70,7 @@ impl Grid {
     fn print_grid(&mut self, width: usize, height: usize) {
         let xmin = self.points.iter().min_by_key(|x| x.x_pos).unwrap().x_pos;
         let ymin = self.points.iter().min_by_key(|x| x.y_pos).unwrap().y_pos;
-        let mut buffer: Vec<char> = vec!['~'; width * height];
+        let mut buffer: Vec<char> = vec![' '; width * height];
         for p in &mut self.points {
             let x = (p.x_pos - xmin) as usize;
             let y = (p.y_pos - ymin) as usize;
@@ -143,7 +143,7 @@ fn part1(input: &Vec<Point>) -> usize {
     let mut grid = Grid::new(input.clone());
     const WIDTH: usize = 80;
     const HEIGHT: usize = 10;
-    let mut extent = 1 << 16;
+    let mut extent = 1 << 24;
     loop {
         grid.step();
         let current = grid.extent();
