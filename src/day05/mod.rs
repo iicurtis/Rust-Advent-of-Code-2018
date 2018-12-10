@@ -91,49 +91,7 @@ fn part2(input: &Vec<u8>) -> usize {
         .expect("Couldn't get min")
 }
 
-#[aoc(day5, part2, globi)]
-fn part2_globi(input: &Vec<u8>) -> usize {
-    let mut input = input.clone();
-    let len = input.len();
-    let mut reduced_len = 0;
 
-    for i in 0..len {
-        if reduced_len > 0 && opposites(input[reduced_len - 1], input[i]) {
-            reduced_len -= 1;
-        } else {
-            input[reduced_len] = input[i];
-            reduced_len += 1;
-        }
-    }
-
-    (b'a'..b'z' + 1)
-        .into_par_iter()
-        .map(|lower| {
-            let mut pass_length = 0;
-            let mut unblocked = [0; 16384];
-
-            for i in 0..reduced_len {
-                if input[i] | 32 == lower {
-                    continue;
-                }
-
-                if pass_length > 0 && opposites(unblocked[pass_length - 1], input[i]) {
-                    pass_length -= 1;
-                } else {
-                    unblocked[pass_length] = input[i];
-                    pass_length += 1;
-                }
-            }
-
-            pass_length
-        })
-        .min()
-        .expect("Empty polymer")
-}
-
-fn opposites(u1: u8, u2: u8) -> bool {
-    u1 ^ 32 == u2
-}
 
 #[cfg(test)]
 mod test {
