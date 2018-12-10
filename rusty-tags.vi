@@ -383,6 +383,7 @@ Err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/i
 Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^        type Err = ParseError;$/;"	t	implementation:parsers::Event
 Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    type Err = Box<Error>;$/;"	t	implementation:Point
 Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^        type Err = ParseError;$/;"	t	implementation:parsers::Instruction
+Err	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^        type Err = ParseError;$/;"	t	implementation:parsers::Point
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Error(Context<I, E>),$/;"	e	enum:Err
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  Error,$/;"	e	enum:CompareResult
 Error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^        type Error = ();$/;"	t	implementation:private::Option
@@ -541,8 +542,12 @@ FxHasher	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-
 FxHasher	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/fx.rs	/^impl FxHasher {$/;"	c
 FxHasher	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/fx.rs	/^impl Hasher for FxHasher {$/;"	c
 FxHasher	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/fx.rs	/^pub struct FxHasher {$/;"	s
+Game	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^impl Game {$/;"	c
+Game	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^struct Game {$/;"	s
 Generator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/types.rs	/^impl Generator {$/;"	c
 Generator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/types.rs	/^pub(crate) struct Generator {$/;"	s
+Grid	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^impl Grid {$/;"	c
+Grid	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^pub struct Grid {$/;"	s
 Group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/generic.rs	/^impl Group {$/;"	c
 Group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/generic.rs	/^pub struct Group(GroupWord);$/;"	s
 Group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/sse2.rs	/^impl Group {$/;"	c
@@ -1154,6 +1159,8 @@ MapWithIter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1
 MapWithIter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/map_with.rs	/^struct MapWithIter<'f, I, U, F: 'f> {$/;"	s
 MapWithProducer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/map_with.rs	/^impl<'f, P, U, F, R> Producer for MapWithProducer<'f, P, U, F>$/;"	c
 MapWithProducer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/map_with.rs	/^struct MapWithProducer<'f, P, U, F: 'f> {$/;"	s
+Marble	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^impl Marble {$/;"	c
+Marble	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^struct Marble {$/;"	s
 Mask	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/sealed.rs	/^pub trait Mask {$/;"	i
 MatchIndices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/str.rs	/^impl<'ch, P: Pattern> ParallelIterator for MatchIndices<'ch, P> {$/;"	c
 MatchIndices	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/str.rs	/^pub struct MatchIndices<'ch, P: Pattern> {$/;"	s
@@ -1226,6 +1233,7 @@ NoDrop	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/
 NoDrop	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/quicksort.rs	/^impl<T> Drop for NoDrop<T> {$/;"	c
 NoDrop	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/quicksort.rs	/^struct NoDrop<T> {$/;"	s
 NoElements	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/minmax.rs	/^    NoElements,$/;"	e	enum:MinMaxResult
+Node	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^pub struct Node {$/;"	s
 NonDescending	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/mergesort.rs	/^    NonDescending,$/;"	e	enum:MergesortResult
 NonEmpty	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  NonEmpty,$/;"	e	enum:ErrorKind
 NonSignificant	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    NonSignificant,$/;"	e	enum:ComparisonResult
@@ -1394,6 +1402,7 @@ ParseError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.
 ParseError	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^    impl From<u32> for ParseError {$/;"	c	function:tests::map_res_err
 ParseError	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    pub struct ParseError;$/;"	s	module:parsers
 ParseError	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^    pub struct ParseError;$/;"	s	module:parsers
+ParseError	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    pub struct ParseError;$/;"	s	module:parsers
 ParseTo	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^pub trait ParseTo<R> {$/;"	i
 ParseTo	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  ParseTo,$/;"	e	enum:ErrorKind
 Parser	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^  impl<'a> Parser<'a> {$/;"	c	module:tests
@@ -1413,6 +1422,8 @@ PeekingNext	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertoo
 PeekingTakeWhile	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/peeking_take_while.rs	/^impl<'a, I, F> Iterator for PeekingTakeWhile<'a, I, F>$/;"	c
 PeekingTakeWhile	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/peeking_take_while.rs	/^pub struct PeekingTakeWhile<'a, I: 'a, F>$/;"	s
 Permutation	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Permutation,$/;"	e	enum:ErrorKind
+Player	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^impl Display for Player {$/;"	c
+Player	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^struct Player {$/;"	s
 Plot	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^impl Plot {$/;"	c
 Plot	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^struct Plot {$/;"	s
 PlotConfiguration	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^impl Default for PlotConfiguration {$/;"	c
@@ -1427,6 +1438,9 @@ Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^impl Display f
 Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^impl Point {$/;"	c
 Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^impl std::str::FromStr for Point {$/;"	c
 Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^pub struct Point {$/;"	s
+Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    impl std::str::FromStr for Point {$/;"	c	module:parsers
+Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^impl Display for Point {$/;"	c
+Point	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^pub struct Point {$/;"	s
 Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^impl<T> Position<T> {$/;"	c
 Position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/with_position.rs	/^pub enum Position<T> {$/;"	g
 Positions	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^impl<I, F> DoubleEndedIterator for Positions<I, F>$/;"	c
@@ -2003,6 +2017,7 @@ add	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src
 add_assign	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bits.rs	/^    fn add_assign(&mut self, other: FakeUint) {$/;"	P	implementation:tests::FakeUint
 add_err	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^  fn add_err() {$/;"	f	module:tests
 add_error_pattern	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn add_error_pattern<'a, I: Clone + Hash + Eq, O, E: Clone + Hash + Eq>($/;"	f
+add_marble	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn add_marble(&mut self) -> usize {$/;"	P	implementation:Game
 add_return_error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^macro_rules! add_return_error ($/;"	M
 add_scalar	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/size_hint.rs	/^pub fn add_scalar(sh: SizeHint, x: usize) -> SizeHint {$/;"	f
 add_to_hash	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/fx.rs	/^    fn add_to_hash(&mut self, i: usize) {$/;"	P	implementation:FxHasher
@@ -2507,6 +2522,7 @@ check_zip_eq_range	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/
 check_zip_into_mut_par_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/test.rs	/^pub fn check_zip_into_mut_par_iter() {$/;"	f
 check_zip_into_par_iter	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/test.rs	/^pub fn check_zip_into_par_iter() {$/;"	f
 check_zip_range	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/test.rs	/^pub fn check_zip_range() {$/;"	f
+children	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    children: Vec<Node>,$/;"	m	struct:Node
 choose_pivot	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/quicksort.rs	/^fn choose_pivot<T, F>(v: &mut [T], is_less: &F) -> (usize, bool)$/;"	f
 chunk_size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/chunks.rs	/^    chunk_size: usize,$/;"	m	struct:ChunkProducer
 chunk_size	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/chunks.rs	/^    chunk_size: usize,$/;"	m	struct:ChunkSeq
@@ -2525,6 +2541,7 @@ clear	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1
 clear	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/mod.rs	/^    pub fn clear(&mut self) {$/;"	P	implementation:RawTable
 clear	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/set.rs	/^    pub fn clear(&mut self) {$/;"	f
 clear_no_drop	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/mod.rs	/^    fn clear_no_drop(&mut self) {$/;"	P	implementation:RawTable
+clockwise	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn clockwise(&mut self, mut num: usize) -> usize {$/;"	P	implementation:Game
 clone	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    fn clone(&self) -> Iter<'a, K, V> {$/;"	P	implementation:Iter
 clone	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    fn clone(&self) -> Keys<'a, K, V> {$/;"	P	implementation:Keys
 clone	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    fn clone(&self) -> Values<'a, K, V> {$/;"	P	implementation:Values
@@ -2753,6 +2770,7 @@ count_fixed	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1
 count_fixed_no_type	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/multi.rs	/^  fn count_fixed_no_type() {$/;"	f	module:tests
 count_new_keys	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/unique_impl.rs	/^fn count_new_keys<I, K>(mut used: HashMap<K, ()>, iterable: I) -> usize$/;"	f
 count_zero	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/multi.rs	/^  fn count_zero() {$/;"	f	module:tests
+counter_clockwise	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn counter_clockwise(&mut self, mut num: usize) -> usize {$/;"	P	implementation:Game
 cp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/fs.rs	/^pub fn cp(from: &Path, to: &Path) -> Result<()> {$/;"	f
 cr_lf	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^  fn cr_lf() {$/;"	f	module:tests
 criterion_group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/macros.rs	/^macro_rules! criterion_group {$/;"	M
@@ -2765,6 +2783,7 @@ ctrl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.
 cur	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^    cur: Option<I::Item>,$/;"	m	struct:MultiProductIter
 cur	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^    cur: usize,$/;"	m	struct:TupleBuffer
 curr_iterator	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/multi_product.rs	/^    fn curr_iterator(&self) -> Vec<I::Item> {$/;"	f
+current	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    current: usize,$/;"	m	struct:Game
 current_elt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    current_elt: Option<I::Item>,$/;"	m	struct:GroupInner
 current_group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/mod.rs	/^    current_group: BitMask,$/;"	m	struct:RawIter
 current_index	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/find_first_last/mod.rs	/^    fn current_index(&self) -> usize {$/;"	P	implementation:FindConsumer
@@ -2784,6 +2803,9 @@ day04	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day04;$/;"	n
 day05	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day05;$/;"	n
 day06	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day06;$/;"	n
 day07	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day07;$/;"	n
+day08	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day08;$/;"	n
+day09	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day09;$/;"	n
+day10	/home/atraii/Downloads/tmp/advent2018-rs/src/lib.rs	/^mod day10;$/;"	n
 days	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    days: [usize; 60],$/;"	m	struct:Guard
 dbg	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^macro_rules! dbg ($/;"	M
 dbg_dmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^macro_rules! dbg_dmp ($/;"	M
@@ -3045,6 +3067,7 @@ extend_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1
 extend_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn extend_into(&self, acc: &mut String) {$/;"	P	implementation:str
 extend_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn extend_into(&self, acc: &mut Vec<u8>) {$/;"	P	implementation:u8
 extend_into	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn extend_into(&self, acc: &mut String) {$/;"	P	implementation:CompleteStr
+extent	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn extent(&mut self) -> i32 {$/;"	P	implementation:Grid
 extract_meta	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/utils.rs	/^pub(crate) fn extract_meta($/;"	f
 extract_result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/utils.rs	/^pub(crate) fn extract_result(ty: &syn::Type) -> Option<(SpecialType, syn::Type)> {$/;"	f
 f	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    pub f: Box<RefCell<Routine<T>>>,$/;"	m	struct:NamedRoutine
@@ -3225,6 +3248,8 @@ fmt	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src
 fmt	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Date
 fmt	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Point
 fmt	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Instruction
+fmt	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Player
+fmt	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Point
 fmuladd_v16f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/mul_adde.rs	/^    fn fmuladd_v16f32(x: f32x16, y: f32x16, z: f32x16) -> f32x16;$/;"	f
 fmuladd_v2f32	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/mul_adde.rs	/^    fn fmuladd_v2f32(x: f32x2, y: f32x2, z: f32x2) -> f32x2;$/;"	f
 fmuladd_v2f64	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/math/float/mul_adde.rs	/^    fn fmuladd_v2f64(x: f64x2, y: f64x2, z: f64x2) -> f64x2;$/;"	f
@@ -3366,6 +3391,7 @@ from_slice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_s
 from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^        fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:parsers::Event
 from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:Point
 from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^        fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:parsers::Instruction
+from_str	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^        fn from_str(input: &str) -> Result<Self, Self::Err> {$/;"	P	implementation:parsers::Point
 from_vector	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/from.rs	/^mod from_vector;$/;"	n
 front	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    front: Option<J>,$/;"	m	struct:Flatten
 fs	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod fs;$/;"	n
@@ -3433,6 +3459,7 @@ get_name	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner
 get_next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    pub fn get_next(&mut self) -> bool {$/;"	f
 get_out_t	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/types.rs	/^    pub fn get_out_t(&self) -> pm2::TokenStream {$/;"	P	implementation:Generator
 get_sleepmin	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn get_sleepmin(input: &Vec<Event>) -> SleepMin {$/;"	f
+get_time	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn get_time(&mut self) -> usize {$/;"	P	implementation:Grid
 global_writes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/collect/consumer.rs	/^    global_writes: &'c AtomicUsize,$/;"	m	struct:CollectFolder
 green	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn green(&self, s: String) -> String {$/;"	P	implementation:CliReport
 group	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/csv_report.rs	/^    group: &'a str,$/;"	m	struct:CsvRow
@@ -3527,6 +3554,7 @@ i_producer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.
 id	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    pub id: String,$/;"	m	struct:NamedRoutine
 id	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^    id: bool,$/;"	m	struct:Tee
 id	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    id: u16,$/;"	m	struct:LandClaim
+id	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    id: usize,$/;"	m	struct:Marble
 identity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.0/src/lib.rs	/^pub fn identity<T>(t: T) -> T {$/;"	f
 identity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/fold.rs	/^    identity: &'c ID,$/;"	m	struct:FoldConsumer
 identity	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/fold.rs	/^    identity: ID,$/;"	m	struct:Fold
@@ -3715,6 +3743,7 @@ insert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.
 insert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    pub fn insert(self, value: V) -> &'a mut V {$/;"	P	implementation:VacantEntry
 insert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/mod.rs	/^    pub fn insert(&mut self, hash: u64, value: T, hasher: impl Fn(&T) -> u64) -> Bucket<T> {$/;"	P	implementation:RawTable
 insert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/set.rs	/^    pub fn insert(&mut self, value: T) -> bool {$/;"	f
+insert_after	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn insert_after(&mut self, to_insert: usize, after: usize) {$/;"	P	implementation:Game
 insert_head	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/mergesort.rs	/^fn insert_head<T, F>(v: &mut [T], is_less: &F)$/;"	f
 insertion_sort	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/quicksort.rs	/^fn insertion_sort<T, F>(v: &mut [T], is_less: &F)$/;"	f
 inspect	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^    fn inspect<OP>(self, inspect_op: OP) -> Inspect<Self, OP>$/;"	P	interface:ParallelIterator
@@ -4276,6 +4305,7 @@ map_sum	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3
 map_val	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    fn map_val<'new>(v: HashMap<u8, &'static str>) -> HashMap<u8, &'new str> {$/;"	f	function:assert_covariance
 map_with	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^    fn map_with<F, T, R>(self, init: T, map_op: F) -> MapWith<Self, T, F>$/;"	P	interface:ParallelIterator
 map_with	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^mod map_with;$/;"	n
+marbles	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    marbles: Vec<Marble>,$/;"	m	struct:Game
 marker	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^            marker: PhantomData<HashMap<K, V, S>>,$/;"	m	struct:deserialize::MapVisitor
 marker	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/set.rs	/^            marker: PhantomData<HashSet<T, S>>,$/;"	m	struct:deserialize::SeqVisitor
 marker	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/empty.rs	/^    marker: PhantomData<T>,$/;"	m	struct:Empty
@@ -4346,6 +4376,7 @@ merge_join_by	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itert
 merge_join_by	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/merge_join.rs	/^pub fn merge_join_by<I, J, F>(left: I, right: J, cmp_fn: F)$/;"	f
 mergesort	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/mergesort.rs	/^unsafe fn mergesort<T, F>(v: &mut [T], buf: *mut T, is_less: &F) -> MergesortResult$/;"	f
 mergesort	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/mod.rs	/^mod mergesort;$/;"	n
+metadata	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    metadata: Vec<usize>,$/;"	m	struct:Node
 method	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^macro_rules! method ($/;"	M
 methods	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^pub mod methods;$/;"	n
 midpoint	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/mod.rs	/^    fn midpoint(&self, end: usize) -> usize {$/;"	f
@@ -4505,6 +4536,9 @@ new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/str.rs	/^    fn new(chars: &'ch str, separator: P) -> Self {$/;"	P	implementation:Split
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/str.rs	/^    fn new(chars: &'ch str, terminator: &'sep P) -> Self {$/;"	P	implementation:SplitTerminatorProducer
 new	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/str.rs	/^    fn new(chars: &'ch str, terminator: P) -> Self {$/;"	P	implementation:SplitTerminator
+new	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn new() -> Game {$/;"	P	implementation:Game
+new	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn new(id: usize) -> Marble {$/;"	P	implementation:Marble
+new	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn new(points: Vec<Point>) -> Grid {$/;"	P	implementation:Grid
 new_builder	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn new_builder(&self) -> Self::Extender;$/;"	P	interface:ExtendInto
 new_builder	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn new_builder(&self) -> String {$/;"	P	implementation:char
 new_builder	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn new_builder(&self) -> String {$/;"	P	implementation:str
@@ -4574,6 +4608,7 @@ next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/sr
 next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/repeat.rs	/^    fn next(&mut self) -> Option<T> {$/;"	P	implementation:Iter
 next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/update.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	f
 next	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/vec.rs	/^    fn next(&mut self) -> Option<T> {$/;"	P	implementation:SliceDrain
+next	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    next: usize,$/;"	m	struct:Marble
 next_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/either-1.5.0/src/lib.rs	/^    fn next_back(&mut self) -> Option<Self::Item> {$/;"	f
 next_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    fn next_back(&mut self) -> Option<Self::Item> {$/;"	f
 next_back	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^    fn next_back(&mut self) -> Option<I::Item> {$/;"	f
@@ -4761,6 +4796,9 @@ parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn parse
 parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn parse_input(input: &str) -> Vec<u8> {$/;"	f
 parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn parse_input(input: &str) -> Vec<Point> {$/;"	f
 parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^fn parse_input(input: &str) -> Vec<Instruction> {$/;"	f
+parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn parse_input(input: &str) -> Box<Node> {$/;"	f
+parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn parse_input(input: &str) -> Box<(usize, usize)> {$/;"	f
+parse_input	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^fn parse_input(input: &str) -> Vec<Point> {$/;"	f
 parse_lib_infos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/out.rs	/^fn parse_lib_infos(infos: pm::TokenStream) -> Result<LibInfos, ()> {$/;"	f
 parse_main_infos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/out.rs	/^fn parse_main_infos(infos: pm::TokenStream) -> Result<MainInfos, ()> {$/;"	f
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^  fn parse_to() {$/;"	f	module:tests
@@ -4773,12 +4811,16 @@ parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^  fn parse_to(&self) -> Option<R> {$/;"	P	implementation:Input
 parsers	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^mod parsers {$/;"	n
 parsers	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^mod parsers {$/;"	n
+parsers	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^mod parsers {$/;"	n
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^fn part1(input: &[isize]) -> isize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^fn part1(input: &Vec<LandClaim>) -> usize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn part1(input: &Vec<Event>) -> usize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn part1(input: &Vec<u8>) -> usize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn part1(input: &Vec<Point>) -> usize {$/;"	f
 part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^fn part1(input: &Vec<Instruction>) -> String {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn part1(input: &Node) -> usize {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn part1(input: &(usize, usize)) -> usize {$/;"	f
+part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^fn part1(input: &Vec<Point>) -> usize {$/;"	f
 part1_burnt	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^fn part1_burnt(input: &str) -> u32 {$/;"	f
 part1_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
 part1_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
@@ -4788,6 +4830,8 @@ part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^fn part2(input
 part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^fn part2(input: &Vec<u8>) -> usize {$/;"	f
 part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^fn part2(input: &Vec<Point>) -> usize {$/;"	f
 part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^fn part2(input: &Vec<Instruction>) -> i32 {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn part2(input: &Node) -> usize {$/;"	f
+part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn part2(input: &(usize, usize)) -> usize {$/;"	f
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day01/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_example	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_simd	/home/atraii/Downloads/tmp/advent2018-rs/src/day02/mod.rs	/^pub fn part2_simd<'a>(input: &'a str) -> String {$/;"	f
@@ -4835,6 +4879,7 @@ permutation_iterator_sep	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9
 permutation_sep	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/whitespace.rs	/^macro_rules! permutation_sep ($/;"	M
 permutation_unwrap	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/branch.rs	/^macro_rules! permutation_unwrap ($/;"	M
 phase	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/adaptors/mod.rs	/^    phase: bool, \/\/ false ==> it0, true ==> it1$/;"	m	struct:InterleaveShortest
+play_game	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^fn play_game(players: &mut [Player], marbles: usize) {$/;"	f
 plot	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^mod plot;$/;"	n
 plot_config	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/benchmark.rs	/^    plot_config: PlotConfiguration,$/;"	m	struct:PartialBenchmarkConfig
 plot_config	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub plot_config: PlotConfiguration,$/;"	m	struct:ReportContext
@@ -4845,6 +4890,8 @@ plumbing	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.
 point	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    point: String,$/;"	m	struct:ConfidenceInterval
 point_estimate	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    point_estimate: f64,$/;"	m	struct:Estimate
 pointer_sized_int	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen.rs	/^crate mod pointer_sized_int;$/;"	n
+points	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    points: usize,$/;"	m	struct:Player
+points	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    points: Vec<Point>,$/;"	m	struct:Grid
 pool	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/combinations.rs	/^    pool: LazyBuffer<I>,$/;"	m	struct:Combinations
 pos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/pad_tail.rs	/^    pos: usize,$/;"	m	struct:PadUsing
 position	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  fn position<P>(&self, predicate: P) -> Option<usize>$/;"	P	implementation:str
@@ -4881,11 +4928,13 @@ prelude	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 prelude	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/lib.rs	/^pub mod prelude;$/;"	n
 prepare_errors	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn prepare_errors<O, E: Clone>(input: &[u8], res: IResult<&[u8], O, E>) -> Option<Vec<(Error/;"	f
 prev	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/delaunator-0.2.0/src/lib.rs	/^    prev: Vec<usize>,$/;"	m	struct:Hull
+prev	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    prev: usize,$/;"	m	struct:Marble
 prev_halfedge	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/delaunator-0.2.0/src/lib.rs	/^pub fn prev_halfedge(i: usize) -> usize {$/;"	f
 previous	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/flat_map.rs	/^    previous: Option<R>,$/;"	m	struct:FlatMapFolder
 print	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^pub fn print<T: Debug>(input: T) -> IResult<T, ()> {$/;"	f
 print_codes	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn print_codes(colors: &HashMap<u32, u8>, names: &HashMap<u32, &str>) -> String {$/;"	f
 print_error	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn print_error<O, E: Clone>(input: &[u8], res: IResult<&[u8], O, E>) {$/;"	f
+print_grid	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn print_grid(&mut self, width: usize, height: usize) {$/;"	P	implementation:Grid
 print_offsets	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^pub fn print_offsets<E>(input: &[u8], from: usize, offsets: &[(ErrorKind<E>, usize, usize)]) -> /;"	f
 print_overwritable	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn print_overwritable(&self, s: String) {$/;"	P	implementation:CliReport
 private	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^mod private {$/;"	n
@@ -5020,6 +5069,7 @@ relative_estimates	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/
 remove	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    pub fn remove(self) -> V {$/;"	P	implementation:OccupiedEntry
 remove	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    pub fn remove<Q: ?Sized>(&mut self, k: &Q) -> Option<V>$/;"	f
 remove	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/set.rs	/^    pub fn remove<Q: ?Sized>(&mut self, value: &Q) -> bool$/;"	f
+remove	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn remove(&mut self, id: usize) {$/;"	P	implementation:Game
 remove_entry	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    pub fn remove_entry(self) -> (K, V) {$/;"	P	implementation:OccupiedEntry
 remove_entry	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/map.rs	/^    pub fn remove_entry<Q: ?Sized>(&mut self, k: &Q) -> Option<(K, V)>$/;"	f
 remove_lowest_bit	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/bitmask.rs	/^    pub fn remove_lowest_bit(self) -> BitMask {$/;"	P	implementation:BitMask
@@ -5483,6 +5533,8 @@ step	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.
 step	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    fn step(&self, client: usize) -> Option<I::Item> {$/;"	f
 step	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    fn step(&self, client: usize) -> Option<I::Item>$/;"	f
 step	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn step(self, n: usize) -> Step<Self>$/;"	P	interface:Itertools
+step	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn step(&mut self) {$/;"	P	implementation:Grid
+step_backward	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn step_backward(&mut self) {$/;"	P	implementation:Grid
 step_buffering	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    fn step_buffering(&mut self, client: usize) -> Option<I::Item> {$/;"	f
 step_current	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/groupbylazy.rs	/^    fn step_current(&mut self) -> Option<I::Item> {$/;"	f
 store_aligned	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/generic.rs	/^    pub unsafe fn store_aligned(&self, ptr: *mut u8) {$/;"	P	implementation:Group
@@ -5670,6 +5722,9 @@ test	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^mod test {$/;"	
 test	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^mod test {$/;"	n
 test	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^mod test {$/;"	n
 test	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^mod test {$/;"	n
+test	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^mod test {$/;"	n
+test	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^mod test {$/;"	n
+test	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^mod test {$/;"	n
 test_apply_m	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^  fn test_apply_m() {$/;"	f	module:tests
 test_benchmark_id_make_directory_name_unique	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn test_benchmark_id_make_directory_name_unique() {$/;"	f	module:test
 test_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/testing/utils.rs	/^pub fn test_cmp<T>($/;"	f
@@ -5700,9 +5755,17 @@ test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    fn te
 test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^    fn test_part1() {$/;"	f	module:test
 test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    fn test_part1() {$/;"	f	module:test
 test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day07/mod.rs	/^    fn test_part1() {$/;"	f	module:test
+test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    fn test_part1() {$/;"	f	module:test
+test_part1	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    fn test_part1() {$/;"	f	module:test
+test_part1_0	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn test_part1_0() {$/;"	f	module:test
+test_part1_1	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn test_part1_1() {$/;"	f	module:test
+test_part1_2	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn test_part1_2() {$/;"	f	module:test
+test_part1_3	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn test_part1_3() {$/;"	f	module:test
+test_part1_4	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn test_part1_4() {$/;"	f	module:test
 test_part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    fn test_part2() {$/;"	f	module:test
 test_part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    fn test_part2() {$/;"	f	module:test
 test_part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day05/mod.rs	/^    fn test_part2() {$/;"	f	module:test
+test_part2	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^    fn test_part2() {$/;"	f	module:test
 test_reduction_float_min_max	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/reductions/min_max.rs	/^macro_rules! test_reduction_float_min_max {$/;"	M
 test_select	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/select.rs	/^macro_rules! test_select {$/;"	M
 test_shuffle1_dyn	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/shuffle1_dyn.rs	/^macro_rules! test_shuffle1_dyn {$/;"	M
@@ -5745,6 +5808,7 @@ thumbnail_width	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/cri
 thumbnail_width	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    thumbnail_width: usize,$/;"	m	struct:SummaryContext
 till_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^    fn till_s(c: char) -> bool {$/;"	f	function:test::take_till_s_succeed
 time	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/format.rs	/^pub fn time(ns: f64) -> String {$/;"	f
+time	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    time: usize,$/;"	m	struct:Grid
 time_interval	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^        fn time_interval(est: &Estimate) -> ConfidenceInterval {$/;"	f	method:Html::measurement_complete
 title	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    title: String,$/;"	m	struct:Context
 to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/error.rs	/^    pub to: PathBuf,$/;"	m	struct:CopyError
@@ -5763,6 +5827,7 @@ to_hex_from	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1
 to_input	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/utils.rs	/^pub(crate) fn to_input(d: Day) -> syn::Ident {$/;"	f
 to_nanos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    fn to_nanos(&self) -> u64 {$/;"	P	implementation:Duration
 to_nanos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    fn to_nanos(&self) -> u64;$/;"	P	interface:DurationExt
+to_node	/home/atraii/Downloads/tmp/advent2018-rs/src/day08/mod.rs	/^fn to_node(input: &mut impl Iterator<Item = usize>) -> Node {$/;"	f
 to_reducer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/cloned.rs	/^    fn to_reducer(&self) -> Self::Reducer {$/;"	f
 to_reducer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/collect/consumer.rs	/^    fn to_reducer(&self) -> Self::Reducer {$/;"	P	implementation:CollectConsumer
 to_reducer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/filter.rs	/^    fn to_reducer(&self) -> Self::Reducer {$/;"	f
@@ -5833,6 +5898,8 @@ tuple_windows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itert
 tuple_windows	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^pub fn tuple_windows<I, T>(mut iter: I) -> TupleWindows<I, T>$/;"	f
 tuples	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^    fn tuples<T>(self) -> Tuples<Self, T>$/;"	P	interface:Itertools
 tuples	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tuple_impl.rs	/^pub fn tuples<I, T>(iter: I) -> Tuples<I, T>$/;"	f
+turn	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    fn turn(&mut self, player: &mut Player) {$/;"	P	implementation:Game
+turn	/home/atraii/Downloads/tmp/advent2018-rs/src/day09/mod.rs	/^    turn: usize,$/;"	m	struct:Game
 types	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/lib.rs	/^mod types;$/;"	n
 types	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/lib.rs	/^pub mod types;$/;"	n
 u128	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/nom.rs	/^macro_rules! u128 ( ($i:expr, $e:expr) => ( {if $crate::Endianness::Big == $e { $crate::be_u128(/;"	M
@@ -6100,9 +6167,13 @@ x86_m8x32_avx_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/
 x86_m8x32_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^macro_rules! x86_m8x32_impl {$/;"	M
 x86_m8x8_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86.rs	/^macro_rules! x86_m8x8_impl {$/;"	M
 x86_m8x8_mmx_impl	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/codegen/reductions/mask/x86/mmx.rs	/^macro_rules! x86_m8x8_mmx_impl {$/;"	M
+x_pos	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    x_pos: i32,$/;"	m	struct:Point
+x_vel	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    x_vel: i32,$/;"	m	struct:Point
 y	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/delaunator-0.2.0/src/lib.rs	/^    pub y: f64,$/;"	m	struct:Point
 y	/home/atraii/Downloads/tmp/advent2018-rs/src/day03/mod.rs	/^    y: u16,$/;"	m	struct:LandClaim
 y	/home/atraii/Downloads/tmp/advent2018-rs/src/day06/mod.rs	/^    y: i32,$/;"	m	struct:Point
+y_pos	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    y_pos: i32,$/;"	m	struct:Point
+y_vel	/home/atraii/Downloads/tmp/advent2018-rs/src/day10/mod.rs	/^    y_vel: i32,$/;"	m	struct:Point
 year	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.0/src/out.rs	/^    year: u32,$/;"	m	struct:LibInfos
 year	/home/atraii/Downloads/tmp/advent2018-rs/src/day04/mod.rs	/^    year: usize,$/;"	m	struct:Date
 yellow	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn yellow(&self, s: String) -> String {$/;"	P	implementation:CliReport
