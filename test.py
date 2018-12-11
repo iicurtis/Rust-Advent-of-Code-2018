@@ -1,25 +1,18 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy
+serial = int(6042)
 
-x = []
-v = []
+def power(x, y):
+    rack = (x + 1) + 10
+    power = rack * (y + 1)
+    power += serial
+    power *= rack
+    return (power // 100 % 10) - 5
 
-with open('./input/2018/day10.txt') as f:
-    lines = [l.rstrip('\n') for l in f]
+grid = numpy.fromfunction(power, (300, 300))
 
-for line in lines:
-    x.append((int(line[10:16]), int(line[18:24])))
-    v.append((int(line[36:38]), int(line[40:42])))
+for width in range(3, 300):
+    windows = sum(grid[x:x-width+1 or None, y:y-width+1 or None] for x in range(width) for y in range(width))
+    maximum = int(windows.max())
+    location = numpy.where(windows == maximum)
+    print(width, maximum, location[0][0] + 1, location[1][0] + 1)
 
-import numpy as np
-x = np.array(x)
-v = np.array(v)
-
-import matplotlib.pyplot as plt
-
-def extent(t):
-    locs = x + t*v
-    print(np.max(locs, axis=0) - np.min(locs, axis=0))
-    return sum(np.max(locs, axis=0) - np.min(locs, axis=0))
-
-extent(1)
