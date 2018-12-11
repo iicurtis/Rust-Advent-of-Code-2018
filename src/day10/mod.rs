@@ -30,59 +30,55 @@ impl Display for Point {
     }
 }
 
-#[derive(Clone, Debug)]
-pub struct Grid {
-    points: Vec<Point>,
-    time: usize,
+fn to_time(input: &mut Vec<Point>, time: i32) {
+    for p in input.iter_mut() {
+        p.x_pos += p.x_vel * time;
+        p.y_pos += p.y_vel * time;
+    }
 }
 
-impl Grid {
-    fn new(points: Vec<Point>) -> Grid {
-        Grid { points, time: 0 }
+fn find_final_time(input: &Vec<Point>) -> usize {
+    // Change center of mass to be fixed at origin
+    // Galilean transform: lazy mode
+    let mut input = input.clone();
+    let mut mean_x: f32 = input.iter().map(|p| p.x_pos as f32).sum();
+    let mut mean_y: f32 = input.iter().map(|p| p.y_pos as f32).sum();
+    let mut mean_xv: f32 = input.iter().map(|p| p.x_vel as f32).sum();
+    let mut mean_yv: f32 = input.iter().map(|p| p.y_vel as f32).sum();
+    mean_x /= input.len() as f32;
+    mean_y /= input.len() as f32;
+    mean_xv /= input.len() as f32;
+    mean_yv /= input.len() as f32;
+    let mut numerator = 0.0;
+    let mut denominator = 0.0;
+    // Find time where distance to origin is minimized
+    for p in input.iter_mut() {
+        let xp = p.x_pos as f32 - mean_x;
+        let yp = p.y_pos as f32 - mean_y;
+        let xv = p.x_vel as f32 - mean_xv;
+        let yv = p.y_vel as f32 - mean_yv;
+        numerator += xp * xv + yp * yv;
+        denominator += xv * xv + yv * yv;
     }
+    return (-(numerator / denominator)).round() as usize;
+}
 
-    fn step(&mut self) {
-        for p in &mut self.points {
-            p.x_pos += p.x_vel;
-            p.y_pos += p.y_vel;
-        }
-        self.time += 1;
+fn print_points(points: &Vec<Point>) -> String {
+    let minx = points.iter().map(|p| p.x_pos).min().unwrap();
+    let maxx = points.iter().map(|p| p.x_pos).max().unwrap();
+    let miny = points.iter().map(|p| p.y_pos).min().unwrap();
+    let maxy = points.iter().map(|p| p.y_pos).max().unwrap();
+    let mut sky = vec![vec![' '; (maxx - minx + 1) as usize]; (maxy - miny + 1) as usize];
+    for point in points {
+        sky[(point.y_pos - miny) as usize][(point.x_pos - minx) as usize] = '▓';
     }
-
-    fn step_backward(&mut self) {
-        for p in &mut self.points {
-            p.x_pos -= p.x_vel;
-            p.y_pos -= p.y_vel;
-        }
-        self.time -= 1;
-    }
-
-    fn get_time(&mut self) -> usize {
-        return self.time;
-    }
-
-    fn extent(&mut self) -> i32 {
-        let xmax = self.points.iter().max_by_key(|x| x.x_pos).unwrap();
-        let xmin = self.points.iter().min_by_key(|x| x.x_pos).unwrap();
-        return (xmax.x_pos - xmin.x_pos) + (xmax.y_pos - xmin.y_pos);
-    }
-
-    fn print_grid(&mut self, width: usize, height: usize) {
-        let xmin = self.points.iter().min_by_key(|x| x.x_pos).unwrap().x_pos;
-        let ymin = self.points.iter().min_by_key(|x| x.y_pos).unwrap().y_pos;
-        let mut buffer: Vec<char> = vec![' '; width * height];
-        for p in &mut self.points {
-            let x = (p.x_pos - xmin) as usize;
-            let y = (p.y_pos - ymin) as usize;
-            buffer[x + width * y] = '#';
-        }
-        for y in 0..height {
-            for x in 0..width {
-                print! {"{}", buffer[y*width + x]}
-            }
-            println!("");
-        }
-    }
+    format!(
+        "\n\n{}\n",
+        sky.into_iter()
+            .map(|line| line.into_iter().collect())
+            .collect::<Vec<String>>()
+            .join("\n")
+    )
 }
 
 mod parsers {
@@ -140,22 +136,19 @@ fn parse_input(input: &str) -> Vec<Point> {
 
 #[aoc(day10, part1)]
 fn part1(input: &Vec<Point>) -> usize {
-    let mut grid = Grid::new(input.clone());
-    const WIDTH: usize = 80;
-    const HEIGHT: usize = 10;
-    let mut extent = 1 << 24;
-    loop {
-        grid.step();
-        let current = grid.extent();
-        if current > extent {
-            break;
-        }
-        extent = current;
-    }
-    grid.step_backward();
-    grid.print_grid(WIDTH, HEIGHT);
+    let mut input = input.clone();
+    let time = find_final_time(&input);
+    to_time(&mut input, time as i32);
+    let ans = print_points(&input);
+    println!("{}", ans);
+    return time;
+}
 
-    return grid.get_time();
+#[aoc(day10, part2)]
+fn part2(input: &Vec<Point>) -> usize {
+    let input = input.clone();
+    let time = find_final_time(&input);
+    return time;
 }
 
 #[cfg(test)]
