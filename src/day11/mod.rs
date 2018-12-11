@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+use rayon::prelude::*;
 use std::fmt::{self, Display};
 
 #[derive(Clone, Copy, PartialEq, Eq, Hash, PartialOrd, Ord, Debug)]
@@ -21,11 +22,12 @@ pub struct Point {
     x: usize,
     y: usize,
     s: usize,
+    p: i32,
 }
 
 impl Display for Point {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "X: {} Y: {} size: {}", self.x, self.y, self.s)
+        write!(f, "{},{},{}", self.x, self.y, self.s)
     }
 }
 
@@ -49,10 +51,14 @@ fn part1(input: &str) -> Point {
         }
     }
 
-    let mut max: i32 = 0;
-    let mut best = Point { x: 0, y: 0, s: 3 };
-    for x in 0..WIDTH - 2 {
-        for y in 0..HEIGHT - 2 {
+    let mut best = Point {
+        x: 0,
+        y: 0,
+        s: 3,
+        p: 0,
+    };
+    for x in 1..WIDTH - 2 {
+        for y in 1..HEIGHT - 2 {
             let mut power: i32 = 0;
             for xi in x..x + 3 {
                 for yi in y..y + 3 {
@@ -60,10 +66,10 @@ fn part1(input: &str) -> Point {
                 }
             }
 
-            if power > max {
+            if power > best.p {
                 best.x = x;
                 best.y = y;
-                max = power;
+                best.p = power;
             }
         }
     }
@@ -74,37 +80,50 @@ fn part1(input: &str) -> Point {
 #[aoc(day11, part2)]
 fn part2(input: &str) -> Point {
     let serial: i32 = input.trim().parse().unwrap();
-    const WIDTH: usize = 300;
-    const HEIGHT: usize = 300;
-    let mut rack: Vec<i32> = vec![0; (WIDTH + 1) * (HEIGHT + 1)];
+    const WIDTH: usize = 301;
+    const HEIGHT: usize = 301;
+    let mut rack: Vec<i32> = vec![0; WIDTH * HEIGHT];
 
-    for x in 1..=WIDTH {
-        for y in 1..=HEIGHT {
+    for x in 1..WIDTH {
+        for y in 1..HEIGHT {
             rack[x + y * WIDTH] = power_level(x as i32, y as i32, serial);
         }
     }
 
-    let mut max: i32 = 0;
-    let mut best = Point { x: 0, y: 0, s: 1 };
-    for s in 1..300 {
-        for x in 0..WIDTH - s + 1 {
-            for y in 0..HEIGHT - s + 1 {
-                let mut sum: i32 = 0;
-                for xi in x..x + s {
-                    for yi in y..y + s {
-                        sum += rack[xi + yi * WIDTH];
-                    }
-                }
-
-                if sum > max {
-                    best.x = x;
-                    best.y = y;
-                    best.s = s;
-                    max = sum;
-                }
-            }
+    let mut area_sums: Vec<i32> = vec![0; WIDTH * HEIGHT];
+    for x in 1..WIDTH {
+        for y in 1..HEIGHT {
+            let mut sum = area_sums[x + (y - 1) * WIDTH] + area_sums[x - 1 + y * WIDTH]
+                - area_sums[x - 1 + (y - 1) * WIDTH];
+            sum += rack[x + y * WIDTH];
+            area_sums[x + y * WIDTH] = sum;
         }
     }
+
+    let best = (1..WIDTH)
+        .into_par_iter()
+        .map(|x| {
+            let mut best = Point {x: 0, y: 0, s: 0, p: 0};
+            for y in 1..HEIGHT {
+                for s in 1..std::cmp::min(WIDTH - x + 1, HEIGHT - y + 1) {
+                    let (x1, y1) = (x + s - 1, y + s - 1);
+                    let power = area_sums[x1 + y1 * WIDTH]
+                        - area_sums[x - 1 + y1 * WIDTH]
+                        - area_sums[x1 + (y - 1) * WIDTH]
+                        + area_sums[x - 1 + (y - 1) * WIDTH];
+
+                    if power > best.p {
+                        best.x = x;
+                        best.y = y;
+                        best.s = s;
+                        best.p = power;
+                    }
+                }
+            }
+            best
+        })
+        .max_by_key(|b| b.p)
+        .unwrap();
 
     return best;
 }

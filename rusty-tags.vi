@@ -4726,6 +4726,7 @@ output_directory	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/cr
 output_directory	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/lib.rs	/^    pub fn output_directory(mut self, path: &std::path::Path) -> Criterion {$/;"	P	implementation:Criterion
 output_directory	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub output_directory: String,$/;"	m	struct:ReportContext
 owner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/tee.rs	/^    owner: bool,$/;"	m	struct:TeeBuffer
+p	/home/atraii/Downloads/projects/advent2018-rs/src/day11/mod.rs	/^    p: i32,$/;"	m	struct:Point
 p_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^    p_value: String,$/;"	m	struct:Comparison
 p_value	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    pub p_value: f64,$/;"	m	struct:ComparisonData
 pad_tail	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/itertools-0.7.11/src/lib.rs	/^mod pad_tail;$/;"	n
