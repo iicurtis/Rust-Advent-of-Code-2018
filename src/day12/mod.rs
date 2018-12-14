@@ -24,17 +24,17 @@ fn parse_input(input: &str) -> Box<(Vec<bool>, [bool; 32])> {
         .map(|c| (c == '#'))
         .collect();
 
-    let mut trans = [false; 32];
+    let mut rules = [false; 32];
     for l in lines.skip(1) {
         if l.as_bytes()[9] == b'#' {
             let idx = l
                 .bytes()
                 .take(5)
                 .fold(0, |n, c| (n << 1) | ((c == b'#') as usize));
-            trans[idx] = true;
+            rules[idx] = true;
         }
     }
-    Box::new((plants, trans))
+    Box::new((plants, rules))
 }
 
 #[aoc(day12, part1)]
@@ -89,10 +89,10 @@ fn part2((initial, rules): &(Vec<bool>, [bool; 32])) -> i64 {
         i += 1;
         if let Some((prev_idx, prev_start)) = seen.get(&state) {
             let loop_len = i - prev_idx;
-            let loop_times = (generations - i) / loop_len;
+            let loop_occurs = (generations - i) / loop_len;
             let start_diff: i64 = start - prev_start;
-            i += loop_len * loop_times;
-            start += start_diff * loop_times as i64;
+            i += loop_len * loop_occurs;
+            start += start_diff * loop_occurs as i64;
         }
         seen.insert(state.clone(), (i, start));
     }
