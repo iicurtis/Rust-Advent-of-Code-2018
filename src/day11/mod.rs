@@ -103,7 +103,12 @@ fn part2(input: &str) -> Point {
     let best = (1..WIDTH)
         .into_par_iter()
         .map(|x| {
-            let mut best = Point {x: 0, y: 0, s: 0, p: 0};
+            let mut best = Point {
+                x: 0,
+                y: 0,
+                s: 0,
+                p: 0,
+            };
             for y in 1..HEIGHT {
                 for s in 1..std::cmp::min(WIDTH - x + 1, HEIGHT - y + 1) {
                     let (x1, y1) = (x + s - 1, y + s - 1);
@@ -135,12 +140,28 @@ mod test {
     #[test]
     fn test_part1_0() {
         let input = r#"18"#;
-        assert_eq!(part1(&input), Point { x: 33, y: 45 });
+        assert_eq!(
+            part1(&input),
+            Point {
+                x: 33,
+                y: 45,
+                p: 29,
+                s: 3
+            }
+        );
     }
     #[test]
     fn test_part1_1() {
         let input = r#"42"#;
-        assert_eq!(part1(&input), Point { x: 21, y: 61 });
+        assert_eq!(
+            part1(&input),
+            Point {
+                x: 21,
+                y: 61,
+                p: 30,
+                s: 3
+            }
+        );
     }
 
     #[test]
