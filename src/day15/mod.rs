@@ -2,6 +2,7 @@
 // Copyright (C) 2018  Isaac Curtis
 
 use hashbrown::HashSet;
+use rayon::prelude::*;
 use std::collections::VecDeque;
 use std::fmt::{self, Display};
 
@@ -27,6 +28,12 @@ struct World {
     ysize: usize,
     goblins: usize,
     elves: usize,
+}
+
+#[derive(PartialEq)]
+enum RoundResult {
+    Complete,
+    Incomplete,
 }
 
 impl Display for World {
@@ -59,6 +66,14 @@ impl World {
             }
         }
         return health;
+    }
+
+    fn convert_elf_ap(&mut self, ap: usize) {
+        for p in self.world.iter_mut() {
+            if p.class == EntityClass::Elf {
+                p.attack = ap as i32;
+            }
+        }
     }
 
     fn target_in_range(&mut self, pos: &usize) -> Option<usize> {
@@ -107,7 +122,7 @@ impl World {
         }
     }
 
-    fn step(&mut self) -> Option<usize> {
+    fn step(&mut self) -> RoundResult {
         let mut processed = HashSet::new();
         for u in 0..self.world.len() {
             if processed.contains(&u) {
@@ -131,11 +146,11 @@ impl World {
                         self.attack(&valid_pos, &target);
                     }
                 } else if self.elves == 0 || self.goblins == 0 {
-                    return Some(0);
+                    return RoundResult::Incomplete;
                 }
             }
         }
-        None
+        RoundResult::Complete
     }
 
     fn move_toward_enemy(&self, unit: usize) -> Option<usize> {
@@ -297,16 +312,45 @@ fn part1(input: &World) -> usize {
     let mut world = input.clone();
     let mut rounds = 0;
     'game: loop {
-        if let Some(_) = world.step() {
+        if world.step() == RoundResult::Incomplete {
             break 'game;
         }
         rounds += 1;
-        if rounds > 1_000 {
-            break 'game;
-        }
     }
     let hp_remaining = world.get_units_hp();
     return rounds * hp_remaining as usize;
+}
+
+#[aoc(day15, part2)]
+fn part2(input: &World) -> usize {
+    let initial_elves_count = input.elves;
+
+    let starting_ap = 4_usize;
+    let ending_ap = 200;
+
+    (starting_ap..ending_ap + 1)
+        .into_par_iter()
+        .filter_map(|ap| {
+            let mut world = input.clone();
+            world.convert_elf_ap(ap);
+
+            let end_turn = (0..)
+                .skip_while(|_| {
+                    let is_complete = world.step() == RoundResult::Complete;
+                    let had_elf_casualties = world.elves < initial_elves_count;
+                    is_complete && !had_elf_casualties
+                })
+                .next()
+                .unwrap();
+
+            if world.elves == initial_elves_count {
+                Some(end_turn * world.get_units_hp())
+            } else {
+                None
+            }
+        })
+        .find_first(|_| true)
+        .unwrap() as usize
 }
 
 #[cfg(test)]

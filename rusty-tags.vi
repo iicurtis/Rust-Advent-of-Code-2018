@@ -182,6 +182,7 @@ ComparisonData	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/crit
 ComparisonResult	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^enum ComparisonResult {$/;"	g
 ComparisonResult	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^enum ComparisonResult {$/;"	g
 Complete	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  Complete,$/;"	e	enum:ErrorKind
+Complete	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^    Complete,$/;"	e	enum:RoundResult
 CompleteByteSlice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^impl<'a> InputTakeAtPosition for CompleteByteSlice<'a> {$/;"	c
 CompleteByteSlice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^impl<'a, 'b> Compare<&'b [u8]> for CompleteByteSlice<'a> {$/;"	c
 CompleteByteSlice	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/types.rs	/^impl<'a, 'b> Compare<&'b str> for CompleteByteSlice<'a> {$/;"	c
@@ -552,6 +553,7 @@ Improved	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-
 Improved	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    Improved,$/;"	e	enum:ComparisonResult
 Incomplete	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/internal.rs	/^  Incomplete(Needed),$/;"	e	enum:Err
 Incomplete	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/traits.rs	/^  Incomplete,$/;"	e	enum:CompareResult
+Incomplete	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^    Incomplete,$/;"	e	enum:RoundResult
 IndexBenchmark	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^impl IndexBenchmark {$/;"	c
 IndexBenchmark	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^struct IndexBenchmark {$/;"	s
 IndexContext	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/html/mod.rs	/^struct IndexContext {$/;"	s
@@ -1412,6 +1414,7 @@ Right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/s
 Right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/unzip.rs	/^    type Right = T;$/;"	t
 Right	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/unzip.rs	/^    type Right: Send;$/;"	t	interface:UnzipOp
 Rightmost	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/find_first_last/mod.rs	/^    Rightmost,$/;"	e	enum:MatchPosition
+RoundResult	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^enum RoundResult {$/;"	g
 Routine	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/routine.rs	/^pub trait Routine<T> {$/;"	i
 Run	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/slice/mergesort.rs	/^struct Run {$/;"	s
 Runner	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-0.2.2/src/lib.rs	/^pub trait Runner {$/;"	i
@@ -2395,6 +2398,7 @@ convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/s
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  fn convert(T) -> Self;$/;"	P	interface:Convert
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^  fn convert(e: ErrorKind<F>) -> Self {$/;"	P	implementation:ErrorKind
 convert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/verbose_errors.rs	/^  fn convert(c: Context<I, F>) -> Self {$/;"	P	implementation:Context
+convert_elf_ap	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^    fn convert_elf_ap(&mut self, ap: usize) {$/;"	P	implementation:World
 convert_special_to_empty_and_full_to_deleted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/generic.rs	/^    pub fn convert_special_to_empty_and_full_to_deleted(&self) -> Group {$/;"	P	implementation:Group
 convert_special_to_empty_and_full_to_deleted	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/sse2.rs	/^    pub fn convert_special_to_empty_and_full_to_deleted(&self) -> Group {$/;"	P	implementation:Group
 copy_new_dir_to_base	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/analysis/mod.rs	/^fn copy_new_dir_to_base(id: &str, baseline: &str, output_directory: &str) {$/;"	f
@@ -4206,6 +4210,7 @@ part2	/home/atraii/Downloads/projects/advent2018-rs/src/day09/mod.rs	/^fn part2(
 part2	/home/atraii/Downloads/projects/advent2018-rs/src/day10/mod.rs	/^fn part2(input: &Vec<Point>) -> usize {$/;"	f
 part2	/home/atraii/Downloads/projects/advent2018-rs/src/day11/mod.rs	/^fn part2(input: &str) -> Point {$/;"	f
 part2	/home/atraii/Downloads/projects/advent2018-rs/src/day14/mod.rs	/^fn part2(input: &str) -> usize {$/;"	f
+part2	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^fn part2(input: &World) -> usize {$/;"	f
 part2_example	/home/atraii/Downloads/projects/advent2018-rs/src/day01/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_example	/home/atraii/Downloads/projects/advent2018-rs/src/day02/mod.rs	/^    fn part2_example() {$/;"	f	module:tests
 part2_simd	/home/atraii/Downloads/projects/advent2018-rs/src/day02/mod.rs	/^pub fn part2_simd<'a>(input: &'a str) -> String {$/;"	f
@@ -4827,7 +4832,7 @@ stderr	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.
 stdin	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/program.rs	/^    stdin: ChildStdin,$/;"	m	struct:Program
 stdout	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/program.rs	/^    stdout: BufReader<ChildStdout>,$/;"	m	struct:Program
 step	/home/atraii/Downloads/projects/advent2018-rs/src/day13/mod.rs	/^    fn step(&mut self) -> Option<Point> {$/;"	P	implementation:Grid
-step	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^    fn step(&mut self) -> Option<usize> {$/;"	P	implementation:World
+step	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^    fn step(&mut self) -> RoundResult {$/;"	P	implementation:World
 step_pos	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^            step_pos: usize,$/;"	m	struct:World::move_toward_enemy::Node
 store_aligned	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/generic.rs	/^    pub unsafe fn store_aligned(&self, ptr: *mut u8) {$/;"	P	implementation:Group
 store_aligned	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/sse2.rs	/^    pub unsafe fn store_aligned(&self, ptr: *mut u8) {$/;"	P	implementation:Group
