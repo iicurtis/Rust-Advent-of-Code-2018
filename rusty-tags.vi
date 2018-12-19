@@ -63,6 +63,7 @@ BytesProducer	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon
 C	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/sequence.rs	/^  struct C {$/;"	s	module:tests
 CHARS	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^static CHARS: &'static [u8] = b"0123456789abcdef";$/;"	v
 COMPARISON_COLORS	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/plot/summary.rs	/^static COMPARISON_COLORS: [Color; NUM_COLORS] = [$/;"	v
+CPU	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^struct CPU {$/;"	s
 Callback	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/chunks.rs	/^        impl<T, CB> ProducerCallback<T> for Callback<CB>$/;"	c	function:with_producer
 Callback	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/chunks.rs	/^        struct Callback<CB> {$/;"	s	function:with_producer
 Callback	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/cloned.rs	/^        impl<'a, T, CB> ProducerCallback<&'a T> for Callback<CB>$/;"	c	function:with_producer
@@ -2477,6 +2478,7 @@ day15	/home/atraii/Downloads/projects/advent2018-rs/src/lib.rs	/^mod day15;$/;"	
 day16	/home/atraii/Downloads/projects/advent2018-rs/src/lib.rs	/^mod day16;$/;"	n
 day17	/home/atraii/Downloads/projects/advent2018-rs/src/lib.rs	/^mod day17;$/;"	n
 day18	/home/atraii/Downloads/projects/advent2018-rs/src/lib.rs	/^mod day18;$/;"	n
+day19	/home/atraii/Downloads/projects/advent2018-rs/src/lib.rs	/^mod day19;$/;"	n
 days	/home/atraii/Downloads/projects/advent2018-rs/src/day04/mod.rs	/^    days: [usize; 60],$/;"	m	struct:Guard
 dbg	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^macro_rules! dbg ($/;"	M
 dbg_dmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/util.rs	/^macro_rules! dbg_dmp ($/;"	M
@@ -3326,6 +3328,7 @@ inspect_op	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.
 inspect_op	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/inspect.rs	/^    inspect_op: F,$/;"	m	struct:Inspect
 instr	/home/atraii/Downloads/projects/advent2018-rs/src/day16/mod.rs	/^    instr: [usize; 4],$/;"	m	struct:Sample
 instructions	/home/atraii/Downloads/projects/advent2018-rs/src/day16/mod.rs	/^    instructions: Vec<[usize; 4]>,$/;"	m	struct:Input
+instructions	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^    instructions: Vec<fn(&mut [usize; 6], usize, usize, usize)>,$/;"	m	struct:CPU
 integer_arithmetic	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/api/reductions.rs	/^mod integer_arithmetic;$/;"	n
 interleave	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/interleave_shortest.rs	/^    interleave: Interleave<Take<I>, Take<J>>$/;"	m	struct:InterleaveShortest
 interleave	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^    fn interleave<I>(self, other: I) -> Interleave<Self, I::Iter>$/;"	P	interface:IndexedParallelIterator
@@ -3419,6 +3422,7 @@ into_result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1
 into_result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^        fn into_result(self) -> Result<T, ()> { self.ok_or(()) }$/;"	P	implementation:private::Option
 into_result	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/rayon-1.0.3/src/iter/mod.rs	/^        fn into_result(self) -> Result<T, E> { self }$/;"	P	implementation:private::Result
 invert	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/hashbrown-0.1.7/src/raw/bitmask.rs	/^    pub fn invert(self) -> BitMask {$/;"	P	implementation:BitMask
+ip	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^    ip: u8,$/;"	m	struct:CPU
 is_a	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bytes.rs	/^  fn is_a() {$/;"	f	module:tests
 is_a	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/bytes.rs	/^macro_rules! is_a ($/;"	M
 is_a_s	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/str.rs	/^macro_rules! is_a_s ($/;"	M
@@ -4194,6 +4198,7 @@ parse_input	/home/atraii/Downloads/projects/advent2018-rs/src/day10/mod.rs	/^fn 
 parse_input	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^fn parse_input(input: &str) -> Box<World> {$/;"	f
 parse_input	/home/atraii/Downloads/projects/advent2018-rs/src/day16/mod.rs	/^fn parse_input(input: &str) -> Input {$/;"	f
 parse_input	/home/atraii/Downloads/projects/advent2018-rs/src/day18/mod.rs	/^fn parse_input(input: &str) -> Box<World> {$/;"	f
+parse_input	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^fn parse_input(input: &str) -> Box<CPU> {$/;"	f
 parse_lib_infos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.2/src/out.rs	/^fn parse_lib_infos(infos: pm::TokenStream) -> Result<LibInfos, ()> {$/;"	f
 parse_main_infos	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/aoc-runner-derive-0.2.2/src/out.rs	/^fn parse_main_infos(infos: pm::TokenStream) -> Result<MainInfos, ()> {$/;"	f
 parse_to	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/macros.rs	/^  fn parse_to() {$/;"	f	module:tests
@@ -4221,6 +4226,7 @@ part1	/home/atraii/Downloads/projects/advent2018-rs/src/day14/mod.rs	/^fn part1(
 part1	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^fn part1(input: &World) -> usize {$/;"	f
 part1	/home/atraii/Downloads/projects/advent2018-rs/src/day16/mod.rs	/^fn part1(input: &Input) -> usize {$/;"	f
 part1	/home/atraii/Downloads/projects/advent2018-rs/src/day18/mod.rs	/^fn part1(input: &World) -> usize {$/;"	f
+part1	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^fn part1(input: &CPU) -> usize {$/;"	f
 part1_burnt	/home/atraii/Downloads/projects/advent2018-rs/src/day02/mod.rs	/^fn part1_burnt(input: &str) -> u32 {$/;"	f
 part1_example	/home/atraii/Downloads/projects/advent2018-rs/src/day01/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
 part1_example	/home/atraii/Downloads/projects/advent2018-rs/src/day02/mod.rs	/^    fn part1_example() {$/;"	f	module:tests
@@ -5050,6 +5056,7 @@ test	/home/atraii/Downloads/projects/advent2018-rs/src/day12/mod.rs	/^mod test {
 test	/home/atraii/Downloads/projects/advent2018-rs/src/day14/mod.rs	/^mod test {$/;"	n
 test	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^mod test {$/;"	n
 test	/home/atraii/Downloads/projects/advent2018-rs/src/day18/mod.rs	/^mod test {$/;"	n
+test	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^mod test {$/;"	n
 test_apply_m	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/nom-4.1.1/src/methods.rs	/^  fn test_apply_m() {$/;"	f	module:tests
 test_benchmark_id_make_directory_name_unique	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/criterion-0.2.5/src/report.rs	/^    fn test_benchmark_id_make_directory_name_unique() {$/;"	f	module:test
 test_cmp	/home/atraii/.cargo/registry/src/github.com-1ecc6299db9ec823/packed_simd-0.3.1/src/testing/utils.rs	/^pub fn test_cmp<T>($/;"	f
@@ -5088,6 +5095,7 @@ test_part1_0	/home/atraii/Downloads/projects/advent2018-rs/src/day09/mod.rs	/^  
 test_part1_0	/home/atraii/Downloads/projects/advent2018-rs/src/day11/mod.rs	/^    fn test_part1_0() {$/;"	f	module:test
 test_part1_0	/home/atraii/Downloads/projects/advent2018-rs/src/day15/mod.rs	/^    fn test_part1_0() {$/;"	f	module:test
 test_part1_0	/home/atraii/Downloads/projects/advent2018-rs/src/day18/mod.rs	/^    fn test_part1_0() {$/;"	f	module:test
+test_part1_0	/home/atraii/Downloads/projects/advent2018-rs/src/day19/mod.rs	/^    fn test_part1_0() {$/;"	f	module:test
 test_part1_1	/home/atraii/Downloads/projects/advent2018-rs/src/day09/mod.rs	/^    fn test_part1_1() {$/;"	f	module:test
 test_part1_1	/home/atraii/Downloads/projects/advent2018-rs/src/day11/mod.rs	/^    fn test_part1_1() {$/;"	f	module:test
 test_part1_1	/home/atraii/Downloads/projects/advent2018-rs/src/day14/mod.rs	/^    fn test_part1_1() {$/;"	f	module:test
